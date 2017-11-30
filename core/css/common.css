@@ -12,9 +12,19 @@ font-family: 'News Cycle', sans-serif;
 */
  
 body {
-	background: url('/core/images/marrakesh.jpg') no-repeat fixed;
 	font-family: 'News Cycle', sans-serif;
 	margin-top: 70px;
+}
+
+.parallax {
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2, h3 {
