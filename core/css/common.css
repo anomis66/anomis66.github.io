@@ -12,6 +12,7 @@ font-family: 'News Cycle', sans-serif;
 */
  
 body {
+	background: url('/core/marrakesh.jpg') no-repeat fixed;
 	font-family: 'News Cycle', sans-serif;
 	margin-top: 70px;
 }
