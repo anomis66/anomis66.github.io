@@ -1,0 +1,17 @@
+/* ----- ----- -----
+ * Common CSS for anomis66.github.io
+ * 
+ * Created: 30 Nov 2017 - Simon Arthur
+ * ----- ----- ----- */
+ 
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Patua+One');
+ 
+/*
+font-family: 'Patua One', cursive;
+font-family: 'News Cycle', sans-serif;
+*/
+ 
+body {
+	font-family: 'News Cycle', sans-serif;
+	margin-top: 70px;
+}
