@@ -13,14 +13,35 @@ font-family: 'News Cycle', sans-serif;
  
 body, html {
     height: 100%;
+	font-size: 100%;
 }
 body {
+	margin-top: 50px;
+	background: #151515;
+	/* background: linear-gradient(#000, #369); /* Vertical - Standard Syntax */
+	background: linear-gradient(to right, #000, #963); /* Horizontl - Standard Syntax */
+	/* background: linear-gradient(to bottom right, #000, #036); /* Diagonal - Standard Syntax */
+	/* background: linear-gradient(-45deg, #000, #630); /* Angle - Standard Syntax */
+	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
+}
+	color: #fff;
 	font-family: 'News Cycle', sans-serif;
 }
+.navbar-fixed-top {
+	margin-bottom: 50px !important;
+}
+
 h1, h2, h3 {
 	font-family: 'Patua One', cursive;
 }
-
+img {
+	margin: 1em 2em;
+	padding: 2em;
+	position: relative;
+	max-width: 96%;
+	height: auto;
+	position: relative;
+}
 
 
 .parallax {
@@ -35,10 +56,12 @@ h1, h2, h3 {
 }
 .paratext {
 	background-color: rgba(255,255,255,0.8);
-	font-size: 1.5em;
-	margin: 5px 2em;
+	color: #333;
+	font-size: 1em;
+	margin: 1em 3em;
 	padding: 2em;
-	max-width: 70%;
+	position: relative;
+	max-width: 54em;
 	border-radius: 5px;
 }
 
@@ -51,9 +74,9 @@ h1, h2, h3 {
     }
 	.paratext {
 		font-size: 1em;
-		margin: 0.5%;
-		padding: 5px;
-		max-width: 99%;
+		margin: 1em 2%;
+		padding: 1em;
+		max-width: 96%;
 	}
 }
 
