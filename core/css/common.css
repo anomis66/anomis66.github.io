@@ -67,6 +67,11 @@ img {
 
 
 @media only screen and (max-device-width: 800px) {
+	img {
+		margin: 5px;
+		padding: 2px;
+		max-width: 100%;
+	}
     .parallax {
         // background-attachment: scroll;
 		height: 100%;
