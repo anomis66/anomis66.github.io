@@ -13,7 +13,7 @@ font-family: 'News Cycle', sans-serif;
  
 body, html {
     height: 100%;
-	font-size: 100%;
+	font-size: 110%;
 }
 body {
 	margin-top: 50px;
@@ -61,7 +61,7 @@ img {
 	margin: 1em 3em;
 	padding: 2em;
 	position: relative;
-	max-width: 54em;
+	max-width: 72em;
 	border-radius: 5px;
 }
 
