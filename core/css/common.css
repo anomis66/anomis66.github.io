@@ -11,10 +11,17 @@ font-family: 'Patua One', cursive;
 font-family: 'News Cycle', sans-serif;
 */
  
+body, html {
+    height: 100%;
+}
 body {
 	font-family: 'News Cycle', sans-serif;
-	margin-top: 70px;
 }
+h1, h2, h3 {
+	font-family: 'Patua One', cursive;
+}
+
+
 
 .parallax {
     /* Full height */
@@ -26,7 +33,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-h1, h2, h3 {
-	font-family: 'Patua One', cursive;
+.paratext {
+	background-color: rgba(255,255,255,0.8);
+	font-size: 1.5em;
+	margin: 5px 2em;
+	padding: 2em;
+	max-width: 70%;
+	border-radius: 5px;
 }
