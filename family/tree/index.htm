@@ -11,13 +11,13 @@
 <meta content='black' name='apple-mobile-web-app-status-bar-style'>
 
 <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-<!--[if IE]><link rel="shortcut icon" href="../../core/images/favicon.ico"><![endif]-->
+<!--[if IE]><link rel="shortcut icon" href="./includes/images/favicon.ico"><![endif]-->
 
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon-precomposed" href="../../core/images/anomis66_jack_180s.png">
+<link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="../../core/images/anomis66_jack_196s.png">
+<link rel="icon" href="../../includes/images/anomis66_jack_196s.png">
 
 
 
@@ -25,108 +25,53 @@
 <meta name="author" content="Simon Arthur (@anomis66)">
 
 
-
-<!-- BOOTSTRAP CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- JQUERY UI CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-<!-- FONT AWESOME CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-
-<link rel="stylesheet" href="../../core/css/common.css">
+<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+<link rel="stylesheet" href="../../includes/css/default.css">
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 <!-- quicksearch -->
-<script type="text/javascript" src="../../core/scripts/jquery.quicksearch.js"></script>
+<script type="text/javascript" src="../../includes/scripts/jquery.quicksearch.js"></script>
 
 </head>
 
 <body>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#social-media-links" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">simonarthur.co.uk</a>
-		</div>
-		
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="social-media-links">
+<h1>Welcome to <a href="/">simonarthur.co.uk</a></h1>
+<ul class="navbar">
+	<li><a href="//twitter.com/anomis66" title="twitter">
+		<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+		<span class="sr-only"> twitter</span>
+		</a></li>
+	<li><a href="//www.last.fm/user/anomis66" title="strava">
+		<i class="fa fa-2x fa-compass" aria-hidden="true"></i>
+		<span class="sr-only"> strava</span>
+		</a></li>
+	<!-- li><a href="//www.last.fm/user/anomis66" title="last.fm">
+		<i class="fa fa-2x fa-lastfm" aria-hidden="true"></i>
+		<span class="sr-only"> last.fm</span>
+		</a></li -->
+	<li><a href="https://github.com/anomis66" title="github">
+		<i class="fa fa-2x fa-github" aria-hidden="true"></i>
+		<span class="sr-only"> github</span>
+		</a></li>
+	<li><a href="https://bitbucket.org/anomis66/" title="bitbucket">
+		<i class="fa fa-2x fa-bitbucket" aria-hidden="true"></i>
+		<span class="sr-only"> bitbucket</span>
+		</a></li>
+</ul>
 
 
 
-			<ul class="nav navbar-nav pull-right">
-				<!-- li><a href="//facebook.com/anomis66">
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> facebook</span>
-					</a></li -->
-				<li><a href="//twitter.com/anomis66">
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> twitter</span>
-					</a></li>
-				<li><a href="//www.last.fm/user/anomis66">
-					<i class="fa fa-lastfm" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> last.fm</span>
-					</a></li>
-				<!-- li><a href="https://www.flickr.com/photos/139985686@N07/">
-					<i class="fa fa-flickr" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> flickr</span>
-					</a></li -->
-				<!-- li><a href="https://vimeo.com/anomis66">
-					<i class="fa fa-vimeo" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> vimeo</span>
-					</a></li -->
-				<li><a href="https://github.com/anomis66">
-					<i class="fa fa-code-fork" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> github</span>
-					</a></li>
-				<!-- li><a href="//paypal.me/anomis66">
-					<i class="fa fa-paypal" aria-hidden="true"></i>
-					<span class="visible-xs-inline"> paypal</span>
-					</a></li -->
-			</ul>
+<h2>Genealogy
+	<small>a record or account of the ancestry and descent of a person, family, group, etc.</small>
+</h2>
 
+<p>Using the tools available to me for free on the web, and family contacts, I have started to develop a page or two dedicated to the ARTHUR family tree. Obviously I will start with myself and the girls and work backwards.</p> 
 
+<p>Progress is slow but <a href="surnames.htm">you can view the latest version of the ARTHUR tree</a> in HTML format. If anyone thinks they can contribute to my efforts, or they spot an error or omission, please email <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x67;&#x65;&#x6e;&#x65;&#x61;&#x6c;&#x6f;&#x67;&#x79;&#x40;&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x31;&#x32;&#x2e;&#x63;&#x6f;&#x2e;&#x75;&#x6b;">&#103;&#101;&#110;&#x65;&#97;&#108;&#111;&#x67;&#121;&#x40;&#x61;&#114;&#116;&#x68;&#117;&#114;&#49;&#50;&#x2e;&#x63;&#111;&#x2e;&#x75;&#107;</a> with the subject line 'Genealogy'.</p>
 
-		</div>
-	  
-	</div><!-- /.container-fluid -->
-</nav>
-
-
-<div class="paratext pull-right">
-	<h1>Genealogy
-		<small>a record or account of the ancestry and descent of a person, family, group, etc.</small>
-	</h1>
-
-	<p>
-	Using the tools available to me for free on the web, and family contacts, I have started to develop a page or two dedicated to the ARTHUR family tree.  
-	Obviously I will start with myself and the girls and work backwards.
-	</p> 
-
-	<p>
-	Progress is slow but <a href="surnames.htm">you can view the latest version of the ARTHUR tree</a> in HTML format.&nbsp; 
-	If anyone thinks they can contribute to my efforts, or they spot an error or omission, please email
-	<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x67;&#x65;&#x6e;&#x65;&#x61;&#x6c;&#x6f;&#x67;&#x79;&#x40;&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x31;&#x32;&#x2e;&#x63;&#x6f;&#x2e;&#x75;&#x6b;">&#103;&#101;&#110;&#x65;&#97;&#108;&#111;&#x67;&#121;&#x40;&#x61;&#114;&#116;&#x68;&#117;&#114;&#49;&#50;&#x2e;&#x63;&#111;&#x2e;&#x75;&#107;</a> 
-	with the subject line 'Genealogy'.
-	</p>
-
-	<p><script type="text/javascript" src="../../core/scripts/random.quotes.genealogy.js"></script></p>
-
-	<ul>
+<ul>
 	<li><a href="http://www.ancestry.co.uk/">Ancestry.co.uk</a></li>
 	<li><a href="http://www.genesreunited.co.uk/">GenesReunited</a></li>
 	<li><a href="http://www.freebmd.org.uk/">Birth, Marriages &amp; Deaths</a></li>
@@ -137,11 +82,19 @@
 	<li><a href="http://www.documentsonline.nationalarchives.gov.uk/">Documents-Online</a></li>
 	<li><a href="http://www.bl.uk/catalogues/newspapers/welcome.asp">British Library</a></li>
 	<li><a href="http://www.wtoram.co.uk/ged2web/ged2web.htm">Ged2Web</a></li>
-	</ul>
+</ul>
 
-</div>
-<div class="parallax" style="background-image: url('../../core/images/parallax-3.jpg');"></div>
 
+
+<blockquote>
+	<script src="../../includes/scripts/random.quotes.genealogy.js"></script>
+</blockquote>
+
+
+
+<footer>
+	<p>&copy; Simon Arthur 2018.  All rights reserved.
+</footer>
 
 </body>
 

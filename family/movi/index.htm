@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="./includes/images/anomis66_jack_196s.png">
+<link rel="icon" href="../../includes/images/anomis66_jack_196s.png">
 
 
 
@@ -26,12 +26,11 @@
 
 
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-<link rel="stylesheet" href="./includes/css/default.css">
+<link rel="stylesheet" href="../../includes/css/default.css">
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- quicksearch -->
-<script type="text/javascript" src="./includes/scripts/jquery.quicksearch.js"></script>
+<script src="../../includes/scripts/jquery.quicksearch.js"></script>
 
 </head>
 
@@ -61,28 +60,62 @@
 		</a></li>
 </ul>
 
-<ul class="navbar">
-	<li><a href="./family/tree/" title="family tree">
-		<i class="fa fa-2x fa-tree" aria-hidden="true"></i>
-		<span class="sr-only"> genealogy</span>
-		</a></li>
-	<li><a href="./family/movi/" title="movie collection">
-		<i class="fa fa-2x fa-film" aria-hidden="true"></i>
-		<span class="sr-only"> movie collection</span>
-		</a></li>
-</ul>
-
-<h2>Keeping it simple!</h2>
 
 
+<h2>Movi Collection</h2>
+
+<form action="#">
+	<input type="text" name="qs" id="qs" placeholder="filter" autofocus />
+</form>
+
+<div id="demo">
+	<span class="loading">Loading...</span>
+</div>
+
+<script>
+// $(document).ready(function() {
+// executes when HTML-Document is loaded and DOM is ready
+
+//$(window).load(function() {
+// executes when complete page is fully loaded, including all frames, objects and image…
+
+// --- Load CSV of movies ---
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		// If successful do stuff with it.
+		doStuff(this.responseText);
+	}
+};
+xhttp.open("GET", "myfilms.csv", true);
+xhttp.send();
 
 
 
-<blockquote>
-	<script src="./includes/scripts/random.quotes.pratchett.js"></script>
-</blockquote>
+function doStuff(file) {
+	// replace EOL with next record code
+	file = file.replace(/(?:\r\n|\r|\n)/g, '</div><div class="record">');
+	// top & tail the output to ensure valid html
+	document.getElementById("demo").innerHTML = '<div id="table"><div class="record">' + file + '</div></div>';
+}
+
+$(document).ready(function () {
+
+	// --- QuickSearch ---
+	$("#qs").quicksearch("#table .record", {
+		noResults: '#noresults',
+		stripeRows: ['odd', 'even'],
+		loader: 'span.loading'
+	});
+});
+
+</script>
 
 
+
+	<div id="noresults">
+		<h3>No Results</h3>
+	</div>
 
 
 <footer>

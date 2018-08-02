@@ -1,0 +1,98 @@
+/* ----- ----- -----
+ * Common CSS for anomis66.github.io
+ * 
+ * Created: 30 Nov 2017 - Simon Arthur
+ * ----- ----- ----- */
+ 
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Patua+One');
+ 
+/*
+font-family: 'Patua One', cursive;
+font-family: 'News Cycle', sans-serif;
+*/
+
+body {
+	background: #fefefe;
+	/* background: linear-gradient(#000, #369); /* Vertical - Standard Syntax */
+	/* background: linear-gradient(to right, #fff, #cf6); /* Horizontl - Standard Syntax */
+	/* background: linear-gradient(to bottom right, #000, #036); /* Diagonal - Standard Syntax */
+	/* background: linear-gradient(-45deg, #000, #630); /* Angle - Standard Syntax */
+	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
+	/* background: linear-gradient(to right, #ccc, #fff, #fff, #cf6); /* Diagonal - Standard Syntax */
+	color: #666;
+	max-width: 54em;
+	margin: 1em auto 2em auto;
+	padding: 1em;
+}
+.navbar {
+	padding: 0; 
+	margin: 0; 
+	border-bottom: 1px dotted #eee;
+}
+.navbar li {
+	list-style: none;
+	display: inline-block;
+	padding: 0.5em 1em;
+}
+.sr-only {
+	display: none;
+}
+h1, h2, h3 {
+	font-family: 'Patua One', cursive;
+	margin: 0.5em 0;
+}
+p {
+	line-height: 1.6em;
+}
+a {
+	color: #693;
+	font-weight: 600;
+	text-decoration: none;
+}
+blockquote {
+	background-color: #e5e5e5;
+	border: 1px solid #d5d5d5;
+	padding: 1em;
+	margin: 1em;
+}
+small {
+	font-style: italic;
+}
+
+
+img {
+	margin: 5px;
+	padding: 2px;
+	max-width: 100%;
+}
+
+
+
+input {
+	margin: 0.5em 0;
+	padding: 0.25em 0;
+	width: 100%;
+}
+.even {
+	background-color: #ffe;
+}
+.record:hover,
+.record:active,
+.record:focus {
+	background-color: #ffc;
+}
+
+
+footer {
+	border-top: 1px dotted #eee;
+}
+
+
+@media only screen and (max-device-width: 800px) {
+	img {
+		margin: 5px;
+		padding: 2px;
+		max-width: 100%;
+	}
+}
+
