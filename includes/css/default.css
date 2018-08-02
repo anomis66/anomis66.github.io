@@ -20,7 +20,7 @@ body {
 	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
 	/* background: linear-gradient(to right, #ccc, #fff, #fff, #cf6); /* Diagonal - Standard Syntax */
 	color: #666;
-	max-width: 54em;
+	max-width: 55em;
 	margin: 1em auto 2em auto;
 	padding: 1em;
 }
@@ -74,14 +74,20 @@ input {
 	width: 100%;
 }
 .even {
-	background-color: #ffe;
+	background-color: #f6f9f3;
+	border: 0 dotted #eee;
+	border-width: 1px 0;
 }
 .record:hover,
 .record:active,
 .record:focus {
-	background-color: #ffc;
+	background-color: #ffa;
 }
-
+.record span {
+	display: inline-block;
+	border-left: 1px dotted #eee;
+	width: 20%;
+}
 
 footer {
 	border-top: 1px dotted #eee;
