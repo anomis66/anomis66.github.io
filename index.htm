@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="./includes/images/anomis66_jack_196s.png">
+<link rel="icon" href="/includes/images/anomis66_jack_196s.png">
 
 
 
@@ -26,80 +26,53 @@
 
 
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-<link rel="stylesheet" href="./includes/css/default.css">
+<link rel="stylesheet" href="/includes/css/default.css">
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- quicksearch -->
-<script type="text/javascript" src="./includes/scripts/jquery.quicksearch.js"></script>
+<script type="text/javascript" src="/includes/scripts/jquery.quicksearch.js"></script>
 
 </head>
 
 <body>
 
-<h1>Welcome to <a href="//www.simonarthur.co.uk/">simonarthur.co.uk</a></h1>
 
-<ul class="navbar">
-	<li><a href="./" title="home">
-		<i class="fa fa-2x fa-home" aria-hidden="true"></i>
-		<span class="sr-only"> home page</span>
-		</a></li>
-	<li><a href="./family/tree/" title="family tree">
-		<i class="fa fa-2x fa-tree" aria-hidden="true"></i>
-		<span class="sr-only"> genealogy</span>
-		</a></li>
-	<li><a href="./family/movi/" title="movie collection">
-		<i class="fa fa-2x fa-film" aria-hidden="true"></i>
-		<span class="sr-only"> movie collection</span>
-		</a></li>
-</ul>
 
-<h2>Keeping it simple!</h2>
+<h1>Keeping it simple!</h1>
 
 
 
-
-
-<blockquote>
-	<script src="./includes/scripts/random.quotes.pratchett.js"></script>
+<blockquote id="quoted_by" class="hidden-print">
+	<script src="/includes/scripts/random.quotes.pratchett.js"></script>
 </blockquote>
 
 
 
-<ul class="navbar">
-	<li><a href="//twitter.com/anomis66" title="twitter">
-		<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-		<span class="sr-only"> twitter</span>
-		</a></li>
-	<li><a href="//www.last.fm/user/anomis66" title="strava">
-		<i class="fa fa-2x fa-compass" aria-hidden="true"></i>
-		<span class="sr-only"> strava</span>
-		</a></li>
-	<!-- li><a href="//www.last.fm/user/anomis66" title="last.fm">
-		<i class="fa fa-2x fa-lastfm" aria-hidden="true"></i>
-		<span class="sr-only"> last.fm</span>
-		</a></li -->
-	<li><a href="https://github.com/anomis66" title="github">
-		<i class="fa fa-2x fa-github" aria-hidden="true"></i>
-		<span class="sr-only"> github</span>
-		</a></li>
-	<li><a href="https://bitbucket.org/anomis66/" title="bitbucket">
-		<i class="fa fa-2x fa-bitbucket" aria-hidden="true"></i>
-		<span class="sr-only"> bitbucket</span>
-		</a></li>
-</ul>
-
 <footer>
+	<hr>
+	<p class="hidden-print">Go To <a href="/">Home Page</a>
+	<br>
+	Go To <a href="/family/tree/">Family Tree</a>
+	<br>
+	Go To <a href="/family/movi/">Movie Collection</a>
+	</p>
 	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
-	<script type="text/javascript">
-		//<![CDATA[
-		function qrcode(url){
-			document.write('<img src="https://chart.googleapis.com/chart?chs=100x100&amp;cht=qr&amp;choe=UTF-8&amp;chl='+url+'" alt="QR code">');
-		}
-		qrcode(location.href);
-		//]]>
-	</script>
+	<hr>
+	<div id="qrcode"></div>
 </footer>
+
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	function qrcode(url){
+		var code = ('<img src="https://chart.googleapis.com/chart?chs=100x100&amp;cht=qr&amp;choe=UTF-8&amp;chl='+url+'" alt="QR code">');
+		document.getElementById("qrcode").innerHTML = code;
+	}
+	qrcode(location.href);
+	//]]>
+</script>
 
 </body>
 

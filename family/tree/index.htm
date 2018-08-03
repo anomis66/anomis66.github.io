@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="../../includes/images/anomis66_jack_196s.png">
+<link rel="icon" href="/includes/images/anomis66_jack_196s.png">
 
 
 
@@ -26,26 +26,30 @@
 
 
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-<link rel="stylesheet" href="../../includes/css/default.css">
+<link rel="stylesheet" href="/includes/css/default.css">
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- quicksearch -->
-<script type="text/javascript" src="../../includes/scripts/jquery.quicksearch.js"></script>
+<script type="text/javascript" src="/includes/scripts/jquery.quicksearch.js"></script>
 
 </head>
 
 <body>
 
-<h1>Welcome to <a href="//www.simonarthur.co.uk/">simonarthur.co.uk</a></h1>
 
 
+<h1>Family Tree</h1>
 
-<h2>Genealogy
-	<small>a record or account of the ancestry and descent of a person, family, group, etc.</small>
-</h2>
+<h2>Genealogy: A record or account of the ancestry and descent of a person, family, group, etc.</h2>
 
 <p>Using the tools available to me for free on the web, and family contacts, I have started to develop a page or two dedicated to the ARTHUR family tree. Obviously I will start with myself and the girls and work backwards.</p> 
+
+
+<blockquote class="hidden-print">
+	<script src="/includes/scripts/random.quotes.genealogy.js"></script>
+</blockquote>
+
 
 <p>Progress is slow but <a href="surnames.htm">you can view the latest version of the ARTHUR tree</a> in HTML format. If anyone thinks they can contribute to my efforts, or they spot an error or omission, please email <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x67;&#x65;&#x6e;&#x65;&#x61;&#x6c;&#x6f;&#x67;&#x79;&#x40;&#x61;&#x72;&#x74;&#x68;&#x75;&#x72;&#x31;&#x32;&#x2e;&#x63;&#x6f;&#x2e;&#x75;&#x6b;">&#103;&#101;&#110;&#x65;&#97;&#108;&#111;&#x67;&#121;&#x40;&#x61;&#114;&#116;&#x68;&#117;&#114;&#49;&#50;&#x2e;&#x63;&#111;&#x2e;&#x75;&#107;</a> with the subject line 'Genealogy'.</p>
 
@@ -64,46 +68,25 @@
 
 
 
-<blockquote>
-	<script src="../../includes/scripts/random.quotes.genealogy.js"></script>
-</blockquote>
-
-
-
-<ul class="navbar">
-	<li><a href="//twitter.com/anomis66" title="twitter">
-		<i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-		<span class="sr-only"> twitter</span>
-		</a></li>
-	<li><a href="//www.last.fm/user/anomis66" title="strava">
-		<i class="fa fa-2x fa-compass" aria-hidden="true"></i>
-		<span class="sr-only"> strava</span>
-		</a></li>
-	<!-- li><a href="//www.last.fm/user/anomis66" title="last.fm">
-		<i class="fa fa-2x fa-lastfm" aria-hidden="true"></i>
-		<span class="sr-only"> last.fm</span>
-		</a></li -->
-	<li><a href="https://github.com/anomis66" title="github">
-		<i class="fa fa-2x fa-github" aria-hidden="true"></i>
-		<span class="sr-only"> github</span>
-		</a></li>
-	<li><a href="https://bitbucket.org/anomis66/" title="bitbucket">
-		<i class="fa fa-2x fa-bitbucket" aria-hidden="true"></i>
-		<span class="sr-only"> bitbucket</span>
-		</a></li>
-</ul>
-
 <footer>
+	<hr>
+	<p class="hidden-print">Go To <a href="/">Home Page</a></p>
 	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
-	<script type="text/javascript">
-		//<![CDATA[
-		function qrcode(url){
-			document.write('<img src="https://chart.googleapis.com/chart?chs=100x100&amp;cht=qr&amp;choe=UTF-8&amp;chl='+url+'" alt="QR code">');
-		}
-		qrcode(location.href);
-		//]]>
-	</script>
+	<hr>
+	<div id="qrcode"></div>
 </footer>
+
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	function qrcode(url){
+		var code = ('<img src="https://chart.googleapis.com/chart?chs=100x100&amp;cht=qr&amp;choe=UTF-8&amp;chl='+url+'" alt="QR code">');
+		document.getElementById("qrcode").innerHTML = code;
+	}
+	qrcode(location.href);
+	//]]>
+</script>
 
 </body>
 

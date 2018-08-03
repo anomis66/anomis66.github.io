@@ -12,22 +12,20 @@ font-family: 'News Cycle', sans-serif;
 */
 
 body {
-	background: #fefefe;
+	background: #fff;
 	/* background: linear-gradient(#000, #369); /* Vertical - Standard Syntax */
-	/* background: linear-gradient(to right, #fff, #cf6); /* Horizontl - Standard Syntax */
+	/* background: linear-gradient(to right, #fff, #cf6); /* Horizontal - Standard Syntax */
 	/* background: linear-gradient(to bottom right, #000, #036); /* Diagonal - Standard Syntax */
 	/* background: linear-gradient(-45deg, #000, #630); /* Angle - Standard Syntax */
 	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
-	/* background: linear-gradient(to right, #ccc, #fff, #fff, #cf6); /* Diagonal - Standard Syntax */
 	font-family: 'News Cycle', sans-serif;
 	color: #666;
-	max-width: 60em;
+	max-width: 54em;
 	margin: 1em auto 2em auto;
 	padding: 1em;
 }
 h1, h2, h3 {
 	font-family: 'Patua One', cursive;
-	margin: 0.5em 0;
 }
 p {
 	line-height: 1.6em;
@@ -38,68 +36,45 @@ a {
 	text-decoration: none;
 }
 blockquote {
-	background-color: #e5e5e5;
-	border: 1px solid #d5d5d5;
+	background-color: #66993315;
+	border: 1px solid #66993345;
+	border-radius: 4px;
 	padding: 1em;
-	margin: 1em;
-}
-small,
-.small {
-	font-style: italic;
-}
-
-
-img {
-	margin: 5px;
-	padding: 2px;
-	max-width: 100%;
+	margin: 1em 0;
 }
 
 input {
-	border: 1px solid #669933;
-	margin: 1em auto;
-	padding: 1em;
-	min-width: 60%;
-}
-
-
-.navbar {
-	padding: 0; 
-	margin: 0; 
-	border-top: 1px dotted #eee;
-}
-.navbar li {
-	list-style: none;
-	display: inline-block;
-	padding: 1em;
-}
-.sr-only {
-	display: none;
+	margin: 1em 0;
+	padding: 0.5em;
+	width: 40%;
 }
 
 
 
-.even {
+/* --- movi listing --- */
+#movi-list .even {
 	background-color: #66993315;
 	border: 0 dotted #eee;
 	border-width: 1px 0;
 }
-.record:first-of-type  {
-	font-weight: 600;
+#movi-list .record:first-of-type  {
+	background-color: #66993395;
+	color: #fff;
+	font-weight: 900;
 	text-transform: capitalize;
 }
-.record span {
+#movi-list .record span {
 	display: inline-block;
 	border-left: 1px dotted #eee;
-	padding: 0.5em;
-	width: 10%;
+	padding: 2px 4px;
+	width: 10%; 
 }
-.record span:first-of-type  {
-	width: 50%;
+#movi-list .record span:first-of-type  {
+	width: 40%;
 }
-.record:hover,
-.record:active,
-.record:focus {
+#movi-list .record:hover,
+#movi-list .record:active,
+#movi-list .record:focus {
 	background-color: #66993345;
 }
 
@@ -109,12 +84,41 @@ footer {
 	border-top: 1px dotted #eee;
 }
 
+#qrcode {
+	background-image: url('/includes/images/anomis66_jack_100s.png');
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 1em auto;
+}
+#qrcode:hover img {
+	display: block;
+}
+#qrcode img {
+	display: none;
+}
+
+
 
 @media only screen and (max-device-width: 800px) {
-	img {
-		margin: 0.5em;
-		padding: 0.5em;
-		max-width: 100%;
+
+	.hidden-sm {
+		display: none;
 	}
+
+}
+@media only print {
+	
+	.hidden-print {
+		display: none;
+	}
+
+	#qrcode img {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 }
 
