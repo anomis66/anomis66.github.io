@@ -26,6 +26,7 @@ body {
 }
 h1, h2, h3 {
 	font-family: 'Patua One', cursive;
+	line-height: 1.6%
 }
 p {
 	line-height: 1.6em;
@@ -71,22 +72,23 @@ hr {
 #csv-list {
 	box-shadow: 2px 2px 4px #eee;
 }
-.record:nth-of-type(2n) {
-	background-color: #99663315;
-}
-#csv-list .even { /* Add Stripes */
+#csv-list .record:nth-child(even)  { /* Add Stripes */
 	background-color: #66993315;
-	border: 0 dotted #eee;
+	border: 0 dotted #d5d5d5;
 	border-width: 1px 0;
 }
 #csv-list .record span { /* Add Border */
 	display: inline-block;
-	border-left: 1px dotted #eee;
+	border-left: 1px dotted #d5d5d5;
 	padding: 1px 3px;
 }
 @media only screen and (max-device-width: 800px) {
 	#csv-list .record span {
 		width: 30%;
+	}
+	#qs {
+		color: #666;
+		width: 95%;
 	}
 }
 #csv-list .record:hover,
@@ -95,9 +97,10 @@ hr {
 	background-color: #66993345;
 }
 #csv-list .record:first-of-type  {
-	background-color: #66993395;
+	background-color: #669933cc;
 	color: #fff;
-	font-weight: 900;
+	font-weight: 600;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 

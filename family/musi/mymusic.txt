@@ -3688,26 +3688,26 @@ Ozzy Osbourne|07|Denial|Ozzmosis|1995|Hard Rock
 Ozzy Osbourne|08|My Little Man|Ozzmosis|1995|Hard Rock
 Ozzy Osbourne|09|My Jekyll Doesn't Hide|Ozzmosis|1995|Hard Rock
 Ozzy Osbourne|10|Old L.A. Tonight|Ozzmosis|1995|Hard Rock
-ACDC|01|Hells Bells|Back In Black|1980|Hard Rock
-ACDC|02|Shoot To Thrill|Back In Black|1980|Hard Rock
-ACDC|03|What Do You Do For Money Honey|Back In Black|1980|Hard Rock
-ACDC|04|Given The Dog A Bone|Back In Black|1980|Hard Rock
-ACDC|05|Let Me Put My Love Into You|Back In Black|1980|Hard Rock
-ACDC|06|Back In Black|Back In Black|1980|Hard Rock
-ACDC|07|You Shook Me All Night Long|Back In Black|1980|Hard Rock
-ACDC|08|Have A Drink On Me|Back In Black|1980|Hard Rock
-ACDC|09|Shake A Leg|Back In Black|1980|Hard Rock
-ACDC|10|Rock And Roll Ain't Noise Pollution|Back In Black|1980|Hard Rock
-ACDC|01|For Those About To Rock (We Salute You)|For Those About To Rock|1981|Hard Rock
-ACDC|02|Put The Finger On You|For Those About To Rock|1981|Hard Rock
-ACDC|03|Let's Get It Up|For Those About To Rock|1981|Hard Rock
-ACDC|04|Inject The Venom|For Those About To Rock|1981|Hard Rock
-ACDC|05|Snowballed|For Those About To Rock|1981|Hard Rock
-ACDC|06|Evil Walks|For Those About To Rock|1981|Hard Rock
-ACDC|07|C.O.D.|For Those About To Rock|1981|Hard Rock
-ACDC|08|Breaking The Rules|For Those About To Rock|1981|Hard Rock
-ACDC|09|Night Of The Long Knives|For Those About To Rock|1981|Hard Rock
-ACDC|10|Spellbound|For Those About To Rock|1981|Hard Rock
+AC/DC|01|Hells Bells|Back In Black|1980|Hard Rock
+AC/DC|02|Shoot To Thrill|Back In Black|1980|Hard Rock
+AC/DC|03|What Do You Do For Money Honey|Back In Black|1980|Hard Rock
+AC/DC|04|Given The Dog A Bone|Back In Black|1980|Hard Rock
+AC/DC|05|Let Me Put My Love Into You|Back In Black|1980|Hard Rock
+AC/DC|06|Back In Black|Back In Black|1980|Hard Rock
+AC/DC|07|You Shook Me All Night Long|Back In Black|1980|Hard Rock
+AC/DC|08|Have A Drink On Me|Back In Black|1980|Hard Rock
+AC/DC|09|Shake A Leg|Back In Black|1980|Hard Rock
+AC/DC|10|Rock And Roll Ain't Noise Pollution|Back In Black|1980|Hard Rock
+AC/DC|01|For Those About To Rock (We Salute You)|For Those About To Rock|1981|Hard Rock
+AC/DC|02|Put The Finger On You|For Those About To Rock|1981|Hard Rock
+AC/DC|03|Let's Get It Up|For Those About To Rock|1981|Hard Rock
+AC/DC|04|Inject The Venom|For Those About To Rock|1981|Hard Rock
+AC/DC|05|Snowballed|For Those About To Rock|1981|Hard Rock
+AC/DC|06|Evil Walks|For Those About To Rock|1981|Hard Rock
+AC/DC|07|C.O.D.|For Those About To Rock|1981|Hard Rock
+AC/DC|08|Breaking The Rules|For Those About To Rock|1981|Hard Rock
+AC/DC|09|Night Of The Long Knives|For Those About To Rock|1981|Hard Rock
+AC/DC|10|Spellbound|For Those About To Rock|1981|Hard Rock
 Bif Naked|01|Abandonment|SuperBeautifulMonster|2005|Rock
 Bif Naked|02|Let Down|SuperBeautifulMonster|2005|Rock
 Bif Naked|03|Everyday|SuperBeautifulMonster|2005|Rock
@@ -5088,6 +5088,24 @@ Queen|17|Somebody To Love|Absolute Greatest|2009|Rock
 Queen|18|I Want To Break Free|Absolute Greatest|2009|Rock
 Queen|19|The Show Must Go On|Absolute Greatest|2009|Rock
 Queen|20|Bohemian Rhapsody|Absolute Greatest|2009|Rock
+R.E.M.|01|Man On The Moon|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|02|The Great Beyond|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|03|Bad Day|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|04|What's The Frequency, Kenneth?|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|05|All The Way To Reno|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|06|Losing My Religion|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|07|E-Bow The Letter|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|08|Orange Crush|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|09|Imitation Of Life|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|10|Daysleeper|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|11|Animal|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|12|The Sidewinder Sleeps Tonite|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|13|Stand|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|14|Electrolite|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|15|All The Right Friends|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|16|Everybody Hurts|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|17|At My Most Beautiful|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
+R.E.M.|18|Nightswimming|In Time: The Best Of R.E.M. 1988-2003|2003|Alternative Rock
 Radiohead|01|Airbag|Ok Computer|1997|Alternative Rock
 Radiohead|02|Paranoid Android|Ok Computer|1997|Alternative Rock
 Radiohead|03|Subterranean Homesick Alien|Ok Computer|1997|Alternative Rock
@@ -5192,6 +5210,118 @@ The Rasmus|10|Funeral Song|Dead Letters (UK Bonus)|2004|Rock
 The Rasmus|11|F-F-F-Falling|Dead Letters (UK Bonus)|2004|Rock
 The Rasmus|12|If You Ever|Dead Letters (UK Bonus)|2004|Rock
 The Rasmus|13|What Ever|Dead Letters (UK Bonus)|2004|Rock
+Red Hot Chili Peppers|01|Good Time Boys|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|02|Higher Ground|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|03|Subway To Venus|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|04|Magic Johnson|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|05|Nobody Weird Like Me|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|06|Knock Me Down|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|07|Taste The Pain|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|08|Stone Cold Bush|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|09|Fire|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|10|Pretty Little Ditty|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|11|Punk Rock Classic|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|12|Sexy Mexican Maid|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|13|Johnny, Kick A Hole In The Sky|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|14|Song That Made Us What We Are Today (Demo)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|15|Knock Me Down (Original Long Version)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|16|Sexy Mexican Maid (Original Long Version)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|17|Salute To Kareem (Demo)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|18|Castles Made Of Sand (Live)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|19|Crosstown Traffic (Live)|Mother's Milk|1989|Funk Rock
+Red Hot Chili Peppers|01|The Power Of Equality|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|02|If You Have To Ask|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|03|Breaking The Girl|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|04|Funky Monks|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|05|Suck My Kiss|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|06|I Could Have Lied|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|07|Mellowship Slinky In B Major|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|08|The Righteous & The Wicked|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|09|Give It Away|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|10|Blood Sugar Sex Magik|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|11|Under The Bridge|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|12|Naked In The Rain|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|13|Apache Rose Peacock|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|14|The Greeting Song|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|15|My Lovely Man|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|16|Sir Psycho Sexy|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|17|They're Red Hot|Blood Sugar Sex Magik|1991|Funk Rock
+Red Hot Chili Peppers|01|Higher Ground|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|02|Fight Like A Brave|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|03|Behind The Sun|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|04|Me And My Friends|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|05|Backwoods|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|06|True Men Don't Kill Coyotes|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|07|Fire|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|08|Get Up And Jump|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|09|Knock Me Down|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|10|Under The Bridge|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|11|Show Me Your Soul|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|12|If You Want Me To Stay|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|13|Hollywood|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|14|Jungle Man|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|15|The Brothers Cup|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|16|Taste The Pain|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|17|Catholic School Girls Rule|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|18|Johnny, Kick A Hole In The Sky|What Hits!?|1992|Funk Rock
+Red Hot Chili Peppers|01|Warped|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|02|Aeroplane|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|03|Deep Kick|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|04|My Friends|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|05|Coffee Shop|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|06|Pea|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|07|One Big Mob|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|08|Walkabout|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|09|Tearjerker|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|10|One Hot Minute|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|11|Falling Into Grace|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|12|Shallow Be Thy Game|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|13|Transcending|One Hot Minute|1995|Funk Rock
+Red Hot Chili Peppers|01|Around The World|Californication|1999|Funk Rock
+Red Hot Chili Peppers|02|Parallel Universe|Californication|1999|Funk Rock
+Red Hot Chili Peppers|03|Scar Tissue|Californication|1999|Funk Rock
+Red Hot Chili Peppers|04|Otherside|Californication|1999|Funk Rock
+Red Hot Chili Peppers|05|Get On Top|Californication|1999|Funk Rock
+Red Hot Chili Peppers|06|Californication|Californication|1999|Funk Rock
+Red Hot Chili Peppers|07|Easily|Californication|1999|Funk Rock
+Red Hot Chili Peppers|08|Porcelain|Californication|1999|Funk Rock
+Red Hot Chili Peppers|09|Emit Remmus|Californication|1999|Funk Rock
+Red Hot Chili Peppers|10|I Like Dirt|Californication|1999|Funk Rock
+Red Hot Chili Peppers|11|This Velvet Glove|Californication|1999|Funk Rock
+Red Hot Chili Peppers|12|Savior|Californication|1999|Funk Rock
+Red Hot Chili Peppers|13|Purple Stain|Californication|1999|Funk Rock
+Red Hot Chili Peppers|14|Right On Time|Californication|1999|Funk Rock
+Red Hot Chili Peppers|15|Road Trippin'|Californication|1999|Funk Rock
+Red Hot Chili Peppers|1|By The Way|By The Way|2002|Rock
+Red Hot Chili Peppers|2|Universally Speaking|By The Way|2002|Rock
+Red Hot Chili Peppers|3|This Is The Place|By The Way|2002|Rock
+Red Hot Chili Peppers|4|Dosed|By The Way|2002|Rock
+Red Hot Chili Peppers|01|Intro|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|02|Can't Stop|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|03|Around The World|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|04|Scar Tissue|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|05|By The Way|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|06|Fortune Faded|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|07|I Feel Love|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|08|Otherside|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|09|Easily|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|10|Universally Speaking|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|11|Get On Top|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|12|Brandy|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|13|Don't Forget Me|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|14|Rolling Sly Stone|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|01|Throw Away Your Television|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|02|Leverage Of Space|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|03|Purple Stain|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|04|The Zephyr Song|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|05|Californication|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|06|Right On Time|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|07|Parallel Universe|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|08|Drum Homage Medley|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|09|Under The Bridge|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|10|Black Cross|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|11|Flea's Trumpet Treated By John|Live In Hyde Park|2004|Rock
+Red Hot Chili Peppers|12|Give It Away|Live In Hyde Park|2004|Rock
 Rock Sugar|01|Don't Stop The Sandman|Reimaginator|2010|Rock
 Rock Sugar|02|We Will Kickstart Your Rhapsody|Reimaginator|2010|Rock
 Rock Sugar|03|Crazy Girl|Reimaginator|2010|Rock
