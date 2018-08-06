@@ -20,9 +20,9 @@ body {
 	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
 	font-family: 'News Cycle', sans-serif;
 	color: #666;
-	max-width: 54em;
-	margin: 1em auto 2em auto;
-	padding: 1em;
+	max-width: 64em;
+	margin: 0 auto 3em auto;
+	padding: 5px;
 }
 h1, h2, h3 {
 	font-family: 'Patua One', cursive;
@@ -49,39 +49,89 @@ input {
 	width: 40%;
 }
 
+hr { 
+	background-color: #fff;
+	border: 0;
+	border-top: 2px dotted #669933;
+} 
 
 
-/* --- movi listing --- */
-#movi-list .even {
+
+.fl {
+	float: left;
+	clear: left;
+}
+.fr {
+	float: right;
+	clear: right;
+}
+
+
+/* --- CSV List --- */
+#csv-list {
+	box-shadow: 2px 2px 4px #eee;
+}
+.record:nth-of-type(2n) {
+	background-color: #99663315;
+}
+#csv-list .even { /* Add Stripes */
 	background-color: #66993315;
 	border: 0 dotted #eee;
 	border-width: 1px 0;
 }
-#movi-list .record:first-of-type  {
+#csv-list .record span { /* Add Border */
+	display: inline-block;
+	border-left: 1px dotted #eee;
+	padding: 1px 3px;
+}
+@media only screen and (max-device-width: 800px) {
+	#csv-list .record span {
+		width: 30%;
+	}
+}
+#csv-list .record:hover,
+#csv-list .record:active,
+#csv-list .record:focus {
+	background-color: #66993345;
+}
+#csv-list .record:first-of-type  {
 	background-color: #66993395;
 	color: #fff;
 	font-weight: 900;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
-#movi-list .record span {
-	display: inline-block;
-	border-left: 1px dotted #eee;
-	padding: 2px 4px;
-	width: 10%; 
-}
-#movi-list .record span:first-of-type  {
-	width: 40%;
-}
-#movi-list .record:hover,
-#movi-list .record:active,
-#movi-list .record:focus {
-	background-color: #66993345;
+
+@media only screen and (min-device-width: 800px) {
+
+	/* --- Movi List --- */
+	.movie .record span {
+		width: 10%; 
+	}
+	.movie .record span:first-of-type  {
+		width: 43%;
+	}
+	.movie .record span:nth-of-type(2)  {
+		text-transform: uppercase;
+	}
+	/* --- Music List --- */
+	.music .record span {
+		width: 12%;
+	}
+	.music .record span:nth-of-type(2),
+	.music .record span:nth-of-type(5) {
+		width: 6%; 
+	}
+	.music .record span:nth-of-type(3),
+	.music .record span:nth-of-type(4) {
+		width: 24%; 
+	}
+
 }
 
 
 
 footer {
-	border-top: 1px dotted #eee;
+	margin: 1em 0;
 }
 
 #qrcode {

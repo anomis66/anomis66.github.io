@@ -36,22 +36,23 @@
 
 
 
-<h1>Movie Collection</h1>
+<h1>Music Collection</h1>
 
 
 
 <p>
-	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="imdb-logo-2.png" alt="IMDb"></a>
-	A listing of my DVD and Blu-ray collection.  This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but soon became something more useful to me.
+	A listing of my Compact Disc collection.
 </p>
 
 <form action="#" class="form hidden-print">
-	<input type="text" name="qs" id="qs" placeholder="Search">
+	<input type="text" name="qs" id="qs" placeholder="Search" value="">
 </form>
 
 <div id="loading"><img src="/includes/images/loading-gray.gif" alt="Loading ... " width="32"></div>
 <div id="noresults"><h2>No Results Found</h2></div>
-<div id="csv-list" class="movie"></div>
+<div id="csv-list" class="music"></div>
+
+
 
 
 
@@ -91,14 +92,14 @@ xhttp.onreadystatechange = function() {
 		doStuff(this.responseText); // if successful do stuff with it.
 	}
 };
-xhttp.open("GET", "myfilms.csv", true);
+xhttp.open("GET", "mymusic.txt", true);
 xhttp.send();
 
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
 	file = file.replace(/(?:\|)/g, '</span><span>');// replace DELIMITER with next record code
-	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span>');  // replace EOL with next record code
-	file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space
+	file = file.replace(/(?:\r\n|\n)/g, '</span></div><div class="record"><span>');  // replace EOL with next record code
+	// file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space
 	// top & tail the output to ensure valid html
 	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
 }
