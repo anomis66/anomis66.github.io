@@ -2287,7 +2287,6 @@ Kaiser Chiefs|11|Caroline, Yes|Employment|2005|Brit Pop
 Kaiser Chiefs|12|Team Mate|Employment|2005|Brit Pop
 Kamikaze Test Pilots|01|Fairy Tales||2012|Hard Rock
 Kamikaze Test Pilots|02|Happy Slapper||2012|Hard Rock
-Kamikaze Test Pilots|01|The Inmates Have Taken Over The Assylum|Diaspora|2010|Hard Rock
 Kamikaze Test Pilots|01|The Inmates Have Taken Over The Asylum|Diaspora|2010|Hard Rock
 Kamikaze Test Pilots|02|Kenny Rogers (With A Shotgun)|Diaspora|2010|Hard Rock
 Kamikaze Test Pilots|03|Chikken|Diaspora|2010|Hard Rock
@@ -2307,23 +2306,7 @@ Kamikaze Test Pilots|08|Shoeshine|Kamikaze Test Pilots|2012|Hard Rock
 Kamikaze Test Pilots|09|Betterway|Kamikaze Test Pilots|2012|Hard Rock
 Kamikaze Test Pilots|10|Turnpike|Kamikaze Test Pilots|2012|Hard Rock
 Kamikaze Test Pilots|11|Basop|Kamikaze Test Pilots|2012|Hard Rock
-Kamikaze Test Pilots|01|Dinosaur|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|02|Patrick|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|03|Happy Slapper|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|04|Fairy Tales|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|05|Chikken|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|06|Kumusha|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|07|Perseverance|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|08|Shoeshine|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|09|Betterway|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|10|Turnpike|Kamikaze Test Pilots|2015|Hard Rock
-Kamikaze Test Pilots|11|Basop|Kamikaze Test Pilots|2015|Hard Rock
 Karrion|01|Dr Beeching's Word|Dr Beeching's Word|2009|Heavy Metal
-Karrion|02|Cursed For The Gift Of Fire|Dr Beeching's Word|2009|Heavy Metal
-Karrion|03|Carrion|Dr Beeching's Word|2009|Heavy Metal
-Karrion|04|Early Grave|Dr Beeching's Word|2009|Heavy Metal
-Karrion|05|Broken Inside|Dr Beeching's Word|2009|Heavy Metal
-Karrion|01|Dr Beeching's Words|Dr Beeching's Word|2009|Heavy Metal
 Karrion|02|Cursed For The Gift Of Fire|Dr Beeching's Word|2009|Heavy Metal
 Karrion|03|Carrion|Dr Beeching's Word|2009|Heavy Metal
 Karrion|04|Early Grave|Dr Beeching's Word|2009|Heavy Metal
@@ -2337,15 +2320,6 @@ Karrion|06|Three Sheets To The Wind ... Sheet 3 - Consequence|Three Sheets To Th
 Karrion|07|Killed In Action|Three Sheets To The Wind|2013|Heavy Metal
 Karrion|08|Up All Night!|Three Sheets To The Wind|2013|Heavy Metal
 Karrion|09|Egyption Cabbage|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|01|Barry Barry Custard Beard|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|02|Booze Me Down|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|03|Cider Pirates|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|04|Three Sheets To The Wind [1] Causality|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|05|Three Sheets To The Wind [2] Booze|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|06|Three Sheets To The Wind [3] Consequence|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|07|Killed In Action|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|08|Up All Night|Three Sheets To The Wind|2013|Heavy Metal
-Karrion|09|Egyptian Cabbage|Three Sheets To The Wind|2013|Heavy Metal
 KISS|01|Crazy Crazy Nights|Crazy Nights|1987|Hard Rock
 KISS|02|I’ll Fight Hell To Hold You|Crazy Nights|1987|Hard Rock
 KISS|03|Bang Bang You|Crazy Nights|1987|Hard Rock
@@ -2495,6 +2469,9 @@ Kris Barras Band|08|Stitch Me Up|Divine And Dirty|2018|Blues
 Kris Barras Band|09|Hold On For Tomorrow|Divine And Dirty|2018|Blues
 Kris Barras Band|10|Blood On Your Hands|Divine And Dirty|2018|Blues
 Kris Barras Band|11|Watching Over Me|Divine And Dirty|2018|Blues
+Kris Barras Band|1/3|Hail Mary (Acoustic Version)|Free Acoustic E.P.|2018|Blues
+Kris Barras Band|2/3|Heart On Your Sleeve (Acoustic Version)|Free Acoustic E.P.|2018|Blues
+Kris Barras Band|3/3|Propane (Acoustic Version)|Free Acoustic E.P.|2018|Blues
 Kula Shaker|01|Hey Dude|K|1996|Alternative Rock
 Kula Shaker|02|Knight On The Town|K|1996|Alternative Rock
 Kula Shaker|03|Temple Of Everlasting Light|K|1996|Alternative Rock
