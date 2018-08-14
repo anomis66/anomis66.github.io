@@ -14,7 +14,7 @@
 <!--[if IE]><link rel="shortcut icon" href="./includes/images/favicon.ico"><![endif]-->
 
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
+<link rel="apple-touch-icon-precomposed" href="/includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
 <link rel="icon" href="/includes/images/anomis66_jack_196s.png">
@@ -29,6 +29,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/includes/scripts/jquery.quicksearch.js"></script>
+<script src="/includes/scripts/jquery.highlight-5.js"></script>
 
 </head>
 
@@ -41,15 +42,19 @@
 
 
 <p>
-	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="imdb-logo-2.png" alt="IMDb"></a>
+	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="./imdb-logo-2.png" alt="IMDb"></a>
 	A listing of my DVD and Blu-ray collection.  This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but soon became something more useful to me.
 </p>
 
+
 <form action="#" class="form hidden-print">
-	<input type="text" name="qs" id="qs" placeholder="Search">
+	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter ">
 </form>
 
+
+
 <div id="loading"><img src="/includes/images/loading-gray.gif" alt="Loading ... " width="32"></div>
+
 <div id="csv-list" class="movie"></div>
 
 
@@ -68,12 +73,10 @@ $(document).ready(function () {
 	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
 	 * ----- ----- ----- */
 
-	$("#qs").hide()
+	$("#quicksearch").hide()
 		.delay( 2000 )
 		.fadeIn( 1000 )
-		.keyup(function () {
-		var len = (this).value.length;
-		if (len > 2 ) {
+		.keyup(function () {	
 			// split the current value of search input (case insensitive)
 			var data = this.value.toUpperCase().split(" ");
 			// create a jquery object of the rows
@@ -96,9 +99,21 @@ $(document).ready(function () {
 			})
 			//show the rows that match.
 			.show();
-		}
-	})
+		})
 
+		/* --- https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html --- */
+		$('span').highlight('8.5');
+		$('span').highlight('8.6');
+		$('span').highlight('8.7');
+		$('span').highlight('8.8');
+		$('span').highlight('8.9');
+		$('span').highlight('9.0');
+		$('span').highlight('9.1');
+		$('span').highlight('9.2');
+		$('span').highlight('9.3');
+		$('span').highlight('9.4');
+		$('span').highlight('9.5');
+	
 });
 
 
@@ -122,6 +137,7 @@ xhttp.send();
 
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
+	file = file.replace(/(?:\,)/g, ', ');			// Add SPACE after commas.
 	file = file.replace(/(?:\|)/g, '</span><span>');// replace DELIMITER with next record code
 	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span>');  // replace EOL with next record code
 	file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space

@@ -20,8 +20,7 @@ body {
 	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
 	font-family: 'News Cycle', sans-serif;
 	color: #666;
-	max-width: 64em;
-	margin: 0 auto 3em auto;
+	margin: 3em;
 	padding: 5px;
 }
 h1, h2, h3 {
@@ -68,57 +67,70 @@ hr {
 }
 
 
+
+
+
 /* --- CSV List --- */
 #csv-list {
 	box-shadow: 2px 2px 4px #eee;
 }
-#csv-list .record:nth-child(even)  { /* Add Stripes */
-	background-color: #66993315;
+/* --- Each Row --- */
+#csv-list .record {
+	padding: 4px 8px;
+}
+/* --- Add Stripes --- */
+#csv-list .record:nth-child(odd)  { 
+	background-color: #66993333;
 	border: 0 dotted #d5d5d5;
 	border-width: 1px 0;
 }
-#csv-list .record span { /* Add Border */
+/* --- Inline Cells --- */
+#csv-list .record span {
 	display: inline-block;
-	border-left: 1px dotted #d5d5d5;
-	padding: 1px 3px;
 }
+
+/* --- Movi List --- */
+.movie .record span {
+	width: 8%; 
+}
+.movie .record span:first-of-type  {
+	width: 32%;
+}
+.movie .record span:nth-of-type(6)  {
+	width: 20%;
+}
+
 @media only screen and (max-device-width: 800px) {
 	#csv-list .record span {
-		width: 30%;
+		width: 50%;
+		border-bottom: 1px dotted #d5d5d5;
 	}
-	#qs {
-		color: #666;
-		width: 95%;
+	.movie .record span:first-of-type  {
+		font-weight: 600;
+		font-size: 120%;
 	}
 }
+
+/* --- Highlight Action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
 	background-color: #66993345;
 }
+/* --- Only The Top Row --- */
 #csv-list .record:first-of-type  {
 	background-color: #669933cc;
 	color: #fff;
 	font-weight: 600;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 @media only screen and (min-device-width: 800px) {
 
-	/* --- Movi List --- */
-	.movie .record span {
-		width: 10%; 
-	}
-	.movie .record span:first-of-type  {
-		width: 43%;
-	}
-	.movie .record span:nth-of-type(2)  {
-		text-transform: uppercase;
-	}
 	/* --- Music List --- */
 	.music .record span {
-		width: 12%;
+		width: 16%;
 	}
 	.music .record span:nth-of-type(2),
 	.music .record span:nth-of-type(5) {
@@ -130,6 +142,16 @@ hr {
 	}
 
 }
+
+.highlight {
+	color: #c33;
+	font-weight: 600;
+	border-width: 0;
+	max-width: 2em;
+}
+
+
+
 
 
 
