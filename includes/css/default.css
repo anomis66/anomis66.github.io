@@ -183,6 +183,10 @@ footer {
 
 }
 @media only print {
+
+	body {
+		font-size: 11pt;
+	}
 	
 	.hidden-print {
 		display: none;
