@@ -28,7 +28,6 @@
 <link rel="stylesheet" href="/includes/css/default.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/includes/scripts/jquery.quicksearch.js"></script>
 
 </head>
 
@@ -45,10 +44,11 @@
 </p>
 
 <form action="#" class="form hidden-print">
-	<input type="text" name="qs" id="qs" placeholder="Search" autofocus >
+	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus >
 </form>
 
 <div id="loading"><img src="/includes/images/loading-gray.gif" alt="Loading ... " width="32"></div>
+
 <div id="csv-list" class="music"></div>
 
 
@@ -69,35 +69,33 @@ $(document).ready(function () {
 	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
 	 * ----- ----- ----- */
 
-	$("#qs").hide()
-		.delay( 2000 )
-		.fadeIn( 1000 )
-		.keyup(function () {
-		var len = (this).value.length;
-		if (len > 2 ) {
-			// split the current value of search input (case insensitive)
-			var data = this.value.toUpperCase().split(" ");
-			// create a jquery object of the rows
-			var obj = $("#table").find(".record");
-			if (this.value == "") {
-				obj.show();
-				return;
-			}
-			// hide all the rows
-			obj.hide();
-			// recursively filter the jQuery object to get results.
-			obj.filter(function (i, v) {
-				var $t = $(this);
-				for (var d = 0; d < data.length; ++d) {
-					if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
-						return true;
-					}
-				}
-				return false;
-			})
-			//show the rows that match.
-			.show();
+	$("#quicksearch")
+	.hide()
+	.delay( 2000 )
+	.fadeIn( 1000 )
+	.keyup(function () {
+		// split the current value of search input (case insensitive)
+		var data = this.value.toUpperCase().split(" ");
+		// create a jquery object of the rows
+		var obj = $("#table").find(".record");
+		if (this.value == "") {
+			obj.show();
+			return;
 		}
+		// hide all the rows
+		obj.hide();
+		// recursively filter the jQuery object to get results.
+		obj.filter(function (i, v) {
+			var $t = $(this);
+			for (var d = 0; d < data.length; ++d) {
+				if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
+					return true;
+				}
+			}
+			return false;
+		})
+		//show the rows that match.
+		.show();
 	})
 
 });
@@ -105,7 +103,7 @@ $(document).ready(function () {
 
 
 /* ----- ----- ----- *
- * Load CSV of movies
+ * Load CSV of MUSIC
  * ----- ----- ----- */
 
 document.getElementById("loading").style.display = ""; // show the loading image

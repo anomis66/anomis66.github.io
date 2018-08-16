@@ -19,8 +19,8 @@ body {
 	/* background: linear-gradient(-45deg, #000, #630); /* Angle - Standard Syntax */
 	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
 	font-family: 'News Cycle', sans-serif;
-	color: #666;
-	margin: 3em;
+	color: #333;
+	margin: 3em 3em;
 	padding: 5px;
 }
 h1, h2, h3 {
@@ -52,7 +52,7 @@ input {
 hr { 
 	background-color: #fff;
 	border: 0;
-	border-top: 2px dotted #669933;
+	border-top: 3px double #669933;
 } 
 
 
@@ -72,7 +72,8 @@ hr {
 
 /* --- CSV List --- */
 #csv-list {
-	box-shadow: 2px 2px 4px #eee;
+	border: 1px solid #66993333;
+	width: auto;
 }
 /* --- Each Row --- */
 #csv-list .record {
@@ -81,34 +82,10 @@ hr {
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
 	background-color: #66993333;
-	border: 0 dotted #d5d5d5;
-	border-width: 1px 0;
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
 	display: inline-block;
-}
-
-/* --- Movi List --- */
-.movie .record span {
-	width: 8%; 
-}
-.movie .record span:first-of-type  {
-	width: 32%;
-}
-.movie .record span:nth-of-type(6)  {
-	width: 20%;
-}
-
-@media only screen and (max-device-width: 800px) {
-	#csv-list .record span {
-		width: 50%;
-		border-bottom: 1px dotted #d5d5d5;
-	}
-	.movie .record span:first-of-type  {
-		font-weight: 600;
-		font-size: 120%;
-	}
 }
 
 /* --- Highlight Action --- */
@@ -117,6 +94,39 @@ hr {
 #csv-list .record:focus {
 	background-color: #66993345;
 }
+
+
+/* --- Movi List --- */
+.movie .record span {
+	width: 10%; 
+}
+.movie .record span:first-of-type {
+	width: 30%;
+}
+.movie .record span:nth-of-type(6) {
+	width: 20%;
+}
+
+
+/* --- Music List --- */
+.music .record span {
+	width: 25%;
+}
+.music .record span:nth-of-type(2),
+.music .record span:nth-of-type(5) {
+	width: 8%; 
+}
+.music .record span:nth-of-type(3) {
+	width: 55%; 
+}
+
+.music .record span:nth-of-type(4),
+.music .record span:nth-of-type(5),
+.music .record span:nth-of-type(6) {
+	font-size: 80%; 
+}
+
+
 /* --- Only The Top Row --- */
 #csv-list .record:first-of-type  {
 	background-color: #669933cc;
@@ -126,30 +136,32 @@ hr {
 	text-transform: capitalize;
 }
 
-@media only screen and (min-device-width: 800px) {
 
-	/* --- Music List --- */
-	.music .record span {
-		width: 16%;
+
+
+
+/* --- SMALL SCREENS --- */
+@media only screen and (max-device-width: 800px) {
+
+	body {
+		margin: 5px;
 	}
-	.music .record span:nth-of-type(2),
-	.music .record span:nth-of-type(5) {
-		width: 6%; 
+	#quicksearch {
+		width: auto;
 	}
-	.music .record span:nth-of-type(3),
-	.music .record span:nth-of-type(4) {
-		width: 24%; 
+	.movie .record span:first-of-type  {
+		width: 100%;
+		font-weight: 600;
+		font-size: 120%;
 	}
+	.movie .record span:nth-of-type(6),
+	.movie .record span {
+		width: 50%;
+		border-bottom: 1px dotted #d5d5d5;
+	}
+
 
 }
-
-.highlight {
-	color: #c33;
-	font-weight: 600;
-	border-width: 0;
-	max-width: 2em;
-}
-
 
 
 
@@ -160,7 +172,7 @@ footer {
 }
 
 #qrcode {
-	background-image: url('/includes/images/anomis66_jack_100s.png');
+	background-image: url('../../includes/images/anomis66_jack_100s.png');
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -185,8 +197,35 @@ footer {
 @media only print {
 
 	body {
+		background: #fff;
+		font-family: 'News Cycle', sans-serif;
 		font-size: 11pt;
+		color: #000;
+		
+		width: auto; 
+		border: 0; 
+		margin: 0 1em; 
+		padding: 0; 
+		float: none !important; 
 	}
+	fr, fl {
+		float: none !important; 
+	}
+	hr { 
+		background-color: #fff;
+		border: 0;
+		border-top: 1px solid #d5d5d5;
+	} 
+
+	#csv-list .record {
+		padding: 1px 2px;
+	}
+	#csv-list .record span {
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	
+	
 	
 	.hidden-print {
 		display: none;
@@ -196,7 +235,7 @@ footer {
 		display: block;
 		position: absolute;
 		right: 0;
-		top: 0;
+		bottom: 0;
 	}
 
 }

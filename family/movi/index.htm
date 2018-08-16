@@ -28,8 +28,6 @@
 <link rel="stylesheet" href="/includes/css/default.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/includes/scripts/jquery.quicksearch.js"></script>
-<script src="/includes/scripts/jquery.highlight-5.js"></script>
 
 </head>
 
@@ -41,14 +39,14 @@
 
 
 
-<p>
+<p class="hidden-print">
 	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="./imdb-logo-2.png" alt="IMDb"></a>
 	A listing of my DVD and Blu-ray collection.  This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but soon became something more useful to me.
 </p>
 
 
 <form action="#" class="form hidden-print">
-	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter ">
+	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus>
 </form>
 
 
@@ -73,47 +71,35 @@ $(document).ready(function () {
 	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
 	 * ----- ----- ----- */
 
-	$("#quicksearch").hide()
-		.delay( 2000 )
-		.fadeIn( 1000 )
-		.keyup(function () {	
-			// split the current value of search input (case insensitive)
-			var data = this.value.toUpperCase().split(" ");
-			// create a jquery object of the rows
-			var obj = $("#table").find(".record");
-			if (this.value == "") {
-				obj.show();
-				return;
-			}
-			// hide all the rows
-			obj.hide();
-			// recursively filter the jQuery object to get results.
-			obj.filter(function (i, v) {
-				var $t = $(this);
-				for (var d = 0; d < data.length; ++d) {
-					if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
-						return true;
-					}
+	$("#quicksearch")
+	.hide()
+	.delay( 2000 )
+	.fadeIn( 1000 )
+	.keyup(function () {
+		// split the current value of search input (case insensitive)
+		var data = this.value.toUpperCase().split(" ");
+		// create a jquery object of the rows
+		var obj = $("#table").find(".record");
+		if (this.value == "") {
+			obj.show();
+			return;
+		}
+		// hide all the rows
+		obj.hide();
+		// recursively filter the jQuery object to get results.
+		obj.filter(function (i, v) {
+			var $t = $(this);
+			for (var d = 0; d < data.length; ++d) {
+				if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
+					return true;
 				}
-				return false;
-			})
-			//show the rows that match.
-			.show();
+			}
+			return false;
 		})
+		//show the rows that match.
+		.show();
+	})
 
-		/* --- https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html --- */
-		$('span').highlight('8.5');
-		$('span').highlight('8.6');
-		$('span').highlight('8.7');
-		$('span').highlight('8.8');
-		$('span').highlight('8.9');
-		$('span').highlight('9.0');
-		$('span').highlight('9.1');
-		$('span').highlight('9.2');
-		$('span').highlight('9.3');
-		$('span').highlight('9.4');
-		$('span').highlight('9.5');
-	
 });
 
 
@@ -148,7 +134,7 @@ function doStuff(file) {
 
 
 
-<footer>
+<footer class="hidden-print">
 	<hr>
 	<p class="hidden-print">Go To <a href="/">Home Page</a></p>
 	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
