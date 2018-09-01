@@ -2607,6 +2607,19 @@ Linkin Park|09|A Place For My Head|Hybrid Theory|2000|Alternative Metal
 Linkin Park|10|Forgotten|Hybrid Theory|2000|Alternative Metal
 Linkin Park|11|Cure For The Itch|Hybrid Theory|2000|Alternative Metal
 Linkin Park|12|Pushing Me Away|Hybrid Theory|2000|Alternative Metal
+Linkin Park|1/13|Foreword|Meteora|2003|Alternative Metal
+Linkin Park|2/13|Don’t Stay|Meteora|2003|Alternative Metal
+Linkin Park|3/13|Somewhere I Belong|Meteora|2003|Alternative Metal
+Linkin Park|4/13|Lying From You|Meteora|2003|Alternative Metal
+Linkin Park|5/13|Hit the Floor|Meteora|2003|Alternative Metal
+Linkin Park|6/13|Easier to Run|Meteora|2003|Alternative Metal
+Linkin Park|7/13|Faint|Meteora|2003|Alternative Metal
+Linkin Park|8/13|Figure.09|Meteora|2003|Alternative Metal
+Linkin Park|9/13|Breaking the Habit|Meteora|2003|Alternative Metal
+Linkin Park|10/13|From the Inside|Meteora|2003|Alternative Metal
+Linkin Park|11/13|Nobody’s Listening|Meteora|2003|Alternative Metal
+Linkin Park|12/13|Session|Meteora|2003|Alternative Metal
+Linkin Park|13/13|Numb|Meteora|2003|Alternative Metal
 Linkin Park|01|Wake|Minutes To Midnight|2007|Alternative Metal
 Linkin Park|02|Given Up|Minutes To Midnight|2007|Alternative Metal
 Linkin Park|03|Leave Out All The Rest|Minutes To Midnight|2007|Alternative Metal
@@ -5423,6 +5436,121 @@ Rush|1/4|Cygnus X-1, Book II: Hemispheres: I. Prelude / II. Apollo: Bringer of W
 Rush|01|Circumstances|Hemispheres|1997|Progressive Rock
 Rush|02|The Trees|Hemispheres|1997|Progressive Rock
 Rush|03|La Villa Strangiato|Hemispheres|1997|Progressive Rock
+S Club 7|1/12|Reach|'7'|2000|Pop
+S Club 7|2/12|Natural|'7'|2000|Pop
+S Club 7|3/12|I’ll Keep Waiting|'7'|2000|Pop
+S Club 7|4/12|Bring the House Down|'7'|2000|Pop
+S Club 7|5/12|Best Friend|'7'|2000|Pop
+S Club 7|6/12|All in Love Is Fair|'7'|2000|Pop
+S Club 7|7/12|Love Train|'7'|2000|Pop
+S Club 7|8/12|Cross My Heart|'7'|2000|Pop
+S Club 7|9/12|The Colour of Blue|'7'|2000|Pop
+S Club 7|10/12|I’ll Be There|'7'|2000|Pop
+S Club 7|11/12|Stand by You|'7'|2000|Pop
+S Club 7|12/12|Spiritual Love|'7'|2000|Pop
+Scorpions|1/15|Rock You Like a Hurricane|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|2/15|Can’t Explain|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|3/15|Rhythm of Love|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|4/15|Big City Nights|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|5/15|Lovedrive|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|6/15|Is There Anybody There?|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|7/15|Holiday|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|8/15|Still Loving You|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|9/15|No One Like You|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|10/15|Blackout|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|11/15|Another Piece of Meat|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|12/15|You Give Me All I Need|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|13/15|Hey You|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|14/15|The Zoo|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Scorpions|15/15|China White|Best of Rockers ’n’ Ballads|1989|Hard Rock
+Sex Pistols|1/12|Holidays in the Sun|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|2/12|Bodies|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|3/12|No Feelings|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|4/12|Liar|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|5/12|God Save the Queen|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|6/12|Problems|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|7/12|Seventeen|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|8/12|Anarchy in the U.K.|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|9/12|Submission|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|10/12|Pretty Vacant|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|11/12|New York|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|12/12|EMI|Never Mind the Bollocks Here’s the Sex Pistols|1985|Punk
+Sex Pistols|1/24|God Save the Queen (Symphony)|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|2/24|Rock Around the Clock|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|3/24|Johnny B Goode|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|4/24|Road Runner|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|5/24|Black Arabs|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|6/24|Anarchy in the UK|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|7/24|Watcha Gonna Do About It|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|8/24|Who Killed Bambi?|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|9/24|Silly Thing|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|10/24|Substitute|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|11/24|Don’t Give Me No Lip Child|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|12/24|I’m Not Your Stepping Stone|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|13/24|Lonely Boy|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|14/24|Something Else|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|15/24|Anarchie pour le UK|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|16/24|Einmal war Belsen Bortrefflich|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|17/24|Einmal war Belsen wirflich Bortrefflich|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|18/24|No One Is Innocent|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|19/24|My Way|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|20/24|C’mon Everybody|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|21/24|EMI (orchestral)|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|22/24|The Great Rock ’n’ Roll Swindle|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|23/24|You Need Hands|The Great Rock ’n’ Roll Swindle|1993|Punk
+Sex Pistols|24/24|Friggin’ in the Riggin’|The Great Rock ’n’ Roll Swindle|1993|Punk
+Siouxsie and the Banshees|1/10|Hong Kong Garden|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|2/10|Mirage|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|3/10|The Staircase (Mystery)|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|4/10|Playground Twist|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|5/10|Love in a Void|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|6/10|Happy House|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|7/10|Christine|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|8/10|Israel|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|9/10|Spellbound|Once Upon a Time: The Singles|1981|Punk
+Siouxsie and the Banshees|10/10|Arabian Knights|Once Upon a Time: The Singles|1981|Punk
+The Sisters of Mercy|1/10|Dominion / Mother Russia|Floodland|1987|Alternative
+The Sisters of Mercy|2/10|Flood I|Floodland|1987|Alternative
+The Sisters of Mercy|3/10|Lucretia My Reflection|Floodland|1987|Alternative
+The Sisters of Mercy|4/10|1959|Floodland|1987|Alternative
+The Sisters of Mercy|5/10|This Corrosion|Floodland|1987|Alternative
+The Sisters of Mercy|6/10|Flood II|Floodland|1987|Alternative
+The Sisters of Mercy|7/10|Driven Like the Snow|Floodland|1987|Alternative
+The Sisters of Mercy|8/10|Never Land (A Fragment)|Floodland|1987|Alternative
+The Sisters of Mercy|9/10|Torch|Floodland|1987|Alternative
+The Sisters of Mercy|10/10|Colours|Floodland|1987|Alternative
+The Sisters of Mercy|1/8|Vision Thing|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|2/8|Ribbons|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|3/8|Detonation Boulevard|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|4/8|Something Fast|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|5/8|When You Don’t See Me|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|6/8|Doctor Jeep|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|7/8|More|Vision Thing|1990|Goth Rock
+The Sisters of Mercy|8/8|I Was Wrong|Vision Thing|1990|Goth Rock
+Sixx:A.M.|1/13|X-Mas in Hell|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|2/13|Van Nuys|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|3/13|Life Is Beautiful|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|4/13|Pray for Me|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|5/13|Tomorrow|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|6/13|Accidents Can Happen|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|7/13|Intermission|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|8/13|Dead Man's Ballet|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|9/13|Heart Failure|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|10/13|Girl With Golden Eyes|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|11/13|Courtesy Call|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|12/13|Permission|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|13/13|Life After Death|The Heroin Diaries Soundtrack|2007|Hard Rock
+Sixx:A.M.|1/11|This Is Gonna Hurt|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|2/11|Lies of the Beautiful People|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|3/11|Are You With Me|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|4/11|Live Forever|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|5/11|Sure Feels Right|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|6/11|Deadlihood|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|7/11|Smile|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|8/11|Help Is On the Way|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|9/11|Oh My God|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|10/11|Goodbye My Friends|This Is Gonna Hurt|2011|Hard Rock
+Sixx:A.M.|11/11|Skin|This Is Gonna Hurt|2011|Hard Rock
 SjW|01|Sanctify|Talk On Corners|2006|Progressive Rock
 SjW|02|Working Man|Talk On Corners|2006|Progressive Rock
 SjW|03|C.C.C.|Talk On Corners|2006|Progressive Rock

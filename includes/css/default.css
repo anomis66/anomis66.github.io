@@ -77,7 +77,7 @@ hr {
 }
 /* --- Each Row --- */
 #csv-list .record {
-	padding: 4px 8px;
+	padding: 1px 4px;
 }
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
@@ -86,6 +86,7 @@ hr {
 /* --- Inline Cells --- */
 #csv-list .record span {
 	display: inline-block;
+	min-width: 12%; 
 }
 
 /* --- Highlight Action --- */
@@ -97,29 +98,32 @@ hr {
 
 
 /* --- Movi List --- */
-.movie .record span {
-	width: 10%; 
-}
 .movie .record span:first-of-type {
-	width: 30%;
+	font-weight: 600;
 }
-.movie .record span:nth-of-type(6) {
-	width: 20%;
+.movie .record span:first-of-type,
+.movie .record span:nth-of-type(5) {
+	width: 62%;
 }
-
+.movie .record span:nth-of-type(5),
+.movie .record span:nth-of-type(6),
+.movie .record span:nth-of-type(7),
+.movie .record span:nth-of-type(8) {
+	font-size: 0.875em; 
+}
 
 /* --- Music List --- */
-.music .record span {
-	width: 25%;
+.music .record span:first-of-type {
+	font-weight: 600;
 }
-.music .record span:nth-of-type(2),
-.music .record span:nth-of-type(5) {
-	width: 8%; 
+.music .record span:nth-of-type(1),
+.music .record span:nth-of-type(4) {
+	width: 30%; 
 }
-.music .record span:nth-of-type(3) {
+.music .record span:nth-of-type(3),
+.music .record span:nth-of-type(6) {
 	width: 55%; 
 }
-
 .music .record span:nth-of-type(4),
 .music .record span:nth-of-type(5),
 .music .record span:nth-of-type(6) {
@@ -132,7 +136,7 @@ hr {
 	background-color: #669933cc;
 	color: #fff;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	text-transform: capitalize;
 }
 
