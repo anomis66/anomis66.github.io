@@ -72,45 +72,79 @@ hr {
 
 /* --- CSV List --- */
 #csv-list {
-	border: 1px solid #66993333;
+	/* border: 1px solid #66993333; */
 	width: auto;
 }
 /* --- Each Row --- */
 #csv-list .record {
-	padding: 1px 4px;
+	padding: 3px;
 }
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background-color: #66993333;
+	background-color: #f5f5f5;
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
-	display: inline-block;
-	min-width: 12%; 
+	padding: 1px 0.5%;
+	/* min-width: 15.5%; */
 }
 
 /* --- Highlight Action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background-color: #66993345;
+	background-color: #99663333;
 }
 
+#loading {
+	text-align: center;
+}
 
 /* --- Movi List --- */
 .movie .record span:first-of-type {
+	display: inline-block;
+	font-size: 1em;
 	font-weight: 600;
+	width: 34%;
 }
-.movie .record span:first-of-type,
-.movie .record span:nth-of-type(5) {
-	width: 62%;
+.movie .record span:nth-of-type(2),
+.movie .record span:nth-of-type(10) {
+	display: inline-block;
+	font-size: 0.85em;
+	width: 29%;
 }
+.movie .record span:nth-of-type(3),
+.movie .record span:nth-of-type(4),
 .movie .record span:nth-of-type(5),
 .movie .record span:nth-of-type(6),
 .movie .record span:nth-of-type(7),
-.movie .record span:nth-of-type(8) {
-	font-size: 0.875em; 
+.movie .record span:nth-of-type(11),
+.movie .record span:nth-of-type(12),
+.movie .record span:nth-of-type(13),
+.movie .record span:nth-of-type(14),
+.movie .record span:nth-of-type(15) {
+	display: inline-block;
+	font-size: 0.85em;
+	width: 6%;
 }
+.movie .record span:nth-of-type(8) {
+	display: inline-block;
+	font-size: 1em;
+	padding: 1em 2em;
+	width: 99%;
+}
+.movie .record span:nth-of-type(9) {
+	display: inline-block;
+	font-size: 0.85em;
+	width: 34%;
+}
+.movie .record span:nth-of-type(11) {
+	display: inline-block;
+	font-size: 0.85em;
+	width: 13%;
+}
+
+
 
 /* --- Music List --- */
 .music .record span:first-of-type {
@@ -133,34 +167,46 @@ hr {
 
 /* --- Only The Top Row --- */
 #csv-list .record:first-of-type  {
-	background-color: #669933cc;
-	color: #fff;
+	background: #66993345;
 	font-weight: 600;
 	letter-spacing: 3px;
 	text-transform: capitalize;
 }
 
-
+.marker {
+	background: #ffc;
+	padding: 2px;
+}
 
 
 
 /* --- SMALL SCREENS --- */
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 960px) {
 
 	body {
 		margin: 5px;
 	}
 	#quicksearch {
+		min-width: 50%;
 		width: auto;
+		max-width: 100%;
 	}
-	.movie .record span:first-of-type  {
+	.movie .record span:first-of-type {
 		width: 100%;
 		font-weight: 600;
 		font-size: 120%;
 	}
+	.movie .record span:nth-of-type(2), 
+	.movie .record span:nth-of-type(3),
+	.movie .record span:nth-of-type(4),
+	.movie .record span:nth-of-type(5),
 	.movie .record span:nth-of-type(6),
+	.movie .record span:nth-of-type(7) {
+		font-size: 0.9em;
+		width: 49%;
+	}
 	.movie .record span {
-		width: 50%;
+		width: 49%;
 		border-bottom: 1px dotted #d5d5d5;
 	}
 

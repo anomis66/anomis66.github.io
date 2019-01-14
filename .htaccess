@@ -1,0 +1,11 @@
+# TURN OFF DIRECTORY BROWSING
+Options +FollowSymLinks +Indexes
+
+# TURN ON MOD_REWRITE
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# REMOVE .PHP FROM FILENAME
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

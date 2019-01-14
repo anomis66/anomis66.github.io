@@ -40,22 +40,20 @@
 
 
 <p class="hidden-print">
-	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="./imdb-logo-2.png" alt="IMDb"></a>
-	A listing of my DVD and Blu-ray collection.  This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but soon became something more useful to me.
+	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="/includes/images/imdb-logo-2.png" alt="IMDb"></a>
+	A listing of my DVD and Blu-ray collection.
 </p>
-
+<p>
+	This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but the datasets were unruly.  Soon it became something different using <a href="//www.omdbapi.com/">OMDb API</a>	and a learning tool more useful to me.
+</p>
 
 <form action="#" class="form hidden-print">
 	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus>
 </form>
 
-
-
 <div id="loading"><img src="/includes/images/loading-gray.gif" alt="Loading ... " width="32"></div>
 
 <div id="csv-list" class="movie"></div>
-
-
 
 <script>
 // executes when complete page is fully loaded, including all frames, objects and image…
@@ -66,6 +64,46 @@
 
 $(document).ready(function () {
 
+	// LET'S GET FUNKY ON HOVERING A MOVIE TITLE
+	$( ".record span:nth-child(8)" ).hide();
+	$( ".record span:nth-child(9)" ).hide();
+	$( ".record span:nth-child(10)" ).hide();
+	$( ".record span:nth-child(11)" ).hide();
+	$( ".record span:nth-child(12)" ).hide();
+	$( ".record span:nth-child(13)" ).hide();
+	$( ".record span:nth-child(14)" ).hide();
+	$( ".record span:nth-child(15)" ).hide();
+	$( ".record span:nth-child(16)" ).hide();
+	$( ".record" ).hover(
+		function() {
+			$( this ).children('span:nth-child(8)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(9)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(10)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(11)').addClass( "movieHighlight" ).show();
+/*
+			.filter(function() {
+				return $(this).text().trim() == t;
+			}
+*/		
+			$( this ).children('span:nth-child(12)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(13)').addClass( "movieHighlight" ).show();
+			<!-- $( this ).children('span:nth-child(14)').addClass( "movieHighlight" ).show(); -->
+			<!-- $( this ).children('span:nth-child(15)').addClass( "movieHighlight" ).show(); -->
+			<!-- $( this ).children('span:nth-child(16)').addClass( "movieHighlight" ).show(); -->
+		}, function() {
+			$( this ).children('span:nth-child(8)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(9)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(10)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(11)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(12)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(13)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(14)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(15)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(16)').removeClass( "movieHighlight" ).hide();
+		}		
+	);
+
+	
 	/* ----- ----- ----- *
 	 * jQuery .filter() Search
 	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
@@ -73,21 +111,21 @@ $(document).ready(function () {
 
 	$("#quicksearch")
 	.hide()
-	.delay( 2000 )
+	.delay( 1000 )
 	.fadeIn( 2000 )
-
+	
 	.keyup(function () {
-		// split the current value of search input (case insensitive)
+		// SPLIT THE CURRENT VALUE OF SEARCH INPUT (CASE INSENSITIVE)
 		var data = this.value.toUpperCase().split(" ");
-		// create a jquery object of the rows
+		// CREATE A JQUERY OBJECT OF THE ROWS
 		var obj = $("#table").find(".record");
 		if (this.value == "") {
 			obj.show();
 			return;
 		}
-		// hide all the rows
+		// HIDE ALL THE ROWS
 		obj.hide();
-		// recursively filter the jQuery object to get results.
+		// RECURSIVELY FILTER THE JQUERY OBJECT TO GET RESULTS.
 		obj.filter(function (i, v) {
 			var $t = $(this);
 			for (var d = 0; d < data.length; ++d) {
@@ -97,10 +135,10 @@ $(document).ready(function () {
 			}
 			return false;
 		})
-		//show the rows that match.
+		// SHOW THE ROWS THAT MATCH.
 		.show();
 	})
-
+	
 });
 
 
@@ -108,8 +146,9 @@ $(document).ready(function () {
 /* ----- ----- ----- *
  * Load CSV of movies
  * ----- ----- ----- */
-
 document.getElementById("loading").style.display = ""; // show the loading image
+
+
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -122,15 +161,18 @@ var rnd = (Math.random() * (1000-0+1) ) << 0; // random() cache buster;
 xhttp.open("GET", "myfilms.csv?" + rnd, true);
 xhttp.send();
 
+
+
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
 	file = file.replace(/(?:\,)/g, ', ');			// Add SPACE after commas.
 	file = file.replace(/(?:\|)/g, '</span><span>');// replace DELIMITER with next record code
-	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span>');  // replace EOL with next record code
+	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span> ');  // replace EOL with next record code
 	file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space
 	// top & tail the output to ensure valid html
 	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
 }
+
 </script>
 
 
