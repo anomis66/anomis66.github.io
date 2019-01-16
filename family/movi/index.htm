@@ -64,9 +64,10 @@
 
 $(document).ready(function () {
 
-	// LET'S GET FUNKY ON HOVERING A MOVIE TITLE
-	$( ".record span:nth-child(8)" ).hide();
-	$( ".record span:nth-child(9)" ).hide();
+	/* LET'S GET FUNKY ON HOVERING A MOVIE TITLE
+	$( ".record span:nth-child(2)" ).hide(); // Hide Plot
+	$( ".record span:nth-child(3)" ).hide(); // Hide Actors
+
 	$( ".record span:nth-child(10)" ).hide();
 	$( ".record span:nth-child(11)" ).hide();
 	$( ".record span:nth-child(12)" ).hide();
@@ -76,15 +77,18 @@ $(document).ready(function () {
 	$( ".record span:nth-child(16)" ).hide();
 	$( ".record" ).hover(
 		function() {
-			$( this ).children('span:nth-child(8)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(9)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(2)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(3)').addClass( "movieHighlight" ).show();
 			$( this ).children('span:nth-child(10)').addClass( "movieHighlight" ).show();
 			$( this ).children('span:nth-child(11)').addClass( "movieHighlight" ).show();
 			$( this ).children('span:nth-child(12)').addClass( "movieHighlight" ).show();
 			$( this ).children('span:nth-child(13)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(14)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(15)').addClass( "movieHighlight" ).show();
+			$( this ).children('span:nth-child(16)').addClass( "movieHighlight" ).show();
 		}, function() {
-			$( this ).children('span:nth-child(8)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(9)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(2)').removeClass( "movieHighlight" ).hide();
+			$( this ).children('span:nth-child(3)').removeClass( "movieHighlight" ).hide();
 			$( this ).children('span:nth-child(10)').removeClass( "movieHighlight" ).hide();
 			$( this ).children('span:nth-child(11)').removeClass( "movieHighlight" ).hide();
 			$( this ).children('span:nth-child(12)').removeClass( "movieHighlight" ).hide();
@@ -92,10 +96,11 @@ $(document).ready(function () {
 			$( this ).children('span:nth-child(14)').removeClass( "movieHighlight" ).hide();
 			$( this ).children('span:nth-child(15)').removeClass( "movieHighlight" ).hide();
 			$( this ).children('span:nth-child(16)').removeClass( "movieHighlight" ).hide();
-		}		
+		}
 	);
+	*/
 
-	
+
 	/* ----- ----- ----- *
 	 * jQuery .filter() Search
 	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery

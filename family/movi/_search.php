@@ -102,7 +102,7 @@ if (isset ( $parsed_json['Search'] ) ) {
 
 		echo ("\n	<li>\n");
 		if ($row['Poster'] == 'N/A') {
-			echo ('		<img src="no-image.png" alt="No image available" title="No image available" class="poster-small">');
+			echo ('		<img src="../../includes/images/no-image.png" alt="No image available" title="No image available" class="poster-small">');
 		} else {
 			echo ('		<img src="' . $row['Poster'] . '" alt="' . $row['Title'] . '" title="' . $row['Title'] . '" class="poster-small">');
 		}
@@ -209,7 +209,7 @@ if ( ( $_GET['f'] == 'i' ) || ( $_GET['f'] == 't' ) ) {
 
 <?php
 	if ($parsed_json['Poster'] == 'N/A') {
-		echo ('<img src="no-image.png" alt="No Image Resource Found" id="poster">');
+		echo ('<img src="../../includes/images/no-image.png" alt="No Image Resource Found" id="poster">');
 	} else {
 ?>
 		<img src="<?php echo $parsed_json['Poster']; ?>" 
@@ -224,7 +224,7 @@ if ( ( $_GET['f'] == 'i' ) || ( $_GET['f'] == 't' ) ) {
 	<p>Directed by: <b><?php echo $parsed_json['Director']; ?></b></p>
 	
 	<p>
-		<a href="//www.imdb.com/title/<?php echo $parsed_json['imdbID']; ?>" title="Check '<?php echo $parsed_json['Title']; ?>' on IMDb"><img src="imdb-logo-2.png" alt="IMDb logo"></a>
+		<a href="//www.imdb.com/title/<?php echo $parsed_json['imdbID']; ?>" title="Check '<?php echo $parsed_json['Title']; ?>' on IMDb"><img src="../../includes/images/imdb-logo-2.png" alt="IMDb logo"></a>
 	</p>
 	
 	<p>

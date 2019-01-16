@@ -85,8 +85,11 @@ hr {
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
+	display: inline-block;
 	padding: 1px 0.5%;
-	/* min-width: 15.5%; */
+	border: 0 dotted #e5e5e5;
+	vertical-align: middle;
+	/* border-width: 0 1px 1px 0; */
 }
 
 /* --- Highlight Action --- */
@@ -101,48 +104,39 @@ hr {
 }
 
 /* --- Movi List --- */
-.movie .record span:first-of-type {
-	display: inline-block;
-	font-size: 1em;
-	font-weight: 600;
-	width: 34%;
-}
+
+/* ----- Column Widths ----- */
+.movie .record span:nth-of-type(1),
 .movie .record span:nth-of-type(2),
-.movie .record span:nth-of-type(10) {
-	display: inline-block;
+.movie .record span:nth-of-type(3) {
 	font-size: 0.85em;
-	width: 29%;
+	width: 18%; /* plus 1% padding */
 }
-.movie .record span:nth-of-type(3),
+.movie .record span:nth-of-type(2) {
+	width: 18%; /* plus 1% padding */
+}
 .movie .record span:nth-of-type(4),
 .movie .record span:nth-of-type(5),
 .movie .record span:nth-of-type(6),
 .movie .record span:nth-of-type(7),
-.movie .record span:nth-of-type(11),
-.movie .record span:nth-of-type(12),
-.movie .record span:nth-of-type(13),
-.movie .record span:nth-of-type(14),
-.movie .record span:nth-of-type(15) {
-	display: inline-block;
+.movie .record span:nth-of-type(8),
+.movie .record span:nth-of-type(9),
+.movie .record span:nth-of-type(10) {
 	font-size: 0.85em;
-	width: 6%;
+	width: 7%;
 }
-.movie .record span:nth-of-type(8) {
-	display: inline-block;
+/*
+	.movie .record span:nth-of-type(4) {
+	font-size: 0.85em;
+	width: 8%;
+}
+*/
+.movie .record span:first-of-type {
 	font-size: 1em;
-	padding: 1em 2em;
-	width: 99%;
+	font-weight: 600;
 }
-.movie .record span:nth-of-type(9) {
-	display: inline-block;
-	font-size: 0.85em;
-	width: 34%;
-}
-.movie .record span:nth-of-type(11) {
-	display: inline-block;
-	font-size: 0.85em;
-	width: 13%;
-}
+
+
 
 
 
@@ -189,7 +183,7 @@ hr {
 	#quicksearch {
 		min-width: 50%;
 		width: auto;
-		max-width: 100%;
+		max-width: 99%;
 	}
 	.movie .record span:first-of-type {
 		width: 100%;
@@ -201,8 +195,11 @@ hr {
 	.movie .record span:nth-of-type(4),
 	.movie .record span:nth-of-type(5),
 	.movie .record span:nth-of-type(6),
-	.movie .record span:nth-of-type(7) {
-		font-size: 0.9em;
+	.movie .record span:nth-of-type(7),
+	.movie .record span:nth-of-type(8),
+	.movie .record span:nth-of-type(9),
+	.movie .record span:nth-of-type(10) {
+		font-size: 1em;
 		width: 49%;
 	}
 	.movie .record span {
