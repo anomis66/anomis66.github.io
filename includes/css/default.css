@@ -102,12 +102,12 @@ hr {
 
 /* ----- Column Widths ----- */
 .movie .record span:nth-of-type(1),
-.movie .record span:nth-of-type(2),
-.movie .record span:nth-of-type(3) {
+.movie .record span:nth-of-type(3),
+.movie .record span:nth-of-type(4) {
 	font-size: 0.85em;
-	width: 17%; /* plus 1% padding */
+	width: 17.5%; /* plus 1% padding */
 }
-.movie .record span:nth-of-type(4),
+.movie .record span:nth-of-type(2),
 .movie .record span:nth-of-type(5),
 .movie .record span:nth-of-type(6),
 .movie .record span:nth-of-type(7),
@@ -115,7 +115,7 @@ hr {
 .movie .record span:nth-of-type(9),
 .movie .record span:nth-of-type(10) {
 	font-size: 0.85em;
-	width: 6.5%;
+	width: 5%;
 }
 /*
 	.movie .record span:nth-of-type(4) {
