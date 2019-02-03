@@ -25,6 +25,9 @@
 
 
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+<link rel="stylesheet" href="../../includes/css/_sanatise.css">
+<!-- link rel="stylesheet" href="../../includes/css/_diagnostic.css" -->
 <link rel="stylesheet" href="../../includes/css/default.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -37,17 +40,14 @@
 
 <h1>Movie Collection</h1>
 
-
-
-<p class="hidden-print">
-	<a href="//www.imdb.com/" class="fr hidden-sm"><img src="../../includes/images/imdb-logo-2.png" alt="IMDb"></a>
+<p class="lead">
 	A listing of my DVD and Blu-ray collection.
 </p>
-<p>
-	This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/">IMDb Datasets</a> but the datasets were unruly.  Soon it became something different using <a href="//www.omdbapi.com/">OMDb API</a>	and a learning tool more useful to me.
+<p class="hidden-print">
+	This started life as a <a href="https://www.postgresql.org/" title="PostgreSQL: The World's Most Advanced Open Source Relational Database">PostgreSQL</a> learning exercise using the <a href="https://www.imdb.com/interfaces/" title="Subsets of IMDb data are available for access to customers for personal and non-commercial use.">IMDb Datasets</a> but the datasets were unruly.  Soon it became something different using <a href="//www.omdbapi.com/" title="The OMDb API is a RESTful web service to obtain movie information">OMDb API</a>	and a learning tool more useful to me.
 </p>
 
-<form action="#" class="form hidden-print">
+<form action="#" class="hidden-print">
 	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus>
 </form>
 
@@ -55,51 +55,24 @@
 
 <div id="csv-list" class="movie"></div>
 
+
+
+
+
+
+
+
+
+
 <script>
-// executes when complete page is fully loaded, including all frames, objects and image…
+
+// Executes when complete page is fully loaded, including all frames, objects and image…
 // $(window).load(function() {
 
-// executes when HTML-Document is loaded and DOM is ready
+// Executes when HTML-Document is loaded and DOM is ready
 // $(document).ready(function () {
 
 $(document).ready(function () {
-
-	/* LET'S GET FUNKY ON HOVERING A MOVIE TITLE
-	$( ".record span:nth-child(2)" ).hide(); // Hide Plot
-	$( ".record span:nth-child(3)" ).hide(); // Hide Actors
-
-	$( ".record span:nth-child(10)" ).hide();
-	$( ".record span:nth-child(11)" ).hide();
-	$( ".record span:nth-child(12)" ).hide();
-	$( ".record span:nth-child(13)" ).hide();
-	$( ".record span:nth-child(14)" ).hide();
-	$( ".record span:nth-child(15)" ).hide();
-	$( ".record span:nth-child(16)" ).hide();
-	$( ".record" ).hover(
-		function() {
-			$( this ).children('span:nth-child(2)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(3)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(10)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(11)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(12)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(13)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(14)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(15)').addClass( "movieHighlight" ).show();
-			$( this ).children('span:nth-child(16)').addClass( "movieHighlight" ).show();
-		}, function() {
-			$( this ).children('span:nth-child(2)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(3)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(10)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(11)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(12)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(13)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(14)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(15)').removeClass( "movieHighlight" ).hide();
-			$( this ).children('span:nth-child(16)').removeClass( "movieHighlight" ).hide();
-		}
-	);
-	*/
-
 
 	/* ----- ----- ----- *
 	 * jQuery .filter() Search
@@ -108,21 +81,21 @@ $(document).ready(function () {
 
 	$("#quicksearch")
 	.hide()
-	.delay( 1000 )
-	.fadeIn( 2000 )
+	.delay( 500 )
+	.fadeIn( 1000 )
 	
 	.keyup(function () {
-		// SPLIT THE CURRENT VALUE OF SEARCH INPUT (CASE INSENSITIVE)
+		// Split the current value of search input (case insensitive)
 		var data = this.value.toUpperCase().split(" ");
-		// CREATE A JQUERY OBJECT OF THE ROWS
+		// Create a jQuery object of the rows
 		var obj = $("#table").find(".record");
 		if (this.value == "") {
 			obj.show();
 			return;
 		}
-		// HIDE ALL THE ROWS
+		// Hide all the rows
 		obj.hide();
-		// RECURSIVELY FILTER THE JQUERY OBJECT TO GET RESULTS.
+		// Recursively filter the jQuery object to get results.
 		obj.filter(function (i, v) {
 			var $t = $(this);
 			for (var d = 0; d < data.length; ++d) {
@@ -132,7 +105,7 @@ $(document).ready(function () {
 			}
 			return false;
 		})
-		// SHOW THE ROWS THAT MATCH.
+		// Show the rows that match.
 		.show();
 	})
 	
@@ -174,10 +147,17 @@ function doStuff(file) {
 
 
 
+
+
+
+
+
+
+
 <footer class="hidden-print">
 	<hr>
-	<p class="hidden-print">Go To <a href="../../">Home Page</a></p>
-	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
+	<p class="hidden-print">Go To <a href="../../">Home Page</a><br>
+	&copy; Simon Arthur 2018.  All rights reserved.</p>
 	<hr>
 	<div id="qrcode"></div>
 </footer>

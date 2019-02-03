@@ -3,70 +3,59 @@
  * 
  * Created: 30 Nov 2017 - Simon Arthur
  * ----- ----- ----- */
- 
-@import url('https://fonts.googleapis.com/css?family=News+Cycle|Patua+One');
- 
-/*
-font-family: 'Patua One', cursive;
-font-family: 'News Cycle', sans-serif;
-*/
+
+/* Color Schema ----- *
+	Primary #d4e157
+	Light	#ffff89
+	Dark	#a0af22
+	Secondary #af2922
+ * ----- ----- ----- */
 
 body {
-	background: #fff;
-	/* background: linear-gradient(#000, #369); /* Vertical - Standard Syntax */
-	/* background: linear-gradient(to right, #fff, #cf6); /* Horizontal - Standard Syntax */
-	/* background: linear-gradient(to bottom right, #000, #036); /* Diagonal - Standard Syntax */
-	/* background: linear-gradient(-45deg, #000, #630); /* Angle - Standard Syntax */
-	/* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); /* Multistop - Standard Syntax */
-	font-family: 'News Cycle', sans-serif;
 	color: #333;
-	margin: 3em 3em;
-	padding: 5px;
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 140%;
+	margin: 2% auto;
+	max-width: 96%;
 }
-h1, h2, h3 {
-	font-family: 'Patua One', cursive;
-}
-p {
-	line-height: 1.6em;
-}
+
 a {
-	color: #693;
-	font-weight: 600;
-	text-decoration: none;
+	border: 1px dotted #fff;
+	color: #a0af22;
+	padding: 2px 4px;
 }
-blockquote {
-	background-color: #66993315;
-	border: 1px solid #66993345;
-	border-radius: 4px;
-	padding: 1em;
-	margin: 1em 0;
-}
-
-input {
-	margin: 1em 0;
-	padding: 0.5em;
-	width: 40%;
+a:active,
+a:hover,
+a:focus {
+	border: 1px dotted #af2922;
+	color: #af2922;
 }
 
-hr { 
-	background-color: #fff;
-	border: 0;
-	border-top: 3px double #669933;
-} 
-
-
-
-.fl {
-	float: left;
-	clear: left;
+fieldset {
+	border: 1px dotted #d4e157;
+	border-radius: 5px;
 }
-.fr {
-	float: right;
-	clear: right;
+label {
+	padding: 0 1em;
 }
-
-
-
+input[type="text"] {
+	border: 1px solid #d4e157;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	padding: 0.5em 0.75em;
+	width: 100%;
+}
+select {
+	border: 1px solid #d4e157;
+	padding: 0.5em 0;
+	width: 50%;
+}
+q,
+.lead {
+	font-size: 1.1em;
+	font-style: italic;
+}
 
 
 /* --- CSV List --- */
@@ -75,7 +64,14 @@ hr {
 }
 /* --- Each Row --- */
 #csv-list .record {
-	padding: 3px;
+	font-size: 0.9em;
+	border-bottom: 2px solid #a0af22;
+}
+/* --- Highlight Action --- */
+#csv-list .record:hover,
+#csv-list .record:active,
+#csv-list .record:focus {
+	background-color: #ffff89;
 }
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
@@ -83,123 +79,72 @@ hr {
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
+	border-bottom: 1px dotted #999;
 	display: inline-block;
-	padding: 2px 0.5%;
-	vertical-align: middle;
-}
-/* --- Highlight Action --- */
-#csv-list .record:hover,
-#csv-list .record:active,
-#csv-list .record:focus {
-	background-color: #99663333;
+	padding: 3px 0.5%;
+	vertical-align: top;
 }
 /* --- Ajax Loading Graphic --- */
 #loading {
 	text-align: center;
 }
 
-/* --- Movi Styles --- */
 
-/* ----- Column Widths ----- */
-.movie .record span:nth-of-type(1),
+
+/* --- Movi Styles --- */
+.movie .record span:first-of-type {
+	font-weight: 600;
+	text-align: left;
+	width: 90%;
+}
+.movie .record span:nth-of-type(2) {
+	font-weight: 600;
+	text-align: center;
+	width: 10%;
+}
 .movie .record span:nth-of-type(3),
 .movie .record span:nth-of-type(4) {
-	font-size: 0.85em;
-	width: 17.5%; /* plus 1% padding */
+	text-align: left;
+	width: 100%;
 }
-.movie .record span:nth-of-type(2),
 .movie .record span:nth-of-type(5),
 .movie .record span:nth-of-type(6),
 .movie .record span:nth-of-type(7),
 .movie .record span:nth-of-type(8),
 .movie .record span:nth-of-type(9),
 .movie .record span:nth-of-type(10) {
-	font-size: 0.85em;
-	width: 5%;
+	text-align: center;
+	width: 33.3%;
 }
-/*
-	.movie .record span:nth-of-type(4) {
-	font-size: 0.85em;
-	width: 8%;
-}
-*/
-.movie .record span:first-of-type {
-	font-size: 1em;
-	font-weight: 600;
-}
-
-
-
-
-
-/* --- Music List --- */
-.music .record span:first-of-type {
-	font-weight: 600;
-}
-.music .record span:nth-of-type(1),
-.music .record span:nth-of-type(4) {
-	width: 30%; 
-}
-.music .record span:nth-of-type(3),
-.music .record span:nth-of-type(6) {
-	width: 55%; 
-}
-.music .record span:nth-of-type(4),
-.music .record span:nth-of-type(5),
-.music .record span:nth-of-type(6) {
-	font-size: 80%; 
-}
-
 
 /* --- Only The Top Row --- */
 #csv-list .record:first-of-type  {
-	background: #66993345;
+	background: #d4e157;
 	font-weight: 600;
-	letter-spacing: 3px;
 	text-transform: capitalize;
 }
 
-.marker {
-	background: #ffc;
-	padding: 2px;
+/* --- Add movie --- */
+#catalogue li {
+    display: inline-block;
+    vertical-align: top;
+	padding: 0.5em;
+    text-align: center;
+	width: 20%;
+	margin-bottom: 0.25em;
 }
-
-
-
-/* --- SMALL SCREENS --- */
-@media only screen and (max-width: 960px) {
-
-	body {
-		margin: 5px;
-	}
-	#quicksearch {
-		min-width: 50%;
-		width: auto;
-		max-width: 99%;
-	}
-	.movie .record span:first-of-type {
-		width: 100%;
-		font-weight: 600;
-		font-size: 120%;
-	}
-	.movie .record span:nth-of-type(2), 
-	.movie .record span:nth-of-type(3),
-	.movie .record span:nth-of-type(4),
-	.movie .record span:nth-of-type(5),
-	.movie .record span:nth-of-type(6),
-	.movie .record span:nth-of-type(7),
-	.movie .record span:nth-of-type(8),
-	.movie .record span:nth-of-type(9),
-	.movie .record span:nth-of-type(10) {
-		font-size: 1em;
-		width: 49%;
-	}
-	.movie .record span {
-		width: 49%;
-		border-bottom: 1px dotted #d5d5d5;
-	}
-
-
+#poster { 
+	max-width: 240px; 
+	border: 1px solid #ccc;
+	float: right; 
+	padding: 5px;
+	margin: 5px;
+}
+.poster-small { 
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+	max-height: 240px;
 }
 
 
@@ -208,6 +153,7 @@ hr {
 
 footer {
 	margin: 1em 0;
+	font-size: 0.85em;
 }
 
 #qrcode {
@@ -226,46 +172,46 @@ footer {
 
 
 
-@media only screen and (max-device-width: 800px) {
 
-	.hidden-sm {
-		display: none;
+
+@media only screen and (min-width: 649px) {
+
+	body {
+		margin: 5% auto;
+		max-width: 64em;
+		width: 98%;
+	}
+	select,
+	input[type="text"] {
+		padding: 0.5em 1em;
+	}
+	#csv-list .record span {
+		border: 0;
+	}
+	/* --- Movi Styles --- */
+	.movie .record span:first-of-type {
+		width: 90%;
+	}
+	.movie .record span:nth-of-type(2) {
+		width: 10%;
+	}
+	.movie .record span:nth-of-type(3),
+	.movie .record span:nth-of-type(4) {
+		width: 26%;
+	}
+	.movie .record span:nth-of-type(5),
+	.movie .record span:nth-of-type(6),
+	.movie .record span:nth-of-type(7),
+	.movie .record span:nth-of-type(8),
+	.movie .record span:nth-of-type(9),
+	.movie .record span:nth-of-type(10) {
+		width: 8%;
 	}
 
 }
+
 @media only print {
 
-	body {
-		background: #fff;
-		font-family: 'News Cycle', sans-serif;
-		font-size: 11pt;
-		color: #000;
-		
-		width: auto; 
-		border: 0; 
-		margin: 0 1em; 
-		padding: 0; 
-		float: none !important; 
-	}
-	fr, fl {
-		float: none !important; 
-	}
-	hr { 
-		background-color: #fff;
-		border: 0;
-		border-top: 1px solid #d5d5d5;
-	} 
-
-	#csv-list .record {
-		padding: 1px 2px;
-	}
-	#csv-list .record span {
-		border-bottom: 1px solid #e5e5e5;
-	}
-
-	
-	
-	
 	.hidden-print {
 		display: none;
 	}

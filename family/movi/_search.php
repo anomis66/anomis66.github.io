@@ -87,7 +87,7 @@ if (!empty ($parsed_json['totalResults']) ) {
 
 if (isset ( $parsed_json['Search'] ) ) {
 	
-	echo ("\n<ol>");
+	echo ('<ol id="catalogue">');
 	foreach ($parsed_json['Search'] as $row) {
 		$parsed = parse_url($url);
 		if (!empty ($parsed['query']) ) {
@@ -100,13 +100,13 @@ if (isset ( $parsed_json['Search'] ) ) {
 			$url = http_build_query($params); 	// Rebuild $query without $offset
 		}
 
-		echo ("\n	<li>\n");
+		echo ('<li><a href="?f=i&amp;q='. $row['imdbID'] . '">');
 		if ($row['Poster'] == 'N/A') {
 			echo ('		<img src="../../includes/images/no-image.png" alt="No image available" title="No image available" class="poster-small">');
 		} else {
 			echo ('		<img src="' . $row['Poster'] . '" alt="' . $row['Title'] . '" title="' . $row['Title'] . '" class="poster-small">');
 		}
-		echo ('		<a href="?f=i&amp;q='. $row['imdbID'] . '">' . $row['Title'] . '</a> (' . $row['Year'] . ") \n");
+		echo ($row['Title'] . '</a><br> (' . $row['Year'] . ") \n");
 		echo ('		<a href="//www.imdb.com/title/' . $row['imdbID'] . '" title="View on ' . $row['Title'] . ' on IMDb"><i class="fas fa-link"></i></a>');
 		echo ("\n	</li>");
 	}
@@ -175,12 +175,17 @@ if (!empty ($parsed_json['totalResults']) ) {
 if ( ( $_GET['f'] == 'i' ) || ( $_GET['f'] == 't' ) ) {
 
 ?>
+<br>
 
 <form method="post" action="_update.php">
 
-	<h2><?php echo $parsed_json['Title']; ?> <small>(<?php echo $parsed_json['Year']; ?>) [<?php echo $parsed_json['Rated']; ?>]</small></h2>
-
 	<fieldset>
+	
+	<h2>
+		<?php echo $parsed_json['Title']; ?> 
+		(<?php echo $parsed_json['Year']; ?>) 
+		[<?php echo $parsed_json['Rated']; ?>]
+	</h2>
 	
 	<input type="hidden" name="Title" value="<?php echo $parsed_json['Title']; ?>">
 	<input type="hidden" name="Year" value="<?php echo $parsed_json['Year']; ?>">
@@ -220,8 +225,9 @@ if ( ( $_GET['f'] == 'i' ) || ( $_GET['f'] == 't' ) ) {
 	}
 ?>
 
-	<h3>Starring: <em><?php echo $parsed_json['Actors']; ?></em></h3>
-	<p>Directed by: <b><?php echo $parsed_json['Director']; ?></b></p>
+	<q><?php echo $parsed_json['Plot']; ?></q>
+	<p><b>Starring:</b> <?php echo $parsed_json['Actors']; ?></p>
+	<p><b>Directed by:</b> <?php echo $parsed_json['Director']; ?></p>
 	
 	<p>
 		<a href="//www.imdb.com/title/<?php echo $parsed_json['imdbID']; ?>" title="Check '<?php echo $parsed_json['Title']; ?>' on IMDb"><img src="../../includes/images/imdb-logo-2.png" alt="IMDb logo"></a>

@@ -27,18 +27,13 @@
 	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
 	crossorigin="anonymous">
 
-<link rel="stylesheet" href="./includes/css/default.css">
+<link rel="stylesheet" href="../../includes/css/_sanatise.css">
+<!-- link rel="stylesheet" href="../../includes/css/_diagnostic.css" -->
+<link rel="stylesheet" href="../../includes/css/default.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
 	crossorigin="anonymous"></script>
-
-<style>
-#poster { max-width: 8em; border: 3px double #ccc; float: right; }
-.poster-small { max-width: 5em; }
-p label { min-width: 15em; }
-</style>
-
 
 </head>
 
@@ -132,8 +127,8 @@ if (isset ($_GET) ) {
 
 <footer class="hidden-print">
 	<hr>
-	<p class="hidden-print">Go To <a href="/">Home Page</a></p>
-	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
+	<p class="hidden-print">Go To <a href="/">Home Page</a><br>
+	&copy; Simon Arthur 2018.  All rights reserved.</p>
 	<hr>
 	<div id="qrcode"></div>
 </footer>

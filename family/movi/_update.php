@@ -205,7 +205,7 @@ else {
 
 } // CHECK
 
-echo '<p><a href="./add">Add</a> |';
-echo '| <a href="./index.htm">View ?</a></p>';
+echo '<h2><a href="./add">Add another</a> |';
+echo '| <a href="./index.htm">View ?</a></h2>';
 
 ?>
