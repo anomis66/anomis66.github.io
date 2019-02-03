@@ -27,9 +27,9 @@
 	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
 	crossorigin="anonymous">
 
-<link rel="stylesheet" href="../../includes/css/_sanatise.css">
-<!-- link rel="stylesheet" href="../../includes/css/_diagnostic.css" -->
-<link rel="stylesheet" href="../../includes/css/default.css">
+<link rel="stylesheet" href="./../../includes/css/_sanitize.css">
+<link rel="stylesheet" href="../../includes/css/_diagnostic.css">
+<link rel="stylesheet" href="./../../includes/css/default.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
