@@ -19,19 +19,38 @@ body {
 	margin: 2% auto;
 	max-width: 90%;
 }
-
+.lead {
+	font-size: 1.1em;
+	font-style: italic;
+}
+q {
+	font-family: cursive;
+	font-size: 1.1em;
+}
 a {
-	border: 1px dotted #fff;
+	border-bottom: 2px dotted #fff;
 	color: #a0af22;
+	display: inline-block;
 	padding: 2px 4px;
+	text-decoration: none;
+}
+a[name] { /* used in family tree */
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+a[name]:active,
+a[name]:hover,
+a[name]:focus { /* used in family tree */
+	border: 0;
 }
 a:active,
 a:hover,
 a:focus {
-	border: 1px dotted #af2922;
+	border-bottom: 2px dotted #af2922;
 	color: #af2922;
 }
-
+/* ----- FORMS ----- */
 fieldset {
 	border: 1px dotted #d4e157;
 	border-radius: 5px;
@@ -50,11 +69,6 @@ select {
 	border: 1px solid #d4e157;
 	padding: 0.5em 0;
 	width: 50%;
-}
-q,
-.lead {
-	font-size: 1.1em;
-	font-style: italic;
 }
 
 
