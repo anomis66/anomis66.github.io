@@ -135,10 +135,19 @@ xhttp.send();
 
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
-	file = file.replace(/(?:\,)/g, ', ');			// Add SPACE after commas.
-	file = file.replace(/(?:\|)/g, '</span><span>');// replace DELIMITER with next record code
-	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span> ');  // replace EOL with next record code
-	file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space
+	
+	// Add SPACE after commas.
+	file = file.replace(/(?:\,)/g, ', ');				
+	
+	// replace DELIMITER with next record code
+	file = file.replace(/(?:\|)/g, '</span><span>');
+	
+	// replace EOL with next record code
+	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span>');  
+	
+	// replace \N with space
+	file = file.replace(/(?:\\N)/g, '&nbsp;');
+	
 	// top & tail the output to ensure valid html
 	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
 }
