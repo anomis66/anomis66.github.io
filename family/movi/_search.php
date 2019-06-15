@@ -238,6 +238,7 @@ if ( ( $_GET['f'] == 'i' ) || ( $_GET['f'] == 't' ) ) {
 		<select name="Format">
 			<option>DVD</option>
 			<option>Bluray</option>
+			<option>Bluray 3D</option>
 			<option>4K HDR</option>
 		</select>
 	</p>
