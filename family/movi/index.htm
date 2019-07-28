@@ -76,39 +76,27 @@ $(document).ready(function () {
 
 	/* ----- ----- ----- *
 	 * jQuery .filter() Search
-	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
+	 * https://stackoverflow.com/questions/7051800/how-to-build-a-simple-table-filter-with-jquery
 	 * ----- ----- ----- */
 
-	$("#quicksearch")
-	.hide()
-	.delay( 500 )
-	.fadeIn( 1000 )
-	
-	.keyup(function () {
-		// Split the current value of search input (case insensitive)
-		var data = this.value.toUpperCase().split(" ");
-		// Create a jQuery object of the rows
-		var obj = $("#table").find(".record");
-		if (this.value == "") {
-			obj.show();
-			return;
-		}
-		// Hide all the rows
-		obj.hide();
-		// Recursively filter the jQuery object to get results.
-		obj.filter(function (i, v) {
-			var $t = $(this);
-			for (var d = 0; d < data.length; ++d) {
-				if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
-					return true;
-				}
-			}
-			return false;
-		})
-		// Show the rows that match.
-		.show();
-	})
-	
+	$("#quicksearch").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$("#table .record").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
+	});
+
+/*
+var src_str = $("#test").text();
+var term = "my text";
+term = term.replace(/(\s+)/,"(<[^>]+>)*$1(<[^>]+>)*");
+var pattern = new RegExp("("+term+")", "gi");
+
+src_str = src_str.replace(pattern, "<mark>$1</mark>");
+src_str = src_str.replace(/(<mark>[^<>]*)((<[^>]+>)+)([^<>]*<\/mark>)/,"$1</mark>$2<mark>$4");
+
+$("#test").html(src_str);
+*/
 });
 
 
