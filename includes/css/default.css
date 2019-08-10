@@ -195,6 +195,11 @@ footer {
 		max-width: 64em;
 		width: 90%;
 	}
+	.right {
+		float: right;
+		clear: right;
+	}
+	
 	select,
 	input[type="text"] {
 		padding: 0.5em 1em;

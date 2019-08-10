@@ -4,25 +4,27 @@
  * Quickly see where your markup might have some trouble:
  * https://meyerweb.com/eric/tools/css/diagnostics/demo-not.html
  * ----- ----- ----- */
- 
+
 div:empty, span:empty,
 li:empty, p:empty,
-td:empty, th:empty {padding: 0.6em; background: yellow;}
+td:empty, th:empty
+	{ padding: 0.6em; background: yellow; }
 
-*[style], font, center { outline: 2px solid red;}
-*[class=""], *[id=""] { outline: 2px dotted red;}
+*[style], font, center { outline: 2px solid crimson; }
+*[class=""], *[id=""] { outline: 2px dotted crimson; }
 
-img[alt=""] {border: 3px dotted orange;}
-img:not([alt]) {border: 3px solid orange;}
-img[title=""] {outline: 3px dotted fuchsia;}
-img:not([title]) {outline: 3px solid fuchsia;}
+img[alt=""] { border: 3px dotted orange; }
+img:not([alt]) { border: 3px solid orange; }
+img[title=""] { outline: 3px dotted violet; }
+img:not([title]) { outline: 3px solid violet; }
 
-table:not([summary]) {outline: 3px double red;}
-table[summary=""] {outline: 2px dotted red;}
-th {border: 2px solid red;}
-th[scope="col"], th[scope="row"] {border: none;}
+table:not([summary]) { outline: 3px double crimson; }
+table[summary=""] { outline: 2px dotted crimson; }
+th { border: 2px solid crimson; }
+th[scope="col"], th[scope="row"] { border: none; }
 
-a[href]:not([title]) {border: 3px double red;}
-a[title=""] {outline: 2px dotted red;}
-a[href="#"] {background: lime;}
-a[href=""] {background: fuchsia;}
+a[href]:not([title]) { border: 3px double crimson; }
+a[title=""] { outline: 2px dotted crimson; }
+a[href="#"] { background: lime; }
+a[href=""] { background: violet; }
+
