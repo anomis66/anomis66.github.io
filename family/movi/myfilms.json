@@ -490,6 +490,21 @@
 		"score": "6.7"
 	},
 	{
+		"title": "Assassin's Creed",
+		"ser": "",
+		"actors": "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brendan Gleeson",
+		"genre": "Action, Adventure, Sci-Fi",
+		"cert": "PG-13",
+		"year": "2016",
+		"mins": "115 min",
+		"format": "Bluray",
+		"set": "No",
+		"ext": "No",
+		"votes": "168,569",
+		"rotten": "18%",
+		"score": "5.8"
+	},
+	{
 		"title": "Assassination of Jesse James by the Coward Robert Ford, The",
 		"ser": "&nbsp;",
 		"actors": "Brad Pitt, Mary-Louise Parker, Brooklynn Proulx, Dustin Bollinger",
@@ -845,6 +860,21 @@
 		"votes": "220,173",
 		"rotten": "55%",
 		"score": "7.6"
+	},
+	{
+		"title": "Blues Brothers, The",
+		"ser": "",
+		"actors": "Tom Erhart, Gerald Walling, John Belushi, Walter Levine",
+		"genre": "Adventure, Comedy, Crime, Music, Musical",
+		"cert": "R",
+		"year": "1980",
+		"mins": "133 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "168,898",
+		"rotten": "83%",
+		"score": "7.9"
 	},
 	{
 		"title": "Bohemian Rhapsody",
@@ -1253,6 +1283,21 @@
 		"votes": "528,050",
 		"rotten": "94%",
 		"score": "8.0"
+	},
+	{
+		"title": "Cast Away",
+		"ser": "",
+		"actors": "Paul Sanchez, Lari White, Leonid Citer, David Allen Brooks",
+		"genre": "Adventure, Drama, Romance",
+		"cert": "PG-13",
+		"year": "2000",
+		"mins": "143 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "475,802",
+		"rotten": "88%",
+		"score": "7.8"
 	},
 	{
 		"title": "Charlie and the Chocolate Factory",
@@ -1807,6 +1852,21 @@
 		"score": "7.1"
 	},
 	{
+		"title": "Deliverance",
+		"ser": "",
+		"actors": "Jon Voight, Burt Reynolds, Ned Beatty, Ronny Cox",
+		"genre": "Adventure, Drama, Thriller",
+		"cert": "R",
+		"year": "1972",
+		"mins": "109 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "92,132",
+		"rotten": "93%",
+		"score": "7.7"
+	},
+	{
 		"title": "Depeche Mode: 101",
 		"ser": "",
 		"actors": "Andrew Fletcher, David Gahan, Martin Gore, Alan Wilder",
@@ -1947,9 +2007,9 @@
 		"cert": "R",
 		"year": "1971",
 		"mins": "102 min",
-		"format": "Bluray",
+		"format": "DVD",
 		"set": "Yes",
-		"ext": "No",
+		"ext": "Yes",
 		"votes": "129,390",
 		"rotten": "93%",
 		"score": "7.8"
@@ -1962,9 +2022,9 @@
 		"cert": "R",
 		"year": "1971",
 		"mins": "102 min",
-		"format": "DVD",
+		"format": "Bluray",
 		"set": "Yes",
-		"ext": "Yes",
+		"ext": "No",
 		"votes": "129,390",
 		"rotten": "93%",
 		"score": "7.8"
@@ -3104,6 +3164,21 @@
 		"score": "8.7"
 	},
 	{
+		"title": "Goonies, The",
+		"ser": "",
+		"actors": "Sean Astin, Josh Brolin, Jeff Cohen, Corey Feldman",
+		"genre": "Adventure, Comedy, Family",
+		"cert": "PG",
+		"year": "1985",
+		"mins": "114 min",
+		"format": "Bluray",
+		"set": "No",
+		"ext": "No",
+		"votes": "218,760",
+		"rotten": "71%",
+		"score": "7.8"
+	},
+	{
 		"title": "Gothika",
 		"ser": "&nbsp;",
 		"actors": "Halle Berry, Robert Downey Jr., Charles S. Dutton, John Carroll Lynch",
@@ -3252,6 +3327,21 @@
 		"votes": "40,909",
 		"rotten": "95%",
 		"score": "7.6"
+	},
+	{
+		"title": "Guys and Dolls",
+		"ser": "",
+		"actors": "Marlon Brando, Jean Simmons, Frank Sinatra, Vivian Blaine",
+		"genre": "Comedy, Crime, Musical, Romance",
+		"cert": "Not Rated",
+		"year": "1955",
+		"mins": "150 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "14,159",
+		"rotten": "90%",
+		"score": "7.2"
 	},
 	{
 		"title": "Hairspray",
@@ -3506,6 +3596,21 @@
 		"score": "8.2"
 	},
 	{
+		"title": "Hello, Dolly!",
+		"ser": "",
+		"actors": "Barbra Streisand, Walter Matthau, Michael Crawford, Marianne McAndrew",
+		"genre": "Adventure, Comedy, Musical, Romance",
+		"cert": "G",
+		"year": "1969",
+		"mins": "146 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "12,199",
+		"rotten": "43%",
+		"score": "7.2"
+	},
+	{
 		"title": "Hereafter",
 		"ser": "&nbsp;",
 		"actors": "Matt Damon, Cécile de France, Thierry Neuvic, Cyndi Mayo, Lisa Griffiths",
@@ -3551,6 +3656,21 @@
 		"score": "7.2"
 	},
 	{
+		"title": "Hill, The",
+		"ser": "",
+		"actors": "Sean Connery, Harry Andrews, Ian Bannen, Alfred Lynch",
+		"genre": "Drama, War",
+		"cert": "Approved",
+		"year": "1965",
+		"mins": "123 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "11,001",
+		"rotten": "100%",
+		"score": "7.9"
+	},
+	{
 		"title": "Hitler: The Rise of Evil",
 		"ser": "1",
 		"actors": "Peter Stormare, Friedrich von Thun, Peter O'Toole, Zoe Telford",
@@ -3593,6 +3713,20 @@
 		"votes": "12,201",
 		"rotten": "53%",
 		"score": "5.9"
+	},
+	{
+		"title": "Hong Kong Phooey",
+		"ser": "1",
+		"actors": "Scatman Crothers, Joe E. Ross",
+		"genre": "Animation, Family, Comedy",
+		"cert": "TV-G",
+		"year": "1974–1975",
+		"mins": "22 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "2,534",
+		"score": "7.0"
 	},
 	{
 		"title": "Hook",
@@ -4567,6 +4701,21 @@
 	},
 	{
 		"title": "Longest Yard, The",
+		"ser": "",
+		"actors": "Burt Reynolds, Eddie Albert, Ed Lauter, Michael Conrad",
+		"genre": "Comedy, Crime, Drama, Sport",
+		"cert": "R",
+		"year": "1974",
+		"mins": "121 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "No",
+		"votes": "15,636",
+		"rotten": "81%",
+		"score": "7.1"
+	},
+	{
+		"title": "Longest Yard, The",
 		"ser": "&nbsp;",
 		"actors": "Adam Sandler, Chris Rock, Burt Reynolds, Nelly",
 		"genre": "Comedy, Crime, Sport",
@@ -4858,7 +5007,7 @@
 		"cert": "R",
 		"year": "1973",
 		"mins": "124 min",
-		"format": "Bluray",
+		"format": "DVD",
 		"set": "Yes",
 		"ext": "No",
 		"votes": "50,092",
@@ -4873,7 +5022,7 @@
 		"cert": "R",
 		"year": "1973",
 		"mins": "124 min",
-		"format": "DVD",
+		"format": "Bluray",
 		"set": "Yes",
 		"ext": "No",
 		"votes": "50,092",
@@ -5128,8 +5277,8 @@
 		"cert": "PG-13",
 		"year": "2004",
 		"mins": "132 min",
-		"format": "Bluray",
-		"set": "Yes",
+		"format": "DVD",
+		"set": "No",
 		"ext": "No",
 		"votes": "574,434",
 		"rotten": "90%",
@@ -5143,8 +5292,8 @@
 		"cert": "PG-13",
 		"year": "2004",
 		"mins": "132 min",
-		"format": "DVD",
-		"set": "No",
+		"format": "Bluray",
+		"set": "Yes",
 		"ext": "No",
 		"votes": "574,434",
 		"rotten": "90%",
@@ -6472,6 +6621,21 @@
 		"score": "6.2"
 	},
 	{
+		"title": "Saving Private Ryan",
+		"ser": "",
+		"actors": "Tom Hanks, Tom Sizemore, Edward Burns, Barry Pepper",
+		"genre": "Drama, War",
+		"cert": "R",
+		"year": "1998",
+		"mins": "169 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "Yes",
+		"votes": "1,122,120",
+		"rotten": "93%",
+		"score": "8.6"
+	},
+	{
 		"title": "Schindler's List",
 		"ser": "&nbsp;",
 		"actors": "Liam Neeson, Ben Kingsley, Ralph Fiennes, Caroline Goodall",
@@ -6914,6 +7078,36 @@
 		"score": "8.6"
 	},
 	{
+		"title": "Sound of Music, The",
+		"ser": "",
+		"actors": "Julie Andrews, Christopher Plummer, Eleanor Parker, Richard Haydn",
+		"genre": "Biography, Drama, Family, Musical, Romance",
+		"cert": "G",
+		"year": "1965",
+		"mins": "172 min",
+		"format": "DVD",
+		"set": "Yes",
+		"ext": "No",
+		"votes": "184,379",
+		"rotten": "83%",
+		"score": "8.0"
+	},
+	{
+		"title": "South Pacific",
+		"ser": "",
+		"actors": "Rossano Brazzi, Mitzi Gaynor, John Kerr, Ray Walston",
+		"genre": "Musical, Romance, War",
+		"cert": "Approved",
+		"year": "1958",
+		"mins": "157 min",
+		"format": "DVD",
+		"set": "Yes",
+		"ext": "No",
+		"votes": "7,428",
+		"rotten": "89%",
+		"score": "6.9"
+	},
+	{
 		"title": "Space Cowboys",
 		"ser": "&nbsp;",
 		"actors": "Clint Eastwood, Tommy Lee Jones, Donald Sutherland, James Garner",
@@ -7062,6 +7256,21 @@
 		"votes": "94,383",
 		"rotten": "73/100",
 		"score": "7.2"
+	},
+	{
+		"title": "Sweeney Todd: The Demon Barber of Fleet Street",
+		"ser": "",
+		"actors": "Johnny Depp, Helena Bonham Carter, Alan Rickman, Timothy Spall",
+		"genre": "Drama, Horror, Musical, Thriller",
+		"cert": "R",
+		"year": "2007",
+		"mins": "116 min",
+		"format": "DVD",
+		"set": "No",
+		"ext": "Yes",
+		"votes": "323,446",
+		"rotten": "85%",
+		"score": "7.4"
 	},
 	{
 		"title": "Swordfish",
@@ -7896,6 +8105,21 @@
 		"votes": "118,513",
 		"rotten": "63%",
 		"score": "7.2"
+	},
+	{
+		"title": "West Side Story",
+		"ser": "",
+		"actors": "Natalie Wood, Richard Beymer, Russ Tamblyn, Rita Moreno",
+		"genre": "Crime, Drama, Musical, Romance",
+		"cert": "Not Rated",
+		"year": "1961",
+		"mins": "153 min",
+		"format": "DVD",
+		"set": "Yes",
+		"ext": "No",
+		"votes": "88,517",
+		"rotten": "94%",
+		"score": "7.6"
 	},
 	{
 		"title": "Westworld",

@@ -70,7 +70,10 @@ select {
 	padding: 0.5em 0;
 	width: 50%;
 }
-
+.btn {
+	border-radius: 5px;
+	padding: 0.5em 0.75em;
+}
 
 /* --- CSV List --- */
 #csv-list {
