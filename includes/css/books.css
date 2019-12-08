@@ -1,0 +1,87 @@
+/* --- BOOK LISTING STYLES --- */
+
+
+
+#addbooks div {
+	margin: 0 0 0.5em 0;
+}
+
+#csv-list .record span {
+	border-bottom: 0;
+	text-transform: capitalize;
+}
+
+.books .record span:first-of-type { /* Title */
+	font-weight: 600;
+	width: 100%;
+}
+.books .record span:nth-of-type(4),  /* Publisher */
+.books .record span:nth-of-type(2) { /* Series */ 
+	width: 36%;
+}
+.books .record span:nth-of-type(9), /* Pages */
+.books .record span:nth-of-type(5), /* Sequence */
+.books .record span:nth-of-type(3) { /* Year */
+	width: 12%;
+}
+.books .record span:nth-of-type(11), /* ISBN-10 */
+.books .record span:nth-of-type(10), /* ISBN-13 */
+.books .record span:nth-of-type(6) { /* Format */
+	width: 24%;
+}
+.books .record span:nth-of-type(7),  /* Edition */
+.books .record span:nth-of-type(8) { /* Print */
+	width: 6%;
+}
+.books .record span:nth-of-type(9)::before { /* Pages */
+	content: "p";
+}
+
+
+@media (min-width: 768px) {
+
+	.books .record span:first-of-type { /* Title */
+		font-weight: 600;
+		width: 40%;
+	}
+	.books .record span:nth-of-type(2) { /* Sequence */
+		width: 25%;
+	}
+	.books .record span:nth-of-type(3) { /* Series */
+		width: 5%;
+	}
+	.books .record span:nth-of-type(4) { /* Publisher */
+		width: 20%;
+	}
+	.books .record span:nth-of-type(5) { /* Year */
+		width: 10%;
+	}
+/* --- 2nd row output --- */
+	.books .record span:nth-of-type(6){ /* Format */
+		font-size: 85%;
+		width: 20%;
+	}
+	.books .record span:nth-of-type(7),   /* Edition */
+	.books .record span:nth-of-type(8) {   /* Print */
+		font-size: 85%;
+		width: 5%;
+	}
+	.books .record span:nth-of-type(9) { /* Pages */
+		font-size: 85%;
+		width: 10%;
+	}
+	.books .record span:nth-of-type(10) { /* ISBN10 */
+		font-size: 85%;
+		width: 10%;
+	}
+	.books .record span:nth-of-type(11) { /* ISBN13 */
+		font-size: 85%;
+		width: 10%;
+	}
+	.books .record span:nth-of-type(12) { /* Condition */
+		font-size: 85%;
+		font-style: oblique;
+	}
+
+
+}
