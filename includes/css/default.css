@@ -6,27 +6,35 @@
  * ----- ----- ----- */
 
 /* Color Schema ----- *
-	Primary: 			#afb42b
-	Primary Light:		#f9fbe7
-	Primary Dark:		#827717
-	Secondary:			#f57c00
-	Secondary Light:	#ffe0b2
-	Secondary Dark:		#e65100
+	Primary: 			#afb42b - c0ca33
+	Primary Light:		#f9fbe7 - f9fbe7
+	Primary Dark:		#827717 - 9e9d24
+	Secondary:			#6d4c41 - 6d4c41
+	Secondary Light:	#d7ccc8 - ffad42
+	Secondary Dark:		#3e2723 - bb4d00
  * ----- ----- ----- */
 
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat&display=swap');
+
+/* Fonts ----- *
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+/* ----- ----- ----- */
+ 
 body {
 	background: #f9fbe7;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
-	line-height: 1.5em;
-	margin: 5px;
+	line-height: 1.3em;
+	margin: 0.3em;
 	max-width: 100%;
 }
 nav {
-	border-bottom: 1px solid #f57c00;
+	border-bottom: 1px solid #6d4c41;
 	margin: 0 0 1em 0;
 }
 nav a {
-	padding: 2px 4px;
+	padding: .3em .6em;
 	display: block;
 }
 .logo {
@@ -58,19 +66,22 @@ nav a {
 	top: auto;
 }
 h1 {
-	font-size: 1.5em;
-	/* line-height: 1.3em; */
+	font-size: 1.6em;
+	line-height: 1.1em;
 }
 
 /* ----- Quotes ----- */
 q {
 	display: block;
-	font-family: cursive;
-	font-size: 1.1em;
+	font-family: 'Handlee', cursive;
+	font-size: 1.5em;
+	line-height: 1.1em;
 }
 cite {
-	float: right;
 	clear: right;
+	display: block;
+	float: right;
+	margin: 0.6em;
 }
 cite::before {
 	content: "- ";
@@ -81,14 +92,14 @@ cite::before {
 a {
 	background: #f9fbe7;
 	border-radius: 0.3em;
-	color: #827717;
+	color: #9e9d24;
 	text-decoration: none;
 }
 a:active,
 a:hover,
 a:focus {
-	background: #ffe0b2;
-	color: #f57c00;
+	background: #d7ccc8;
+	color: #6d4c41;
 }
 /* ----- USED IN FAMILY TREE ----- */
 a[name] { 
@@ -106,9 +117,13 @@ a[name]:focus {
 
 /* ----- FOOTER ----- */
 footer {
-	margin: 1em 0;
-	font-size: 0.85em;
 	clear: both;
+	font-size: 0.85em;
+	margin: 1em 0;
+}
+footer p {
+	border-top: 1px solid #6d4c41;
+	border-bottom: 1px solid #6d4c41;
 }
 #qrcode {
 	background-image: url('../../includes/images/anomis66_jack_100s.png');
@@ -163,9 +178,9 @@ form {
 	display: block;
 }
 fieldset {
-	border: 1px solid #f57c00;
+	border: 1px solid #6d4c41;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px #ffe0b2;
+	box-shadow: 2px 2px 2px #d7ccc8;
 }
 form div {
 	margin-bottom: 0.5em; 
@@ -178,7 +193,7 @@ input[type="number"],
 input[type="text"],
 select, 
 textarea {
-	border: 1px solid #827717;
+	border: 1px solid #9e9d24;
 	border-radius: 5px;
 	padding: 0.25em 0.5em;
 	width: 100%;
@@ -207,8 +222,8 @@ span.required {
 /* --- Each Row --- */
 #csv-list .record {
 	font-size: 0.9em;
-	border-top: 1px solid #827717;
-	border-bottom: 1px solid #827717;
+	border-top: 1px solid #9e9d24;
+	border-bottom: 1px solid #9e9d24;
 }
 /* --- Highlight Action --- */
 #csv-list .record:hover,
@@ -218,18 +233,18 @@ span.required {
 }
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background-color: #ffe0b2;
+	background-color: #d7ccc8;
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
 	border-bottom: 1px dotted #999;
 	display: inline-block;
-	padding: 1px 0.25%;
+	padding: 1px 0.3em;
 	vertical-align: top;
 }
 /* --- Header Style --- */
 #csv-list .record:first-of-type  {
-	background: #afb42b;
+	background: #c0ca33;
 	font-weight: 600;
 	text-transform: capitalize;
 	font-variant: small-caps;
@@ -258,9 +273,18 @@ span.required {
 		width: 100%;
 	}
 	nav a {
+		border: 1px solid #6d4c41;
+		border-width: 1px 1px 0 1px;
+		border-radius: .3em .3em 0 0;
 		display: inline-block;
 	}
-
+	.active {
+		background: #6d4c41;
+		border: 1px solid #6d4c41;
+		border-width: 1px 1px 0 1px;
+		color: #fff;
+		font-weight: 600;
+	}
 	label {
 		display: inline-block;
 		width: 20%;

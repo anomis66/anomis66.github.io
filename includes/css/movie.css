@@ -63,24 +63,27 @@
 		width: 90%;
 	}
 	.movie .record span:nth-of-type(2) { /* Series */
+		font-size: 90%;
 		width: 10%;
 	}
 	.movie .record span:nth-of-type(3) { /* Plot */
+		font-size: 90%;
 		width: 70%;
 	}
 	.movie .record span:nth-of-type(4) { /* Genre */
+		font-size: 90%;
 		width: 30%;
 	}
 	/* --- 2nd row output --- */
 	.movie .record span:nth-of-type(5) {  /* Actors */
-		font-size: 85%;
+		font-size: 90%;
 		width: 60%;
 	}
 	.movie .record span:nth-of-type(6),   /* Year */
 	.movie .record span:nth-of-type(7),   /* Mins */
 	.movie .record span:nth-of-type(8),   /* Format */
 	.movie .record span:nth-of-type(9) { /* Score */
-		font-size: 85%;
+		font-size: 90%;
 		width: 10%;
 	}
 
