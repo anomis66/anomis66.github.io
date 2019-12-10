@@ -13,14 +13,13 @@
 <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
 
 <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-<!--[if IE]><link rel="shortcut icon" href="../../includes/images/favicon.ico"><![endif]-->
+<!--[if IE]><link rel="shortcut icon" href="./../../includes/images/favicon.ico"><![endif]-->
 
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon-precomposed" href="../../includes/images/anomis66_jack_180s.png">
+<link rel="apple-touch-icon-precomposed" href="./../../includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="../../includes/images/anomis66_jack_196s.png">
-
+<link rel="icon" href="./../../includes/images/anomis66_jack_196s.png">
 
 <title>simonarthur.co.uk</title>
 <meta name="author" content="Simon Arthur (@anomis66)">
@@ -29,37 +28,47 @@
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 
 <link rel="stylesheet" href="./../../includes/css/sanitize.css?v8.0.0">
-<link rel="stylesheet" href="./../../includes/css/diagnostic.css?v1.0">
+<!-- link rel="stylesheet" href="./../../includes/css/diagnostic.css?v1.0" -->
 <link rel="stylesheet" href="./../../includes/css/default.css">
 <link rel="stylesheet" href="./../../includes/css/movie.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 
+<header>
 
+	<a href="/" title="Home" class="right"><img src="./../../includes/images/anomis66_jack_100s.png" alt="anomis66" title="Logo" class="logo"></a>
 
-<h1>Movie Collection</h1>
+	<h1>My Movie Collection</h1>
+
+	<nav>
+		<a href="./../../family/tree/" title="My Family Tree">Family Tree</a><span class="sr-only"> | </span>
+		<a href="./../../family/book/" title="My Book Library">Book Library</a><span class="sr-only"> | </span>
+		<a href="./../../family/movi/" title="My Movie Collection">Movie Collection</a><span class="sr-only"> | </span>
+	</nav>
+
+</header>
+	
+<article>
 
 <p class="lead">
 	A listing of my DVD and Blu-ray collection.
 </p>
 <p class="hidden-print">
 	This started life as a <a href="https://www.postgresql.org/" title="PostgreSQL: The World's Most Advanced Open Source Relational Database">PostgreSQL</a> learning exercise.  
-	Soon it became something using <a href="//www.omdbapi.com/" title="The OMDb API is a RESTful web service to obtain movie information">OMDb API</a> and a learning tool more useful to me.
-</p>
-
-<p>Here's <a href="https://www.imdb.com/user/ur90560186/checkins?sort=list_order%2Cdesc&view=grid" title="My IMDB Check-In list">what I've been watching</a> recently</p> 
+	Soon it became something using <a href="//www.omdbapi.com/" title="The OMDb API is a RESTful web service to obtain movie information">OMDb API</a> and a learning tool more useful to me. 
+	Here's <a href="https://m.imdb.com/user/ur90560186/checkins?sort=list_order%2Cdesc&view=grid" title="My IMDB Check-In list">what I've been watching</a> recently.</p> 
 
 <form action="#" class="hidden-print">
-	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus>
+	<div><input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus></div>
 </form>
 
-<div id="loading"><img src="../../includes/images/loading_gears.gif" alt="Loading ... " width="32"></div>
+<div id="loading"><img src="../../includes/images/loading-gears.gif" alt="Loading ... " title="Loading ... please wait"></div>
 
-<div id="csv-list" class="movie"></div>
+<div id="csv-list" class="movie">&nbsp;</div>
 
 
 
@@ -112,9 +121,14 @@ $("#test").html(src_str);
  * ----- ----- ----- */
 document.getElementById("loading").style.display = ""; // show the loading image
 
-
-
-var xhttp = new XMLHttpRequest();
+if (window.XMLHttpRequest) {
+	// ---- Code for IE7+, Firefox, Chrome, Opera, Safari -----
+	xhttp=new XMLHttpRequest();
+} 
+else {  
+	// ----- Code for IE6, IE5 -----
+	xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
 xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		document.getElementById("loading").style.display = "none"; // hide the loading image
@@ -148,21 +162,18 @@ function doStuff(file) {
 
 </script>
 
+</article>
 
+<footer>
 
+	<p class="hidden-print">
+		<a href="/" title="Home">Home</a> | 
+		&copy; Simon Arthur 2018.  All rights reserved.
+	</p>
 
-
-
-
-
-
-
-<footer class="hidden-print">
-	<hr>
-	<p class="hidden-print">Go To <a href="../../">Home Page</a><br>
-	&copy; Simon Arthur 2018.  All rights reserved.</p>
-	<hr>
+	<!-- MOBILE QR CODE -->
 	<div id="qrcode"></div>
+
 </footer>
 
 

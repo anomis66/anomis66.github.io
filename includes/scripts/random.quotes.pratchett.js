@@ -40,7 +40,7 @@ var quotes = new Array(
 // ----- get $total number of $quotes - divide by /2 because each $quote is followed by an $author -----
 var total = (quotes.length/2);
 // ----- $total-1 as array starts at [0]-----
-var count = Math.floor((Math.random() * total) + 1);;
+var count = Math.floor((Math.random() * total) + 2);;
 // ----- odds/evens -----
 count = count * 2;
 // ----- get $quote form $quotes -----
@@ -48,4 +48,4 @@ var quote = quotes[count];
 			count++;
 var author = quotes[count];
 
-document.getElementById("quoted_by").innerHTML = '<span><q>' + quote + '</q> - <cite>' + author + '</cite></span>';
+document.getElementById("quoted_by").innerHTML = '<q>' + quote + '</q><cite>' + author + '</cite>';

@@ -7,55 +7,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <!-- The above meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<meta content='yes' name='apple-mobile-web-app-capable'>
-<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
 
 <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-<!--[if IE]><link rel="shortcut icon" href="//www.simonarthur.co.uk/includes/images/favicon.ico"><![endif]-->
+<!--[if IE]><link rel="shortcut icon" href="./../../includes/images/favicon.ico"><![endif]-->
 
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon-precomposed" href="//www.simonarthur.co.uk/includes/images/anomis66_jack_180s.png">
+<link rel="apple-touch-icon-precomposed" href="./../../includes/images/anomis66_jack_180s.png">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
 <link rel="icon" href="./../../includes/images/anomis66_jack_196s.png">
 
-
 <title>simonarthur.co.uk</title>
 <meta name="author" content="Simon Arthur (@anomis66)">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
-	crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 
 <link rel="stylesheet" href="./../../includes/css/sanitize.css?v8.0.0">
-<link rel="stylesheet" href="./../../includes/css/diagnostic.css?v1.0">
+<!-- link rel="stylesheet" href="./../../includes/css/diagnostic.css?v1.0" -->
 <link rel="stylesheet" href="./../../includes/css/default.css">
 <link rel="stylesheet" href="./../../includes/css/books.css">
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-	crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 
+<header>
+
+	<a href="/" title="Home" class="right"><img src="./../../includes/images/anomis66_jack_100s.png" alt="anomis66" title="Logo" class="logo"></a>
+
+	<h1>Terry Pratchett Collection</h1>
+
+	<nav>
+		<a href="./../../family/tree/" title="My Family Tree">Family Tree</a><span class="sr-only"> | </span>
+		<a href="./../../family/book/" title="My Book Library">Book Library</a><span class="sr-only"> | </span>
+		<a href="./../../family/movi/" title="My Movie Collection">Movie Collection</a><span class="sr-only"> | </span>
+	</nav>
+
+</header>
+	
 <article>
 
-	<h1>Pratchett Collection</h1>
-
 	<p class="lead">
-		A listing of my Terry Pratchet collection.
+		A listing of my Terry Pratchett collection.
 	</p>
 
+	<div id="quoted_by" class="hidden-print">
+		<script src="../../includes/scripts/random.quotes.pratchett.js"></script>
+	</div>
+
 	<form action="#" class="hidden-print">
-		<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus>
+		<div><input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus></div>
 	</form>
 
-	<div id="loading"><img src="../../includes/images/loading_gears.gif" alt="Loading ... " width="32"></div>
+	<div id="loading"><img src="../../includes/images/loading_gears.gif" alt="Loading ... "></div>
 
-	<div id="csv-list" class="books"></div>
+	<div id="csv-list" class="books">&nbsp;</div>
 
 <script>
 
@@ -88,9 +101,14 @@ $(document).ready(function () {
  * ----- ----- ----- */
 document.getElementById("loading").style.display = ""; // show the loading image
 
-
-
-var xhttp = new XMLHttpRequest();
+if (window.XMLHttpRequest) {
+	// ---- Code for IE7+, Firefox, Chrome, Opera, Safari -----
+	xhttp=new XMLHttpRequest();
+} 
+else {  
+	// ----- Code for IE6, IE5 -----
+	xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
 xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		document.getElementById("loading").style.display = "none"; // hide the loading image
@@ -102,10 +120,9 @@ xhttp.open("GET", "mybooks.tsv?" + rnd, true);
 xhttp.send();
 
 
-
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
-	
+
 	// Add SPACE after commas.
 	file = file.replace(/(?:\,)/g, ', ');				
 	
@@ -117,7 +134,7 @@ function doStuff(file) {
 	
 	// replace \N with space
 	file = file.replace(/(?:\\N)/g, '&nbsp;');
-	
+
 	// top & tail the output to ensure valid html
 	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
 }
@@ -126,12 +143,16 @@ function doStuff(file) {
 
 </article>
 
-<footer class="hidden-print">
-	<hr>
-	<p class="hidden-print">Go To <a href="/" title="Back to Homepage">Home Page</a><br>
-	&copy; Simon Arthur 2018.  All rights reserved.</div>
-	<hr>
+<footer>
+
+	<p class="hidden-print">
+		<a href="/" title="Home">Home</a> | 
+		&copy; Simon Arthur 2018.  All rights reserved.
+	</p>
+
+	<!-- MOBILE QR CODE -->
 	<div id="qrcode"></div>
+
 </footer>
 
 

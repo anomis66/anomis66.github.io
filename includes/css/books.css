@@ -15,6 +15,7 @@
 	font-weight: 600;
 	width: 100%;
 }
+.books .record span:nth-of-type(10), /* ISBN */
 .books .record span:nth-of-type(4),  /* Publisher */
 .books .record span:nth-of-type(2) { /* Series */ 
 	width: 36%;
@@ -24,14 +25,15 @@
 .books .record span:nth-of-type(3) { /* Year */
 	width: 12%;
 }
-.books .record span:nth-of-type(11), /* ISBN-10 */
-.books .record span:nth-of-type(10), /* ISBN-13 */
 .books .record span:nth-of-type(6) { /* Format */
 	width: 24%;
 }
 .books .record span:nth-of-type(7),  /* Edition */
 .books .record span:nth-of-type(8) { /* Print */
 	width: 6%;
+}
+.books .record span:nth-of-type(11) { /* Condition */
+	font-style: oblique;
 }
 .books .record span:nth-of-type(9)::before { /* Pages */
 	content: "p";
@@ -45,9 +47,11 @@
 		width: 40%;
 	}
 	.books .record span:nth-of-type(2) { /* Sequence */
+		font-weight: 600;
 		width: 25%;
 	}
 	.books .record span:nth-of-type(3) { /* Series */
+		font-weight: 600;
 		width: 5%;
 	}
 	.books .record span:nth-of-type(4) { /* Publisher */
@@ -70,17 +74,12 @@
 		font-size: 85%;
 		width: 10%;
 	}
-	.books .record span:nth-of-type(10) { /* ISBN10 */
+	.books .record span:nth-of-type(10) { /* ISBN */
 		font-size: 85%;
-		width: 10%;
+		width: 15%;
 	}
-	.books .record span:nth-of-type(11) { /* ISBN13 */
+	.books .record span:nth-of-type(11) { /* Condition */
 		font-size: 85%;
-		width: 10%;
-	}
-	.books .record span:nth-of-type(12) { /* Condition */
-		font-size: 85%;
-		font-style: oblique;
 	}
 
 
