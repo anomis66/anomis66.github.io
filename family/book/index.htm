@@ -42,9 +42,9 @@
 
 	<a href="/" title="Home" class="right"><img src="./../../includes/images/anomis66_jack_100s.png" alt="anomis66" title="Logo" class="logo"></a>
 
-	<h1>Terry Pratchett Collection</h1>
+	<h1>My Book Library</h1>
 
-	<nav>
+	<nav class="hidden-print">
 		<a href="./../../family/tree/" title="My Family Tree">Family Tree</a><span class="sr-only"> | </span>
 		<a href="./../../family/book/" title="My Book Library" class="active">Book Library</a><span class="sr-only"> | </span>
 		<a href="./../../family/movi/" title="My Movie Collection">Movie Collection</a><span class="sr-only"> | </span>
@@ -54,8 +54,9 @@
 	
 <article>
 
-	<p class="lead">
+	<p>
 		A listing of my Terry Pratchett collection.
+		<img src="./../../includes/images/bee.jpg" alt="Bee" title="#SpeakHisName" class="right">
 	</p>
 
 	<div id="quoted_by" class="hidden-print">
@@ -66,7 +67,9 @@
 		<div><input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus></div>
 	</form>
 
-	<div id="loading"><img src="../../includes/images/loading_gears.gif" alt="Loading ... "></div>
+	<div id="csv-count" class="center">
+		<div id="loading"><img src="../../includes/images/loading-gears.gif" alt="Loading ... " title="Loading ... please wait"></div>
+	</div>
 
 	<div id="csv-list" class="books">&nbsp;</div>
 
@@ -118,6 +121,20 @@ xhttp.onreadystatechange = function() {
 var rnd = (Math.random() * (1000-0+1) ) << 0; // random() cache buster;
 xhttp.open("GET", "mybooks.tsv?" + rnd, true);
 xhttp.send();
+
+
+// RECORD COUNT -----
+var myFileUri = "mybooks.tsv";
+tsvCount(myFileUri);
+
+function tsvCount(myFile){
+// Use jQuery to get -----
+	$.get(myFile, function(data) {
+		var lineCount = data.split('\n').length;
+		var count = lineCount-2; // Remove header and footer lines -----
+		document.getElementById("csv-count").innerHTML = '<span class="lead">' + count + ' entries.</span>';
+	})
+}
 
 
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE

@@ -6,12 +6,12 @@
  * ----- ----- ----- */
 
 /* Color Schema ----- *
-	Primary: 			#afb42b - c0ca33
-	Primary Light:		#f9fbe7 - f9fbe7
-	Primary Dark:		#827717 - 9e9d24
-	Secondary:			#6d4c41 - 6d4c41
-	Secondary Light:	#d7ccc8 - ffad42
-	Secondary Dark:		#3e2723 - bb4d00
+	Primary: 			#
+	Primary Dark:		#
+	Secondary:			#
+	Secondary Dark:		#
+	Mono:				#
+	Mono Dark: 			#
  * ----- ----- ----- */
 
 @import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat&display=swap');
@@ -22,27 +22,29 @@ font-family: 'Handlee', cursive;
 /* ----- ----- ----- */
  
 body {
-	background: #f9fbe7;
+	background: linear-gradient(to bottom right, #300, #000);
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	line-height: 1.3em;
-	margin: 0.3em;
+	padding: 0.3em;
 	max-width: 100%;
 }
 nav {
-	border-bottom: 1px solid #6d4c41;
+	border-bottom: 1px solid #c33;
 	margin: 0 0 1em 0;
 }
 nav a {
-	padding: .3em .6em;
+	border-bottom: 1px solid #c33;
 	display: block;
+	padding: .3em auto;
 }
 .logo {
 	background: #fff;
 	border-radius: 50%;
 	margin: 0;
 	padding: 5px;
-	width: 100px;
+	width: 90px;
 }
 .lead {
 	font-size: 1.15rem;
@@ -88,28 +90,29 @@ cite::before {
 }
 
 
+
 /* ----- ANCHORS ----- */
 a {
-	background: #f9fbe7;
-	border-radius: 0.3em;
-	color: #9e9d24;
+	padding: 0.15em 0.3em;
+	color: #ccc;
+	font-weight: 600;
 	text-decoration: none;
 }
 a:active,
 a:hover,
 a:focus {
-	background: #d7ccc8;
-	color: #6d4c41;
+	background: #c33;
+	color: #fff;
 }
 /* ----- USED IN FAMILY TREE ----- */
-a[name] { 
+a[name] {
 	border: 0;
 	padding: 0;
 	margin: 0;
 }
 a[name]:active,
 a[name]:hover,
-a[name]:focus { 
+a[name]:focus {
 	border: 0;
 }
 
@@ -122,11 +125,11 @@ footer {
 	margin: 1em 0;
 }
 footer p {
-	border-top: 1px solid #6d4c41;
-	border-bottom: 1px solid #6d4c41;
+	border-top: 1px solid #c33;
+	border-bottom: 1px solid #666;
 }
 #qrcode {
-	background-image: url('../../includes/images/anomis66_jack_100s.png');
+	/* background-image: url('../../includes/images/anomis66_jack_100s.png'); */
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -143,7 +146,7 @@ footer p {
 
 /* ----- MESSAGES ----- */
 .success, .error, .info {
-	border: 1px solid #eee;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 	color: #000;
 	padding: 5px 10px;
@@ -178,9 +181,9 @@ form {
 	display: block;
 }
 fieldset {
-	border: 1px solid #6d4c41;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px #d7ccc8;
+	border: 1px solid #666;
+	/* border-radius: 5px; */
+	/* box-shadow: 2px 2px 4px #666; */
 }
 form div {
 	margin-bottom: 0.5em; 
@@ -193,7 +196,7 @@ input[type="number"],
 input[type="text"],
 select, 
 textarea {
-	border: 1px solid #9e9d24;
+	border: 1px solid #666;
 	border-radius: 5px;
 	padding: 0.25em 0.5em;
 	width: 100%;
@@ -209,7 +212,7 @@ textarea {
 }
 span.required {
 	font-weight: 600;
-	color: #ab000d;
+	color: #c33;
 }
 
 
@@ -222,38 +225,46 @@ span.required {
 /* --- Each Row --- */
 #csv-list .record {
 	font-size: 0.9em;
-	border-top: 1px solid #9e9d24;
-	border-bottom: 1px solid #9e9d24;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+/* --- Add Stripes --- */
+#csv-list .record:nth-child(odd)  { 
+	background-color: #151515;
 }
 /* --- Highlight Action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background-color: #f9fbe7;
-}
-/* --- Add Stripes --- */
-#csv-list .record:nth-child(odd)  { 
-	background-color: #d7ccc8;
+	background-color: #c90;
+	font-weight: 600;
 }
 /* --- Inline Cells --- */
 #csv-list .record span {
-	border-bottom: 1px dotted #999;
+	border-bottom: 1px dotted #666;
 	display: inline-block;
 	padding: 1px 0.3em;
 	vertical-align: top;
 }
 /* --- Header Style --- */
 #csv-list .record:first-of-type  {
-	background: #c0ca33;
+	background: #600;
+	color: #fff;
 	font-weight: 600;
 	text-transform: capitalize;
 	font-variant: small-caps;
 }
+/* --- File Row Count --- */
+#csv-count {
+}
+
 /* --- Ajax Loading Graphic --- */
 #loading {
 	text-align: center;
 }
-
+#loading img {
+	width: 150px;
+}
 
 
 
@@ -268,19 +279,20 @@ span.required {
 
 	body {
 		line-height: 1.6em;
-		margin: 0 auto;
-		max-width: 50rem;
+		margin: 2em auto;
+		max-width: 60em;
 		width: 100%;
 	}
 	nav a {
-		border: 1px solid #6d4c41;
+		border: 1px solid #ccc;
 		border-width: 1px 1px 0 1px;
 		border-radius: .3em .3em 0 0;
 		display: inline-block;
+		margin-right: 0.3em;
 	}
 	.active {
-		background: #6d4c41;
-		border: 1px solid #6d4c41;
+		background: #600;
+		border: 1px solid #c33;
 		border-width: 1px 1px 0 1px;
 		color: #fff;
 		font-weight: 600;
@@ -307,6 +319,7 @@ span.required {
 @media print {
 
 	body {
+		color: #333;
 		font-size: 11pt;
 		line-height: 110%;
 		margin: 0 auto;
@@ -320,7 +333,7 @@ span.required {
 		background-color: #fff;
 	}
 	#csv-list .record span {
-		padding: 2px 4px;
+		padding: 1px 2px;
 	}
 	.movie .record span:first-of-type,
 	.movie .record span:nth-of-type(2) {
@@ -334,7 +347,7 @@ span.required {
 		display: block;
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		top: 0;
 	}
 
 }
