@@ -131,19 +131,6 @@ var rnd = (Math.random() * (1000-0+1) ) << 0; // random() cache buster;
 xhttp.open("GET", "myfilms.tsv?" + rnd, true);
 xhttp.send();
 
-// RECORD COUNT -----
-var myFileUri = "myfilms.tsv";
-tsvCount(myFileUri);
-
-function tsvCount(myFile){
-// Use jQuery to get -----
-	$.get(myFile, function(data) {
-		var lineCount = data.split('\n').length;
-		var count = lineCount-2; // Remove header and footer lines -----
-		document.getElementById("csv-count").innerHTML = '<span class="lead">' + count + ' entries.</span>';
-	})
-}
-
 // FUNCTION TO DO STUFF WITH AJAX RESPONSE
 function doStuff(file) {
 	// Add SPACE after commas.
@@ -158,6 +145,18 @@ function doStuff(file) {
 	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
 }
 
+// RECORD COUNT -----
+var myFileUri = "myfilms.tsv";
+tsvCount(myFileUri);
+
+function tsvCount(myFile){
+// Use jQuery to get -----
+	$.get(myFile, function(data) {
+		var lineCount = data.split('\n').length;
+		var count = lineCount-2; // Remove header and footer lines -----
+		document.getElementById("csv-count").innerHTML = '<span class="lead warning">' + count + ' entries.</span>';
+	})
+}
 </script>
 
 </article>
@@ -166,7 +165,7 @@ function doStuff(file) {
 
 	<p class="hidden-print">
 		<a href="/" title="Home">Home</a> | 
-		&copy; Simon Arthur 2018.  All rights reserved.
+		&copy; 2018 - Simon Arthur.  All rights reserved.
 	</p>
 
 	<!-- MOBILE QR CODE -->
