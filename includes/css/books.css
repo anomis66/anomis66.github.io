@@ -52,6 +52,10 @@
 }
 
 
+img.bee {
+	max-width: 20%;
+}
+
 
 @media (min-width: 768px) {
 

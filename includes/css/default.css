@@ -22,7 +22,7 @@ font-family: 'Handlee', cursive;
 /* ----- ----- ----- */
  
 body {
-	background: linear-gradient(to bottom right, #300, #000);
+	background: linear-gradient(to bottom right, #151515, #000);
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
@@ -37,7 +37,7 @@ nav {
 nav a {
 	border-bottom: 1px solid #c33;
 	display: block;
-	padding: .3em auto;
+	padding: 1em;
 }
 .logo {
 	background: #fff;
@@ -94,7 +94,7 @@ cite::before {
 /* ----- ANCHORS ----- */
 a {
 	padding: 0.15em 0.3em;
-	color: #ccc;
+	color: #c90;
 	font-weight: 600;
 	text-decoration: none;
 }
@@ -121,12 +121,12 @@ a[name]:focus {
 /* ----- FOOTER ----- */
 footer {
 	clear: both;
-	font-size: 0.85em;
-	margin: 1em 0;
 }
 footer p {
 	border-top: 1px solid #c33;
-	border-bottom: 1px solid #666;
+	/* border-bottom: 1px solid #666; */
+	font-size: 0.9em;
+	/* line-height: 1.8em; */
 }
 #qrcode {
 	/* background-image: url('../../includes/images/anomis66_jack_100s.png'); */
@@ -145,10 +145,11 @@ footer p {
 
 
 /* ----- MESSAGES ----- */
-.success, .error, .info {
+.success, .error, .info, .warning {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	color: #000;
+	display: block;
 	padding: 5px 10px;
 	font-weight: 600;
 }
@@ -159,6 +160,10 @@ footer p {
 .error {
 	border: 1px solid #b71c1c;
 	background: #ffcdd2;
+}
+.warning {
+	border: 1px solid #ff6f00;
+	background: #ffecb3;
 }
 .info {
 	border: 1px solid #01579b;
@@ -224,13 +229,14 @@ span.required {
 }
 /* --- Each Row --- */
 #csv-list .record {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #300;
 	font-size: 0.9em;
-	border-top: 1px solid #666;
-	border-bottom: 1px solid #666;
+	line-height: 1.5em;
 }
 /* --- Add Stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background-color: #151515;
+	/* background-color: #151515; */
 }
 /* --- Highlight Action --- */
 #csv-list .record:hover,
@@ -243,12 +249,12 @@ span.required {
 #csv-list .record span {
 	border-bottom: 1px dotted #666;
 	display: inline-block;
-	padding: 1px 0.3em;
+	padding: 1px 0.15em;
 	vertical-align: top;
 }
 /* --- Header Style --- */
 #csv-list .record:first-of-type  {
-	background: #600;
+	background: #300;
 	color: #fff;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -278,7 +284,7 @@ span.required {
 @media (min-width: 768px) {
 
 	body {
-		line-height: 1.6em;
+		line-height: 1.2em;
 		margin: 2em auto;
 		max-width: 60em;
 		width: 100%;
@@ -286,9 +292,10 @@ span.required {
 	nav a {
 		border: 1px solid #ccc;
 		border-width: 1px 1px 0 1px;
-		border-radius: .3em .3em 0 0;
+		/* border-radius: .3em .3em 0 0; */
 		display: inline-block;
 		margin-right: 0.3em;
+		padding: 0.3em;
 	}
 	.active {
 		background: #600;
@@ -306,6 +313,10 @@ span.required {
 	input[type="text"],
 	select {
 		width: 60%;
+	}
+	#csv-list .record {
+		font-size: 0.9em;
+		border-bottom: 1px solid #300;
 	}
 	#csv-list .record span {
 		border: 0;

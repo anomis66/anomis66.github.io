@@ -1,29 +1,36 @@
 /* ----- MOVIE STYLES ----- */
 
 
-
-.movie .record span:first-of-type {
+/* --- TITLE --- */
+.movie .record span:first-of-type { 
 	color: #c33;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 600;
 	text-align: left;
 	width: 90%;
 }
+/* --- SERIES --- */
 .movie .record span:nth-of-type(2) {
-	font-weight: 600;
 	width: 10%;
 }
-.movie .record span:nth-of-type(3),
-.movie .record span:nth-of-type(4) {
+/* --- PLOT --- */
+#csv-list .record span:nth-of-type(3),
+.movie .record span:nth-of-type(3) {
+	display: none;
+	width: 100%;
+}
+
+.movie .record span:nth-of-type(4),
+.movie .record span:nth-of-type(5) {
 	text-align: left;
 	width: 100%;
 }
-.movie .record span:nth-of-type(5), 
-.movie .record span:nth-of-type(6),
+.movie .record span:nth-of-type(6), 
 .movie .record span:nth-of-type(7),
 .movie .record span:nth-of-type(8),
 .movie .record span:nth-of-type(9),
-.movie .record span:nth-of-type(10) {
+.movie .record span:nth-of-type(10),
+.movie .record span:nth-of-type(11) {
 	width: 25%;
 }
 
@@ -65,19 +72,21 @@
 		width: 90%;
 	}
 	.movie .record span:nth-of-type(2) { /* Series */
-		font-size: 90%;
 		width: 10%;
 	}
-	.movie .record span:nth-of-type(3),  /* Actors */
-	.movie .record span:nth-of-type(4) { /* Genre */
-		font-size: 90%;
+	#csv-list .record span:nth-of-type(3),
+	.movie .record span:nth-of-type(3) { /* Plot */
+		display: inline-block;
+		width: 100%;
+	}
+	.movie .record span:nth-of-type(4),  /* Actors */
+	.movie .record span:nth-of-type(5) { /* Genre */
 		width: 50%;
 	}
-	.movie .record span:nth-of-type(5),   /* Year */
-	.movie .record span:nth-of-type(6),   /* Mins */
-	.movie .record span:nth-of-type(7),   /* Format */
-	.movie .record span:nth-of-type(8) { /* Score */
-		font-size: 90%;
+	.movie .record span:nth-of-type(6),   /* Year */
+	.movie .record span:nth-of-type(7),   /* Mins */
+	.movie .record span:nth-of-type(8),   /* Format */
+	.movie .record span:nth-of-type(9) { /* Score */
 		width: 25%;
 	}
 
