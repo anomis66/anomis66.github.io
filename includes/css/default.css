@@ -22,7 +22,7 @@ font-family: 'Handlee', cursive;
 /* ----- ----- ----- */
  
 body {
-	background: linear-gradient(to bottom right, #151515, #000);
+	background: linear-gradient(to bottom right, #000, #000);
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
@@ -31,7 +31,7 @@ body {
 	max-width: 100%;
 }
 nav {
-	border-bottom: 1px solid #c33;
+	/* border-bottom: 1px solid #c33; */
 	margin: 0 0 1em 0;
 }
 nav a {
@@ -289,6 +289,10 @@ span.required {
 		max-width: 60em;
 		width: 100%;
 	}
+	nav {
+		border-bottom: 1px solid #c33;
+		margin: 0 0 1em 0;
+	}
 	nav a {
 		border: 1px solid #ccc;
 		border-width: 1px 1px 0 1px;
@@ -298,7 +302,7 @@ span.required {
 		padding: 0.3em;
 	}
 	.active {
-		background: #600;
+		background: linear-gradient(to bottom right, #900, #600);
 		border: 1px solid #c33;
 		border-width: 1px 1px 0 1px;
 		color: #fff;
