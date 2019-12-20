@@ -3,41 +3,27 @@
 
 /* --- TITLE --- */
 .movie .record span:first-of-type { 
-	color: #c33;
-	font-size: 1.3em;
 	font-weight: 600;
-	text-align: left;
 	width: 90%;
 }
 /* --- SERIES --- */
 .movie .record span:nth-of-type(2) {
 	width: 10%;
 }
-/* --- PLOT --- */
-#csv-list .record span:nth-of-type(3),
-.movie .record span:nth-of-type(3) {
-	display: none;
-	width: 100%;
-}
-
-.movie .record span:nth-of-type(4),
-.movie .record span:nth-of-type(5) {
+.movie .record span:nth-of-type(3), 
+.movie .record span:nth-of-type(4) {
 	text-align: left;
 	width: 100%;
 }
-.movie .record span:nth-of-type(6), 
-.movie .record span:nth-of-type(7),
-.movie .record span:nth-of-type(8),
-.movie .record span:nth-of-type(9),
-.movie .record span:nth-of-type(10),
-.movie .record span:nth-of-type(11) {
-	width: 25%;
+.movie .record span:nth-of-type(5), 
+.movie .record span:nth-of-type(6) {
+	width: 50%;
 }
 
 
 /* --- Add movie --- */
 #catalogue li {
-	border: 1px solid #c33;
+	border: 1px solid #693;
 	border-radius: 5px;
     display: inline-block;
 	height: 320px;
@@ -50,7 +36,7 @@
 }
 #poster { 
 	max-width: 180px; 
-	border: 1px solid #666;
+	border: 1px solid #ccc;
 	float: right; 
 	padding: 5px;
 	margin: 5px;
@@ -60,34 +46,63 @@
 	width: 100%;
 	max-width: 150px;
 	height: auto;
-	max-height: 2400px;
+	max-height: 240px;
 }
 
 
 
 @media (min-width: 768px) {
 
-	.movie .record span:first-of-type { /* Title */
+	.movie .record span:first-of-type { 
 		font-weight: 600;
-		width: 90%;
-	}
-	.movie .record span:nth-of-type(2) { /* Series */
-		width: 10%;
-	}
-	#csv-list .record span:nth-of-type(3),
-	.movie .record span:nth-of-type(3) { /* Plot */
-		display: inline-block;
-		width: 100%;
-	}
-	.movie .record span:nth-of-type(4),  /* Actors */
-	.movie .record span:nth-of-type(5) { /* Genre */
 		width: 50%;
 	}
-	.movie .record span:nth-of-type(6),   /* Year */
-	.movie .record span:nth-of-type(7),   /* Mins */
-	.movie .record span:nth-of-type(8),   /* Format */
-	.movie .record span:nth-of-type(9) { /* Score */
-		width: 25%;
+	.movie .record span:nth-of-type(2) {
+		display: inline-block;
+		width: 5%;
+	}
+	.movie .record span:nth-of-type(3) {
+		display: inline-block;
+		width: 45%;
+	}
+	.movie .record span:nth-of-type(4) {
+		display: inline-block;
+		width: 55%;
+	}
+	.movie .record span:nth-of-type(5),
+	.movie .record span:nth-of-type(6) {
+		display: inline-block;
+		width: 10%;
+	}
+
+}
+
+
+/* style sheet for all printing */
+@media print {
+	
+	.movie .record span:first-of-type { 
+		font-weight: 600;
+		width: 30%;
+	}
+	.movie .record span:nth-of-type(2) {
+		display: inline-block;
+		width: 3%;
+	}
+	.movie .record span:nth-of-type(3) {
+		display: inline-block;
+		width: 30%;
+	}
+	.movie .record span:nth-of-type(4) {
+		display: inline-block;
+		width: 20%;
+	}
+	.movie .record span:nth-of-type(5) {
+		width: 9%;
+	}
+	.movie .record span:nth-of-type(6) {
+		display: inline-block;
+		width: 3%;
 	}
 
 }
