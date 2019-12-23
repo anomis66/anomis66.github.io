@@ -16,13 +16,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat&display=swap');
 
-/* Fonts ----- *
-font-family: 'Montserrat', sans-serif;
-font-family: 'Handlee', cursive;
+/* -- FONTS ----- *
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Handlee', cursive;
 /* ----- ----- ----- */
- 
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background: linear-gradient(#f6f9f3, #fff);
+	background: #f6f9f3;
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
@@ -30,11 +36,17 @@ body {
 	padding: 0.3em;
 	max-width: 100%;
 }
+header {
+	background: #f6f9f3;
+    position: -webkit-sticky;  /* required for Safari */
+    position: sticky;
+    top: 0; /* required as well. */
+}
 nav {
-	margin: 0 0 1em 0;
+	margin: 1em 0 1em 0;
 }
 nav a {
-	border-bottom: 1px solid #9c6;
+	border-bottom: 1px solid #ccc;
 	display: block;
 	padding: 1em;
 }
@@ -43,7 +55,7 @@ nav a {
 	border-radius: 50%;
 	margin: 0;
 	padding: 5px;
-	width: 90px;
+	width: 82px;
 }
 .lead {
 	font-size: 1.2em;
@@ -71,7 +83,9 @@ h1 {
 	line-height: 1.1em;
 }
 
-/* ----- Quotes ----- */
+
+
+/* ----- QUOTES ----- */
 q {
 	display: block;
 	font-family: 'Handlee', cursive;
@@ -123,12 +137,9 @@ footer {
 }
 footer p {
 	border-top: 1px solid #9c6;
-	/* border-bottom: 1px solid #666; */
 	font-size: 0.9em;
-	/* line-height: 1.8em; */
 }
 #qrcode {
-	/* background-image: url('../../includes/images/anomis66_jack_100s.png'); */
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -174,7 +185,17 @@ footer p {
 /* ----- USED IN GENEALOGY ----- */
 img.tree {
 	width: 100%;
-	max-width: 360px
+}
+@media (min-width: 400px) and (max-width: 768px) {
+	img.tree {
+		width: 50%;
+		max-width: 254px;
+	}
+}
+@media (min-width: 768px) {
+	img.tree {
+		width: 254px;
+	}
 }
 
 
@@ -202,8 +223,7 @@ textarea {
 	border-radius: 5px;
 	margin: 0 auto;
 	padding: 0.25em 0.5em;
-	width: 80%;
-	
+	width: 75%;
 	text-transform: capitalize;
 }
 textarea {
@@ -221,35 +241,32 @@ span.required {
 
 
 
-
-/* --- CSV List --- */
+/* --- CSV LIST --- */
 #csv-list {
 	width: auto;
 }
-/* --- Each Row --- */
+/* --- EACH ROW --- */
 #csv-list .record {
 	border-bottom: 3px double #9c6;
 }
-/* --- Add Stripes --- */
+/* --- ADD STRIPES --- */
 #csv-list .record:nth-child(odd)  { 
 	/* background-color: #151515; */
 }
-/* --- Highlight Action --- */
+/* --- HIGHLIGHT ACTION --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
 	background-color: #ffd;
-	/* font-weight: 600; */
 }
-/* --- Inline Cells --- */
+/* --- INLINE CELLS --- */
 #csv-list .record span {
-	display: inline-block;
+	display: inline-block;`1`
 	font-size: 0.9em;
-	/* line-height: 1.1em; */
 	padding: 2px 5px;
 	vertical-align: top;
 }
-/* --- Header Style --- */
+/* --- HEADER STYLE --- */
 #csv-list .record:first-of-type  {
 	background: linear-gradient(to bottom right, #9c6, #693, #9c6);
 	color: #fff;
@@ -257,11 +274,10 @@ span.required {
 	text-transform: capitalize;
 	font-variant: small-caps;
 }
-/* --- File Row Count --- */
+/* --- FILE ROW COUNT --- */
 #csv-count {
 }
-
-/* --- Ajax Loading Graphic --- */
+/* --- AJAX LOADING GRAPHIC --- */
 #loading {
 	text-align: center;
 }
@@ -274,21 +290,21 @@ span.required {
 
 
 
-
-
-
 /* ----- LARGE SCREEN PRESENTATION ----- */
 @media (min-width: 768px) {
 
 	body {
 		line-height: 1.2em;
-		margin: 2em auto;
+		margin: 0 auto;
 		max-width: 60em;
 		width: 100%;
 	}
+	header {
+		/* padding: 10px 0; */
+	}
 	nav {
 		border-bottom: 1px solid #ccc;
-		margin: 0 0 1em 0;
+		/* margin: 1em 0 1em 0; */
 	}
 	nav a {
 		border: 1px solid #ccc;
@@ -326,7 +342,7 @@ span.required {
 
 
 
-/* style sheet for all printing */
+/* STYLE SHEET FOR ALL PRINTING */
 @media print {
 
 	body {

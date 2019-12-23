@@ -40,7 +40,7 @@
 
 
 img.bee {
-	max-width: 20%;
+	max-width: 90px;
 }
 
 
@@ -49,26 +49,30 @@ img.bee {
 
 	.books .record span:first-of-type {
 		font-weight: 600;
-		width: 40%;
+		width: 30%;
 	}
 	.books .record span:nth-of-type(2) {
-		width: 25%;
+		width: 20%;
 	}
 	.books .record span:nth-of-type(3) {
-		width: 5%;
+		width: 10%;
 	}
 	.books .record span:nth-of-type(4) {
-		width: 10%;
+		width: 15%;
 	}
 	.books .record span:nth-of-type(5),
 	.books .record span:nth-of-type(6) {
 		width: 5%;
 	}
 	.books .record span:nth-of-type(7) {
-		width: 10%;
+		width: 15%;
 	}
 	.books .record span:nth-of-type(8) {
 		font-style: italic;
+	}
+
+	img.bee {
+		max-width: 150px;
 	}
 
 }

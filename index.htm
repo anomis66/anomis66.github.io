@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 
 <link rel="stylesheet" href="./includes/css/sanitize.css?v8.0.0">
-<link rel="stylesheet" href="./includes/css/diagnostic.css?v1.0">
+<!-- <link rel="stylesheet" href="./includes/css/diagnostic.css?v1.0"> -->
 <link rel="stylesheet" href="./includes/css/default.css">
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -63,7 +63,9 @@
 
 	<p class="hidden-print">
 		<a href="/" title="Home">Home</a> | 
-		&copy; 2018 - Simon Arthur.  All rights reserved.
+		<a href="javascript:void();" id="changePreferences" title="Change your Cookies Preferences">Cookies</a>
+		<br>
+		&copy; 2018. Simon Arthur - All rights reserved.
 	</p>
 
 	<!-- FETCHEVERYONE BUTTON -->
@@ -92,7 +94,7 @@
 <script type="text/javascript" src="//www.FreePrivacyPolicy.com/cookie-consent/releases/3.0.0/cookie-consent.js"></script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"headline","consent_type":"implied","palette":"light","change_preferences_selector":"#changePreferences","language":"en","cookies_policy_url":"//www.simonarthur.co.uk/privacy-policy"});
+    cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","change_preferences_selector":"#changePreferences","language":"en","website_name":"Keep It Simple, Simon"});
 });
 </script>
 
