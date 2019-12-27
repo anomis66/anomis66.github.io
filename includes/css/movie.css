@@ -4,11 +4,11 @@
 /* --- TITLE --- */
 .movie .record span:first-of-type { 
 	font-weight: 600;
-	width: 90%;
+	width: 85%;
 }
 /* --- SERIES --- */
 .movie .record span:nth-of-type(2) {
-	width: 10%;
+	width: 15%;
 }
 .movie .record span:nth-of-type(3), 
 .movie .record span:nth-of-type(4) {
@@ -26,7 +26,7 @@
 	border: 1px solid #693;
 	border-radius: 5px;
     display: inline-block;
-	height: 320px;
+	height: 360px;
 	margin: 0 2px 2px 0;
 	overflow: hidden;
 	padding: 2px;
@@ -43,8 +43,7 @@
 }
 .poster-small { 
 	border-radius: 3px;
-	width: 100%;
-	max-width: 150px;
+	max-width: 100%;
 	height: auto;
 	max-height: 240px;
 }
@@ -55,7 +54,7 @@
 
 	.movie .record span:first-of-type { 
 		font-weight: 600;
-		width: 50%;
+		width: 45%;
 	}
 	.movie .record span:nth-of-type(2) {
 		display: inline-block;
@@ -63,16 +62,16 @@
 	}
 	.movie .record span:nth-of-type(3) {
 		display: inline-block;
-		width: 45%;
+		width: 50%;
 	}
 	.movie .record span:nth-of-type(4) {
 		display: inline-block;
-		width: 55%;
+		width: 50%;
 	}
 	.movie .record span:nth-of-type(5),
 	.movie .record span:nth-of-type(6) {
 		display: inline-block;
-		width: 10%;
+		width: 25%;
 	}
 
 }

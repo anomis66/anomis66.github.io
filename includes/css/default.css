@@ -15,10 +15,12 @@
  * ----- ----- ----- */
 
 @import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 /* -- FONTS ----- *
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Handlee', cursive;
+	font-family: 'Source Code Pro', monospace;
 /* ----- ----- ----- */
 
 
@@ -26,18 +28,17 @@
 html {
 	scroll-behavior: smooth;
 }
-
 body {
-	background: #f6f9f3;
+	background: #fff;
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-	line-height: 1.3em;
-	padding: 0.3em;
+	font-size: 1rem;
+	line-height: 1.5em;
+	margin: 5px;
 	max-width: 100%;
 }
 header {
-	background: #f6f9f3;
+	background: #fff;
     position: -webkit-sticky;  /* required for Safari */
     position: sticky;
     top: 0; /* required as well. */
@@ -48,14 +49,14 @@ nav {
 nav a {
 	border-bottom: 1px solid #ccc;
 	display: block;
-	padding: 1em;
+	padding: 0.5em;
 }
 .logo {
 	background: #fff;
 	border-radius: 50%;
 	margin: 0;
-	padding: 5px;
-	width: 82px;
+	padding: 0.25em;
+	width: 4.5em;
 }
 .lead {
 	font-size: 1.2em;
@@ -78,9 +79,18 @@ nav a {
 	left: -10000px;
 	top: auto;
 }
+
+h1,h2,h3 {
+	margin: 0.2em auto 0.5em;
+}
 h1 {
-	font-size: 1.5em;
-	line-height: 1.1em;
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
 }
 
 
@@ -114,8 +124,8 @@ a {
 a:active,
 a:hover,
 a:focus {
-	background: #ffd;
-	color: #9c6;
+	background: #693;
+	color: #fff;
 }
 /* ----- USED IN FAMILY TREE ----- */
 a[name] {
@@ -127,6 +137,9 @@ a[name]:active,
 a[name]:hover,
 a[name]:focus {
 	border: 0;
+}
+pre {
+	font-family: 'Source Code Pro', monospace;
 }
 
 
@@ -241,6 +254,22 @@ span.required {
 
 
 
+/* --- TABLE --- */
+table {
+	width: 100%;
+}
+td:nth-child(1) {
+	width: 40%;
+}
+td {
+	border: none;
+	border-bottom: 1px solid #eee;
+	padding: 2px 5px;
+	position: relative;
+	text-align: left;
+}
+
+
 /* --- CSV LIST --- */
 #csv-list {
 	width: auto;
@@ -294,13 +323,13 @@ span.required {
 @media (min-width: 768px) {
 
 	body {
-		line-height: 1.2em;
-		margin: 0 auto;
-		max-width: 60em;
+		line-height: 1.5em;
+		margin: 5px auto;
+		max-width: 72em;
 		width: 100%;
 	}
 	header {
-		/* padding: 10px 0; */
+		padding: 0;
 	}
 	nav {
 		border-bottom: 1px solid #ccc;
