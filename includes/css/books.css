@@ -3,7 +3,7 @@
 
 
 #addbooks div {
-	margin: 0 0 0.5em 0;
+	/* margin: 0 0 0.5em 0; */
 }
 
 #csv-list .record span {
@@ -17,23 +17,19 @@
 	font-weight: 600;
 	width: 100%;
 }
-.books .record span:nth-of-type(2) {
-	width: 70%;
-}
-.books .record span:nth-of-type(3) {
-	width: 30%;
-}
-.books .record span:nth-of-type(4) {
-	width: 70%;
-}
+.books .record span:nth-of-type(7),
+.books .record span:nth-of-type(6),
 .books .record span:nth-of-type(5),
-.books .record span:nth-of-type(6) {
-	width: 15%;
+.books .record span:nth-of-type(2) {
+	width: 50%;
 }
-.books .record span:nth-of-type(7) {
-	width: 40%;
+.books .record span:nth-of-type(8),
+.books .record span:nth-of-type(9),
+.books .record span:nth-of-type(4),
+.books .record span:nth-of-type(3) {
+	width: 25%;
 }
-.books .record span:nth-of-type(8) {
+.books .record span:nth-of-type(10) {
 	font-style: italic;
 }
 
@@ -48,26 +44,26 @@ img.bee {
 @media (min-width: 768px) {
 
 	.books .record span:first-of-type {
-		font-weight: 600;
+		font-weight: 750;
+		width: 50%;
+	}
+	.books .record span:nth-of-type(7),
+	.books .record span:nth-of-type(2) {
 		width: 30%;
 	}
-	.books .record span:nth-of-type(2) {
-		width: 20%;
-	}
-	.books .record span:nth-of-type(3) {
+	.books .record span:nth-of-type(9),
+	.books .record span:nth-of-type(8),
+	.books .record span:nth-of-type(3),
+	.books .record span:nth-of-type(4) {
 		width: 10%;
 	}
-	.books .record span:nth-of-type(4) {
+	.books .record span:nth-of-type(5) {
 		width: 15%;
-	}
-	.books .record span:nth-of-type(5),
+	}	
 	.books .record span:nth-of-type(6) {
-		width: 5%;
+		width: 35%;
 	}
-	.books .record span:nth-of-type(7) {
-		width: 15%;
-	}
-	.books .record span:nth-of-type(8) {
+	.books .record span:nth-of-type(10) {
 		font-style: italic;
 	}
 

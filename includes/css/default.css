@@ -101,6 +101,7 @@ q {
 	font-family: 'Handlee', cursive;
 	font-size: 1.4em;
 	line-height: 1.1em;
+	margin: 1em 1em 0 1em;
 }
 cite {
 	clear: right;
@@ -280,17 +281,17 @@ td {
 }
 /* --- ADD STRIPES --- */
 #csv-list .record:nth-child(odd)  { 
-	/* background-color: #151515; */
+	background-color: #f5f5f5;
 }
 /* --- HIGHLIGHT ACTION --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background-color: #ffd;
+	background-color: #cf9;
 }
 /* --- INLINE CELLS --- */
 #csv-list .record span {
-	display: inline-block;`1`
+	display: inline-block;
 	font-size: 0.9em;
 	padding: 2px 5px;
 	vertical-align: top;
@@ -323,9 +324,10 @@ td {
 @media (min-width: 768px) {
 
 	body {
-		line-height: 1.5em;
+		line-height: 1.1em;
 		margin: 5px auto;
-		max-width: 72em;
+		max-width: 60em;
+		padding: 5px;
 		width: 100%;
 	}
 	header {
