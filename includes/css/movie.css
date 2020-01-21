@@ -1,14 +1,40 @@
 /* ----- MOVIE STYLES ----- */
 
 
+
+#addmovi div {
+	margin: 5px 5px;
+}
+#final {
+	background: #eceff1;
+	padding: 5px;
+}
+label {
+	display: inline-block;
+	min-width: 20%;
+	/* text-align: right; */
+}
+select,
+textarea,
+input[type="text"] {
+	display: inline-block;
+	min-width: 50%;
+}
+.required {
+	color: #c62828;
+	font-weight: 600;
+}
+
+
+
 /* --- TITLE --- */
 .movie .record span:first-of-type { 
 	font-weight: 600;
-	width: 85%;
+	width: 80%;
 }
 /* --- SERIES --- */
 .movie .record span:nth-of-type(2) {
-	width: 15%;
+	width: 20%;
 }
 .movie .record span:nth-of-type(3), 
 .movie .record span:nth-of-type(4) {
@@ -17,16 +43,20 @@
 }
 .movie .record span:nth-of-type(5), 
 .movie .record span:nth-of-type(6) {
-	width: 50%;
+	width: 40%;
+}
+.movie .record span:nth-of-type(7) {
+	width: 20%;
 }
 
 
 /* --- Add movie --- */
 #catalogue li {
-	border: 1px solid #693;
-	border-radius: 5px;
+	border: 1px solid #c62828;
+	/* border-radius: 5px; */
     display: inline-block;
-	height: 360px;
+	font-size: 75%;
+	height: 320px;
 	margin: 0 2px 2px 0;
 	overflow: hidden;
 	padding: 2px;
@@ -34,23 +64,24 @@
     vertical-align: top;
 	width: 19%;
 }
-#poster { 
-	max-width: 180px; 
-	border: 1px solid #ccc;
+#poster {
+	background: #fff;
+	border: 1px solid #eceff1;
 	float: right; 
-	padding: 5px;
 	margin: 5px;
+	max-width: 180px; 
+	padding: 5px;
 }
 .poster-small { 
 	border-radius: 3px;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
-	max-height: 240px;
+	max-height: 180px;
 }
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 	.movie .record span:first-of-type { 
 		font-weight: 600;
@@ -58,20 +89,21 @@
 	}
 	.movie .record span:nth-of-type(2) {
 		display: inline-block;
-		width: 5%;
+		width: 10%;
 	}
 	.movie .record span:nth-of-type(3) {
 		display: inline-block;
-		width: 50%;
+		width: 45%;
 	}
 	.movie .record span:nth-of-type(4) {
 		display: inline-block;
-		width: 50%;
+		width: 55%;
 	}
 	.movie .record span:nth-of-type(5),
-	.movie .record span:nth-of-type(6) {
+	.movie .record span:nth-of-type(6),
+	.movie .record span:nth-of-type(7) {
 		display: inline-block;
-		width: 25%;
+		width: 15%;
 	}
 
 }

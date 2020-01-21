@@ -3,11 +3,26 @@
 
 
 #addbooks div {
-	/* margin: 0 0 0.5em 0; */
+	margin: 5px 5px;
+}
+label {
+	display: inline-block;
+	min-width: 25%;
+}
+select,
+textarea,
+input[type="text"] {
+	display: inline-block;
+	min-width: 50%;
+}
+.required {
+	color: #c62828;
+	font-weight: 600;
 }
 
+
 #csv-list .record span {
-	border-bottom: 0;
+	display: inline-block;
 	text-transform: capitalize;
 }
 
@@ -41,10 +56,10 @@ img.bee {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 	.books .record span:first-of-type {
-		font-weight: 750;
+		font-weight: 600;
 		width: 50%;
 	}
 	.books .record span:nth-of-type(7),
