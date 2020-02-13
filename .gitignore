@@ -15,3 +15,5 @@ family/movi/add/URI - Convert CSV to JSON.url
 family/musi/discogs.php
 family/musi/musicbrainz.php
 *.ini
+*.zip
+*.bak

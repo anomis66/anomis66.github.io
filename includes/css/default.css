@@ -35,6 +35,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
+	padding: 0 10px;
 }
 
 article, aside, footer, header, nav, section {
@@ -54,7 +55,6 @@ section {
 	clear: both;
 	font-family: 'Gabriela', serif;
 	margin: 0;
-	padding: 20px;
 }
 footer {
 	background: #fff;
@@ -75,12 +75,13 @@ footer {
     top: 0; /* required as well. */
 }
 
-/* --- NOSCRIPT HILIGHT--- */
+/* --- NOSCRIPT HILIGHT--- *
 noscript p {
-	background: #bbdefb; /* ColorTool 100 */
+	background: #bbdefb; /* ColorTool 100 *
 	padding: 10px;
 	margin: 5px;
 }
+*/
 noscript p strong {
     background: url(../images/iconfinder_icon-information_2867914.svg) no-repeat left center;
 	display: block;
@@ -176,7 +177,30 @@ a[name]:hover,
 a[name]:focus {
 	border: 0;
 }
-/* --- */
+/* --- ALERTS --- */
+noscript, .info, .success, .warning, .error {
+	display: block;
+	padding: 0.5em 1em;
+	margin: 0.5em auto;
+}
+noscript,
+.info {
+	background: #1565c0; /* 800 */
+	color: #fff;
+}
+.success {
+	background: #2e7d32; /* 800 */ 
+	color: #fff;
+}
+.warning {
+	background: #f9a825; /* 800 */
+	color: #000;
+}
+.error {
+	background: #c62828; /* 800 */
+	color: #fff;
+}
+
 
 
 /* --- HEADER STYLES --- */
@@ -254,7 +278,6 @@ article {
 	/* box-shadow: 2px 2px 4px rgba(0,0,0,0.2); */
 	border-bottom: 1px solid #eceff1;
 	margin: 2em auto;
-	padding: 20px 10px;
 }
 form {
 	clear: both;
@@ -272,26 +295,38 @@ form {
 }
 
 
-/* --- IMAGE STYLES --- */
-figure {
-	border: 1em solid #eceff1;
+/* --- IMAGES --- */
+img {
+	display: block;
+	margin: 0 auto;
 	max-width: 100%;
-	padding: 1em;
+}
+figure {
+	display: table;
+	font-size: 85%;
+	margin: 0 auto 1em;
+	width: 200px;
 }
 figure img {
 	display: block;
-	margin: auto;
-	max-height: 360px;
-	max-width: 100%;
+    margin: auto;
+	object-fit: cover; /* Zoom/Crop image */
+	
+	height: 200px;
+	width: 100%;
 }
 figcaption {
+    background: #fff;
+    caption-side: bottom;
 	color: #9ea7aa;
+	display: table-caption;
+	
 	font-family: 'Oswald', sans-serif;
-	font-size: 85%;
-	font-style: italic;
-	padding: 5px 10px;
-	text-align: right;
+    padding: 0 5px 5px;
+	text-align: center;
 }
+
+
 
 /* --- MOBILE FRIENDLY TABLE --- */
 #csv-list {
@@ -326,12 +361,10 @@ figcaption {
 	font-weight: 600;
 	text-transform: capitalize;
 }
-/* --- ajax loading graphic --- */
+/* --- AJAX LOADING GRAPHIC --- */
 #loading {
 	text-align: center;
 }
-
-
 
 
 
@@ -356,7 +389,7 @@ figcaption {
 		font-size: 120%;
 		line-height: 160%;
 		margin: 0 auto;
-		max-width: 800px;
+		max-width: 60em;
 		width: 100%;
 	}
 	header {
@@ -400,13 +433,26 @@ figcaption {
 	section {
 		clear: both;
 		margin: 0;
-		padding: 1em;
 	}
+	/* --- IMAGES --- */
 	figure {
-		border: 2em solid #eee;
+		display: inline-grid;
 	}
 	figure img {
-		max-height: 800px;
+		height: 200px;
+	}
+/*
+[data-fancybox="gallery"] + figcaption {
+		position: relative;
+		text-align: left;
+		top: -265px; /* height of img */
+/*
+	}
+	figcaption {
+		border-bottom: 1px solid #c62828;
+		background: #cfd8dc;
+		color: #333;
+		padding: 0 5px;
 	}
 	/* --- FOOTER STYLES --- */
 	footer {
