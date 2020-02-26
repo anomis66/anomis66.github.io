@@ -155,7 +155,7 @@ cite::before {
 a {
 	color: #c62828;
 	text-decoration: none;
-	border-bottom: 2px solid #fff;
+	border-bottom: 1px solid #fff;
 
 	transition: color .6s linear;
 	transition: background .6s linear;
@@ -163,10 +163,11 @@ a {
 a:active,
 a:hover,
 a:focus {
-	border-bottom: 2px solid #8e0000;
+	border-bottom: 1px dotted #8e0000;
 	color: #8e0000;
 }
-/* --- USED IN FAMILY TREE --- */
+
+/* --- FAMILY TREE --- */
 a[name] {
 	border: 0;
 	padding: 0;
@@ -177,6 +178,9 @@ a[name]:hover,
 a[name]:focus {
 	border: 0;
 }
+
+
+
 /* --- ALERTS --- */
 noscript, .info, .success, .warning, .error {
 	display: block;
@@ -203,7 +207,7 @@ noscript,
 
 
 
-/* --- HEADER STYLES --- */
+/* --- HEADER --- */
 header h1 {
 	margin: 0;
 	padding: 0;
