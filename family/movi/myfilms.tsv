@@ -1,4 +1,4 @@
-title|ser|format|year|runtime|score
+title|ser|format|year|mins|score
 10 Things I Hate About You|&nbsp;|DVD|1999|97 min|7.3
 10th Kingdom, The|1|DVD|2000|417 min|8.4
 13th Warrior, The|&nbsp;|DVD|1999|102 min|6.6
@@ -262,6 +262,7 @@ Golden Compass, The|&nbsp;|DVD|2007|113 min|6.1
 GoldenEye|&nbsp;|DVD|1995|130 min|7.2
 Gone Girl|&nbsp;|DVD|2014|149 min|8.1
 Gone in Sixty Seconds|&nbsp;|DVD|2000|118 min|6.5
+Good Morning, Vietnam|&nbsp;|DVD|1987|121 min|7.3
 Good Will Hunting|&nbsp;|DVD|1997|126 min|8.3
 Good, the Bad and the Ugly, The|&nbsp;|DVD|1966|178 min|8.9
 Goodfellas|&nbsp;|DVD|1990|146 min|8.7
@@ -273,6 +274,7 @@ Grease|&nbsp;|DVD|1978|110 min|7.2
 Grease 2|&nbsp;|DVD|1982|115 min|4.3
 Great Escape, The|&nbsp;|DVD|1963|172 min|8.2
 Great Rock 'n' Roll Swindle, The|&nbsp;|DVD|1980|103 min|6.5
+Greatest Showman, The|&nbsp;|DVD|2017|105 min|7.6
 Green Mile, The|&nbsp;|DVD|1999|189 min|8.5
 Green Zone|&nbsp;|DVD|2010|115 min|6.8
 Gremlins|&nbsp;|DVD|1984|106 min|7.3
@@ -356,8 +358,8 @@ Jumanji|&nbsp;|DVD|1995|104 min|7.0
 Jupiter Ascending|&nbsp;|DVD|2015|127 min|5.3
 K-19: The Widowmaker|&nbsp;|DVD|2002|138 min|6.7
 Kalifornia|&nbsp;|DVD|1993|117 min|6.7
-Kelly's Heroes|&nbsp;|DVD|1970|144 min|7.7
 Kelly's Heroes|&nbsp;|Blu-ray Disc|1970|144 min|7.7
+Kelly's Heroes|&nbsp;|DVD|1970|144 min|7.7
 Kes|&nbsp;|DVD|1969|111 min|7.9
 Kill Bill: Vol. 1|&nbsp;|DVD|2003|111 min|8.1
 Kill Bill: Vol. 2|&nbsp;|DVD|2004|137 min|8.0
@@ -416,8 +418,8 @@ Mad Max: Fury Road|&nbsp;|DVD|2015|120 min|8.1
 Mad Max: The Road Warrior|&nbsp;|DVD|1981|94 min|7.6
 Madame Butterfly|&nbsp;|DVD|1995|134 min|7.0
 Magnificent Seven, The|&nbsp;|DVD|1960|128 min|7.8
-Magnum Force|&nbsp;|Blu-ray Disc|1973|124 min|7.2
 Magnum Force|&nbsp;|DVD|1973|124 min|7.2
+Magnum Force|&nbsp;|Blu-ray Disc|1973|124 min|7.2
 Man on Fire|&nbsp;|DVD|2004|146 min|7.7
 Man Who Fell to Earth, The|&nbsp;|DVD|1976|139 min|6.7
 Man Who Would Be King, The|&nbsp;|DVD|1975|129 min|7.9
@@ -454,6 +456,7 @@ Mötley Crüe: Carnival of Sins|&nbsp;|DVD|2005|210 min|8.2
 Mr Benn|1|DVD|1971–2005|15 min|7.7
 Mr. Holmes|&nbsp;|DVD|2015|104 min|6.9
 Mrs. Doubtfire|&nbsp;|DVD|1993|125 min|7.0
+Mule, The|&nbsp;|DVD|2018|116 min|7.0
 My Fair Lady|&nbsp;|DVD|1964|170 min|7.8
 My Little Eye|&nbsp;|DVD|2002|95 min|5.6
 Mystic River|&nbsp;|Blu-ray Disc|2003|138 min|8.0
@@ -481,8 +484,8 @@ Out of Time|&nbsp;|DVD|2003|105 min|6.5
 Outlander|&nbsp;|DVD|2008|115 min|6.3
 Outlaw Josey Wales, The|&nbsp;|Blu-ray Disc|1976|135 min|7.9
 Pacific Rim|&nbsp;|Blu-ray Disc|2013|131 min|6.9
-Pale Rider|&nbsp;|Blu-ray Disc|1985|115 min|7.3
 Pale Rider|&nbsp;|DVD|1985|115 min|7.3
+Pale Rider|&nbsp;|Blu-ray Disc|1985|115 min|7.3
 Papillon|&nbsp;|DVD|1973|151 min|8.0
 Patch Adams|&nbsp;|DVD|1998|115 min|6.7
 Patriot, The|&nbsp;|DVD|2000|165 min|7.2
@@ -558,8 +561,8 @@ Sex and the City|&nbsp;|DVD|2008|145 min|5.6
 Shallow Grave|&nbsp;|DVD|1994|89 min|7.3
 Shaun of the Dead|&nbsp;|DVD|2004|99 min|7.9
 Shawshank Redemption, The|&nbsp;|DVD|1994|142 min|9.3
-Sherlock Holmes|&nbsp;|Blu-ray Disc|2009|128 min|7.6
 Sherlock Holmes|&nbsp;|DVD|2009|128 min|7.6
+Sherlock Holmes|&nbsp;|Blu-ray Disc|2009|128 min|7.6
 Sherlock Jr.|&nbsp;|DVD|1924|45 min|8.2
 Shooter|&nbsp;|DVD|2007|124 min|7.2
 Siberia|&nbsp;|DVD|2018|104 min|4.3
@@ -671,8 +674,8 @@ Waterworld|&nbsp;|DVD|1995|135 min|6.2
 Wayne's World|&nbsp;|DVD|1992|94 min|7.0
 Wayne's World 2|&nbsp;|DVD|1993|95 min|6.2
 We Were Soldiers|&nbsp;|DVD|2002|138 min|7.2
-West Side Story|&nbsp;|DVD|1961|153 min|7.6
 West Side Story|&nbsp;|DVD|1961|153 min|7.5
+West Side Story|&nbsp;|DVD|1961|153 min|7.6
 Westworld|&nbsp;|DVD|1973|88 min|7.0
 What's Eating Gilbert Grape|&nbsp;|DVD|1993|118 min|7.8
 What's Love Got to Do with It|&nbsp;|DVD|1993|118 min|7.3
