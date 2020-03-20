@@ -42,6 +42,8 @@ article, aside, footer, header, nav, section {
 	display: block;
 }
 
+
+
 header {
 	background: #fff;
 	border-bottom: 1px solid #cfd8dc;
@@ -66,15 +68,12 @@ footer {
 
 
 
-
-
 /* --- STICKY NAV BAR --- */
 .sticky {
     position: -webkit-sticky;  /* required for Safari */
     position: sticky;
     top: 0; /* required as well. */
 }
-
 /* --- NOSCRIPT HILIGHT--- *
 noscript p {
 	background: #bbdefb; /* ColorTool 100 *
@@ -87,8 +86,6 @@ noscript p strong {
 	display: block;
     padding: 0 0 0 30px;
 }
-
-
 
 
 
@@ -297,6 +294,13 @@ form {
 
 	text-align: right;
 }
+#quicksearch {
+	width: 75%;
+}
+.btn {
+	width: 25%;
+}
+
 
 
 /* --- IMAGES --- */
@@ -445,6 +449,7 @@ figcaption {
 	figure img {
 		height: 200px;
 	}
+
 /*
 [data-fancybox="gallery"] + figcaption {
 		position: relative;

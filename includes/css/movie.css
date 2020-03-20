@@ -30,11 +30,12 @@ input[type="text"] {
 /* --- TITLE --- */
 .movie .record span:first-of-type { 
 	font-weight: 600;
-	width: 80%;
+	width: 75%;
 }
 /* --- SERIES --- */
 .movie .record span:nth-of-type(2) {
-	width: 20%;
+	font-weight: 600;
+	width: 25%;
 }
 .movie .record span:nth-of-type(3), 
 .movie .record span:nth-of-type(4), 
@@ -43,13 +44,16 @@ input[type="text"] {
 	text-align: left;
 	width: 25%;
 }
-.movie .record span:nth-of-type(5), 
+/* 
+.movie .record span:nth-of-type(5),
 .movie .record span:nth-of-type(6) {
 	width: 40%;
 }
+*/
 .movie .record span:nth-of-type(7) {
 	width: 20%;
 }
+
 
 
 /* --- Add movie --- */
