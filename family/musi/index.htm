@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- The above meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+
+<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+<!--[if IE]><link rel="shortcut icon" href="./includes/images/favicon.ico"><![endif]-->
+
+<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+<link rel="apple-touch-icon-precomposed" href="./includes/images/anomis66_jack_180s.png">
+
+<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+<link rel="icon" href="/includes/images/anomis66_jack_196s.png">
+
+
+<title>simonarthur.co.uk</title>
+<meta name="author" content="Simon Arthur (@anomis66)">
+
+
+<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+<link rel="stylesheet" href="/includes/css/default.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+<h1>Music Collection</h1>
+
+
+
+<p>
+	A listing of my Compact Disc collection.
+</p>
+
+<form action="#" class="form hidden-print">
+	<input type="text" name="quicksearch" id="quicksearch" placeholder="Quick filter" autofocus >
+</form>
+
+<div id="loading"><img src="/includes/images/loading-gray.gif" alt="Loading ... " width="32"></div>
+
+<div id="csv-list" class="music"></div>
+
+
+
+
+
+<script>
+// executes when complete page is fully loaded, including all frames, objects and image…
+// $(window).load(function() {
+
+// executes when HTML-Document is loaded and DOM is ready
+// $(document).ready(function () {
+
+$(document).ready(function () {
+
+	/* ----- ----- ----- *
+	 * jQuery .filter() Search
+	 * https://stackoverflow.com/questions/17074687/filtering-table-rows-using-jquery
+	 * ----- ----- ----- */
+
+	$("#quicksearch")
+	.hide()
+	.delay( 2000 )
+	.fadeIn( 1000 )
+	.keyup(function () {
+		// split the current value of search input (case insensitive)
+		var data = this.value.toUpperCase().split(" ");
+		// create a jquery object of the rows
+		var obj = $("#table").find(".record");
+		if (this.value == "") {
+			obj.show();
+			return;
+		}
+		// hide all the rows
+		obj.hide();
+		// recursively filter the jQuery object to get results.
+		obj.filter(function (i, v) {
+			var $t = $(this);
+			for (var d = 0; d < data.length; ++d) {
+				if ($t.text().toUpperCase().indexOf(data[d]) > -1) {
+					return true;
+				}
+			}
+			return false;
+		})
+		//show the rows that match.
+		.show();
+	})
+
+});
+
+
+
+/* ----- ----- ----- *
+ * Load CSV of MUSIC
+ * ----- ----- ----- */
+
+document.getElementById("loading").style.display = ""; // show the loading image
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("loading").style.display = "none"; // hide the loading image
+		doStuff(this.responseText); // if successful do stuff with it.
+	}
+};
+var rnd = (Math.random() * (1000 - 0 + 1) ) << 0; // random() cache buster;
+xhttp.open("GET", "mymusic.txt?" + rnd, true);
+xhttp.send();
+
+// FUNCTION TO DO STUFF WITH AJAX RESPONSE
+function doStuff(file) {
+	file = file.replace(/(?:\|)/g, '</span><span>');// replace DELIMITER with next record code
+	file = file.replace(/(?:\r\n|\n)/g, '</span></div><div class="record"><span>');  // replace EOL with next record code
+	// file = file.replace(/(?:\\N)/g, '&nbsp;'); // replace \N with space
+	// top & tail the output to ensure valid html
+	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
+}
+</script>
+
+
+
+<footer>
+	<hr>
+	<p class="hidden-print">Go To <a href="/">Home Page</a></p>
+	<p>&copy; Simon Arthur 2018.  All rights reserved.</p>
+	<hr>
+	<div id="qrcode"></div>
+</footer>
+
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	function qrcode(url){
+		var code = ('<img src="https://chart.googleapis.com/chart?chs=100x100&amp;cht=qr&amp;choe=UTF-8&amp;chl='+url+'" alt="QR code">');
+		document.getElementById("qrcode").innerHTML = code;
+	}
+	qrcode(location.href);
+	//]]>
+</script>
+
+</body>
+
+</html>
