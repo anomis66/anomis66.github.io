@@ -31,7 +31,7 @@ html {
 
 body {
 	background: #111;
-	color: #fff;
+	color: #eee;
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
@@ -48,18 +48,14 @@ header {
 	background: #111;
 	border-bottom: 1px solid #42a5f5;
 	margin: 0;
-	/* padding: 5px; */
+	padding: 5px 0;
 }
 section {
-	/* min-height: 150vh; */
-
-	/* background: #f5f5f5; */
 	clear: both;
 	font-family: 'Gabriela', serif;
 	margin: 0;
 }
 footer {
-	background: #111;
 	border-top: 1px double #42a5f5;
 	clear: both;
 	margin: 0;
@@ -82,12 +78,14 @@ noscript p strong {
 .logo {
 	background: #fff;
 	padding: 2px;
+	border-radius: 50%;
 }
 
 
 /* --- TEXT HEIRARCHY --- */
 h1, h2 {
 	line-height: 200%;
+	text-shadow: 2px 2px 2px #42a5f5;
 }
 h3 {
 	line-height: 100%;
@@ -150,14 +148,15 @@ a {
 	text-decoration: none;
 	border-bottom: 1px dotted #111;
 
-	transition: color .6s linear;
+	transition: color .3s linear;
 	transition: background .6s linear;
 }
 a:active,
 a:hover,
 a:focus {
-	border-bottom: 1px dotted #80d6ff;
-	color: #80d6ff;
+	background: #fff;
+	border-bottom: 1px dotted #0077c2;
+	color: #0077c2;
 }
 
 /* --- FAMILY TREE --- */
@@ -211,7 +210,6 @@ header img {
 }
 #nav {
 	clear: left;
-	/* padding: 5px; */
 }
 #nav ul {
 	font-size: 1.2em;
@@ -273,9 +271,8 @@ section h3 {
 	clear: both;
 }
 article {
-	/* background: #f5f5f5; */
-	/* box-shadow: 2px 2px 4px rgba(0,0,0,0.2); */
-	border-bottom: 1px solid #eceff1;
+	background: rgba(21,21,21,0.85);
+	border-bottom: 3px double #454545;
 	margin: 2em auto;
 }
 form {
@@ -304,7 +301,7 @@ input[type="text"] {
 .btn {
 	background: none;
 	border: 2px solid #0077c2;
-	border-radius: 10px;
+	border-radius: 25px;
 	color: #fff;
 	padding: 10px;
 	min-width: 15%;
@@ -390,9 +387,15 @@ figcaption {
 
 
 /* --- FOOTER STYLES --- */
-
-
-
+.cc_dialog button.cc_b_ok,
+.cc_dialog button.cc_b_cp {
+	border-radius: 25px;
+	padding: 10px;
+}
+.cc_dialog button.cc_b_ok {
+    color: #fff;
+	background: linear-gradient(to bottom right, #0077c2, #42a5f5);
+}
 
 
 
@@ -407,8 +410,6 @@ figcaption {
 @media (min-width: 800px) {
 
 	body {
-		background: #151515;
-		color: #fff;
 		font-size: 120%;
 		line-height: 160%;
 		margin: 0 auto;
@@ -416,7 +417,7 @@ figcaption {
 		width: 100%;
 	}
 	header {
-		padding: 10px 0;
+		padding: 20px 0;
 	}
 	article {
 		padding: 5px;
@@ -424,7 +425,7 @@ figcaption {
 
 	/* --- HEADER STYLES --- */
 	header img {
-		max-height: 5em;
+		max-height: 120px;
 		float: right;
 		margin: 0 0 0 1em;
 	}

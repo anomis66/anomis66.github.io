@@ -79,9 +79,9 @@ input[type="text"] {
 }
 .poster-small { 
 	border-radius: 3px;
-	width: 100%;
-	height: auto;
-	max-height: 180px;
+	/* width: 100%; */
+	min-height: 150px;
+	max-height: 200px;
 }
 
 
