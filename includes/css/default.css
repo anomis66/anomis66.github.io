@@ -15,13 +15,27 @@
 	font-family: 'Noto Serif JP', serif;
 /* ----- ----- ----- */
 
-/* --- ICONS ----- *
- * https://www.iconfinder.com/iconsets/heroicons-ui * 
- * ----- ----- ----- */
+
 
 /* -- COLORS ----- *
- * https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=C62828&secondary.color=CFD8DC
+ * 	https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=C62828&secondary.color=CFD8DC
+/* -- COLORS ----- *
+	Primary:			#42a5f5;
+	Primary-Light:		#80d6ff;
+	Primary-Dark: 		#0077c2;
+	
+	Secondary:			#bdbdbd;
+	Secondary-Light:	#efefef;
+	Secondary-Dark:		#8d8d8d;
+/* ----- ----- ----- */
+
+
+
+/* --- ICONS ----- *
+ * 	https://www.iconfinder.com/iconsets/heroicons-ui * 
  * ----- ----- ----- */
+
+
 
 
 
@@ -30,8 +44,8 @@ html {
 }
 
 body {
-	background: #111;
-	color: #eee;
+	background: #151515;
+	color: #efefef;
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
@@ -45,7 +59,7 @@ article, aside, footer, header, nav, section {
 
 
 header {
-	background: #111;
+	background: #151515;
 	border-bottom: 1px solid #42a5f5;
 	margin: 0;
 	padding: 5px 0;
@@ -85,7 +99,10 @@ noscript p strong {
 /* --- TEXT HEIRARCHY --- */
 h1, h2 {
 	line-height: 200%;
-	text-shadow: 2px 2px 2px #42a5f5;
+	text-shadow: 3px 3px 1px #42a5f5;
+}
+h1 a {
+	color: #fff;
 }
 h3 {
 	line-height: 100%;
@@ -146,15 +163,22 @@ cite::before {
 a {
 	color: #42a5f5;
 	text-decoration: none;
-	border-bottom: 1px dotted #111;
+	border-bottom: 1px dotted #151515;
+	padding: 0 3px;
 
 	transition: color .3s linear;
 	transition: background .6s linear;
 }
+a:not([href*='simonarthur.co.uk']):not([href^='#']):not([href^='/']):after {
+/*
+	font-family: 'FontAwesome';
+    content: " \f08e";
+*/
+}
 a:active,
 a:hover,
 a:focus {
-	background: #fff;
+	background: #efefef;
 	border-bottom: 1px dotted #0077c2;
 	color: #0077c2;
 }
@@ -221,7 +245,7 @@ header img {
 	line-height: 166%;
 }
 #nav ul a {
-	border: 1px solid #ccc;
+	border: 1px solid #bdbdbd;
 	border-width: 1px 0;
     display: block;
 	padding: 5px;
@@ -231,7 +255,7 @@ header img {
 .active {
 	background: linear-gradient(to bottom right, #0077c2, #42a5f5);
 	color: #fff;
-	border: 1px solid #d5d5d5;
+	border: 1px solid #efefef;
 }
 
 
@@ -240,7 +264,7 @@ header img {
  * --- --- --- --- */
 nav label {
     background: #fff url(../images/iconfinder_icon-menu_2867922.svg) no-repeat 5px center;
-	color: #111;
+	color: #151515;
     cursor: pointer;
     display: inline-block;
 	margin: 5px 0;
@@ -272,27 +296,27 @@ section h3 {
 }
 article {
 	background: rgba(21,21,21,0.85);
-	border-bottom: 3px double #454545;
+	border-bottom: 3px double #8d8d8d;
 	margin: 2em auto;
 }
 form {
 	clear: both;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #d5d5d5;
+  color: #efefef;
   z-index: auto;
 }
 select,
 textarea,
 input[type="text"] {
-	border: 1px solid #d5d5d5;
+	border: 1px solid #bdbdbd;
 	border-radius: 20px;
 	padding: 10px;
 	width: 100%;
 }
 
 .date {
-	color: #d5d5d5;
+	color: #bdbdbd;
 	font-size: 90%;
 	font-style: italic;
 
@@ -334,9 +358,9 @@ figure img {
 	width: 100%;
 }
 figcaption {
-    background: #fff;
+    background: #efefef;
     caption-side: bottom;
-	color: #111;
+	color: #151515;
 	display: table-caption;
 	
 	font-family: 'Oswald', sans-serif;
@@ -445,7 +469,7 @@ figcaption {
 		display: inline-block;
 	}
 	#nav li a {
-		border-bottom: 3px solid #fff;
+		border-bottom: 3px solid #efefef;
 		border-width: 0 0 3px 0;
 		padding: 5px 10px;
 		margin-right: 10px;
