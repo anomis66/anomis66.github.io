@@ -1,0 +1,12 @@
+
+	<article>
+	
+		<h3>Another New Theme</h3>
+		
+		<p class="date">Tuesday 21 January 2020</p>
+		
+		<p>
+			I have spent some time working on a new theme for the site.  I've tested it as best I can on the numerous devices I have access to and also in different browser to ensure there is a consistent look and feel across them all.  I've written 90% of the code and CSS myself, so there's no <a href="https://getbootstrap.com/" title="Bootstrap - The most popular HTML, CSS, and JS library in the world">Bootstrap</a> or <a href="http://flexboxgrid.com/" title="A grid system based on the flex display property">Flexbox</a> used.
+		</p>
+
+	</article>

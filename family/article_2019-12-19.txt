@@ -1,0 +1,11 @@
+	<article>
+	
+		<h3>Cookie Consent Solution</h3>
+		
+		<p class="date">Thursday 19 December 2019</p>
+		
+		<p>
+			I have added cookie consent management to the site using <a href="https://www.freeprivacypolicy.com/cookie-consent/" title="Cookie Consent is a free JavaScript cookies management solution for websites to comply with GDPR and EU Cookies Directive (ePrivacy)">https://www.freeprivacypolicy.com</a>.  I don't actually set any Cookies on this site but I guess <a href="https://github.com/" title="GitHub is where people build software">GitHub</a> probably do (but I have no control over those ones).
+		</p>
+
+	</article>
