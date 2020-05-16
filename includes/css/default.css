@@ -20,9 +20,9 @@
 /* -- COLORS ----- *
  * 	https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=C62828&secondary.color=CFD8DC
 /* -- COLORS ----- *
-	Primary:			#42a5f5;
-	Primary-Light:		#80d6ff;
-	Primary-Dark: 		#0077c2;
+	Primary:			#42a5f5; #1976d2; #bbdefb;
+	Primary-Light:		#63a4ff; #63a4ff; #eeffff;
+	Primary-Dark: 		#0077c2; #004ba0; #8aacc8;
 	
 	Secondary:			#bdbdbd;
 	Secondary-Light:	#efefef;
@@ -44,8 +44,8 @@ html {
 }
 
 body {
-	background: #151515;
-	color: #efefef;
+	background: linear-gradient(to bottom right, #1b1b1b, #1b1b1b, #6a1b9a);
+	color: #fff;
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
@@ -59,8 +59,8 @@ article, aside, footer, header, nav, section {
 
 
 header {
-	background: #151515;
-	border-bottom: 1px solid #42a5f5;
+	background: #1b1b1b;
+	border-bottom: 1px solid #9c4dcc;
 	margin: 0;
 	padding: 5px 0;
 }
@@ -70,7 +70,7 @@ section {
 	margin: 0;
 }
 footer {
-	border-top: 1px double #42a5f5;
+	border-top: 1px double #9c4dcc;
 	clear: both;
 	margin: 0;
 	padding: 5px;
@@ -99,7 +99,8 @@ noscript p strong {
 /* --- TEXT HEIRARCHY --- */
 h1, h2 {
 	line-height: 200%;
-	text-shadow: 3px 3px 1px #42a5f5;
+	/* text-shadow: 2px 2px 4px #bbdefb; */
+	/* text-shadow: 3px 3px 1px #bbdefb; */
 }
 h1 a {
 	color: #fff;
@@ -161,12 +162,12 @@ cite::before {
 
 /* ----- ANCHORS ----- */
 a {
-	color: #42a5f5;
+	color: #9c4dcc;
 	text-decoration: none;
-	border-bottom: 1px dotted #151515;
+	border-bottom: 1px solid #1b1b1b;
 	padding: 0 3px;
 
-	transition: color .3s linear;
+	transition: color .6s linear;
 	transition: background .6s linear;
 }
 a:not([href*='simonarthur.co.uk']):not([href^='#']):not([href^='/']):after {
@@ -178,9 +179,9 @@ a:not([href*='simonarthur.co.uk']):not([href^='#']):not([href^='/']):after {
 a:active,
 a:hover,
 a:focus {
-	background: #efefef;
-	border-bottom: 1px dotted #0077c2;
-	color: #0077c2;
+	background: #6a1b9a;
+	border-bottom: 1px solid #9c4dcc;
+	color: #fff;
 }
 
 /* --- FAMILY TREE --- */
@@ -245,7 +246,7 @@ header img {
 	line-height: 166%;
 }
 #nav ul a {
-	border: 1px solid #bdbdbd;
+	border: 1px solid #424242;
 	border-width: 1px 0;
     display: block;
 	padding: 5px;
@@ -253,7 +254,7 @@ header img {
     text-decoration: none;
 }
 .active {
-	background: linear-gradient(to bottom right, #0077c2, #42a5f5);
+	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
 	color: #fff;
 	border: 1px solid #efefef;
 }
@@ -264,7 +265,7 @@ header img {
  * --- --- --- --- */
 nav label {
     background: #fff url(../images/iconfinder_icon-menu_2867922.svg) no-repeat 5px center;
-	color: #151515;
+	color: #1b1b1b;
     cursor: pointer;
     display: inline-block;
 	margin: 5px 0;
@@ -295,28 +296,29 @@ section h3 {
 	clear: both;
 }
 article {
-	background: rgba(21,21,21,0.85);
-	border-bottom: 3px double #8d8d8d;
+	background: rgba(34, 34, 34, 0.85);
+	border-bottom: 1px solid #38006b;
 	margin: 2em auto;
 }
 form {
 	clear: both;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #efefef;
+  color: #9c4dcc;
   z-index: auto;
 }
 select,
 textarea,
 input[type="text"] {
-	border: 1px solid #bdbdbd;
+	background: #6d6d6d;
+	border: 1px solid #6a1b9a;
 	border-radius: 20px;
 	padding: 10px;
 	width: 100%;
 }
 
 .date {
-	color: #bdbdbd;
+	color: #6d6d6d;
 	font-size: 90%;
 	font-style: italic;
 
@@ -324,7 +326,7 @@ input[type="text"] {
 }
 .btn {
 	background: none;
-	border: 2px solid #0077c2;
+	border: 2px solid #6a1b9a;
 	border-radius: 25px;
 	color: #fff;
 	padding: 10px;
@@ -332,7 +334,7 @@ input[type="text"] {
 }
 .btn:hover {
     cursor: pointer;	
-	border: 2px solid #42a5f5;
+	border: 2px solid #9c4dcc;
 }
 
 
@@ -345,7 +347,7 @@ img {
 }
 figure {
 	display: table;
-	font-size: 85%;
+	font-size: 95%;
 	margin: 0 auto 1em;
 	width: 200px;
 }
@@ -358,9 +360,9 @@ figure img {
 	width: 100%;
 }
 figcaption {
-    background: #efefef;
+    background: #424242;
     caption-side: bottom;
-	color: #151515;
+	color: #fff;
 	display: table-caption;
 	
 	font-family: 'Oswald', sans-serif;
@@ -377,17 +379,17 @@ figcaption {
 }
 /* --- each row --- */
 #csv-list .record {
-	border-bottom: 2px solid #42a5f5;
+	border-bottom: 2px solid #38006b;
 }
 /* --- add stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background: rgba(255,255,255,0.15);
+	background: rgba(255,255,255,0.05);
 }
 /* --- highlight action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background: rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.2);
 }
 /* --- inline cells --- */
 #csv-list .record span {
@@ -398,7 +400,7 @@ figcaption {
 }
 /* --- header style --- */
 #csv-list .record:first-of-type  {
-	background: linear-gradient(to bottom right, #0077c2, #42a5f5);
+	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
 	color: #fff;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -416,11 +418,11 @@ figcaption {
 	border-radius: 25px;
 	padding: 10px;
 }
+.cc_cp_f_save button,
 .cc_dialog button.cc_b_ok {
     color: #fff;
-	background: linear-gradient(to bottom right, #0077c2, #42a5f5);
+	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
 }
-
 
 
 
@@ -469,13 +471,13 @@ figcaption {
 		display: inline-block;
 	}
 	#nav li a {
-		border-bottom: 3px solid #efefef;
+		border-bottom: 3px solid #6d6d6d;
 		border-width: 0 0 3px 0;
 		padding: 5px 10px;
 		margin-right: 10px;
 	}
 	#nav li a:hover {
-		border-bottom: 3px solid #80d6ff;
+		border-bottom: 3px solid #9c4dcc;
 	}
 
 
