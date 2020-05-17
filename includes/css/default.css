@@ -49,31 +49,54 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
-	padding: 0 10px;
+
+	/* --- https://www.gradient-animator.com/ ----- */
+	background: linear-gradient(0deg, #38006b, #1b1b1b);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 20s ease infinite;
+	-moz-animation: AnimationName 20s ease infinite;
+	animation: AnimationName 20s ease infinite;
 }
 
-article, aside, footer, header, nav, section {
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+
+
+
+article, aside, footer, header, nav {
 	display: block;
+	margin: 0;
+	padding: 5px 10px;
 }
-
-
 
 header {
 	background: #1b1b1b;
 	border-bottom: 1px solid #9c4dcc;
-	margin: 0;
-	padding: 5px 0;
 }
 section {
 	clear: both;
 	font-family: 'Gabriela', serif;
-	margin: 0;
+}
+article {
+	border-radius: 5px;
 }
 footer {
 	border-top: 1px double #9c4dcc;
 	clear: both;
-	margin: 0;
-	padding: 5px;
 }
 
 
@@ -348,7 +371,7 @@ img {
 figure {
 	display: table;
 	font-size: 95%;
-	margin: 0 auto 1em;
+	margin: 0 auto 1em auto;
 	width: 200px;
 }
 figure img {
@@ -442,13 +465,11 @@ figcaption {
 		max-width: 48em;
 		width: 100%;
 	}
-	header {
-		padding: 20px 0;
+	article, aside, footer, header, nav {
+		display: block;
+		margin: 0;
+		padding: 10px 20px;
 	}
-	article {
-		padding: 5px;
-	}
-
 	/* --- HEADER STYLES --- */
 	header img {
 		max-height: 120px;
@@ -490,9 +511,10 @@ figcaption {
 	/* --- IMAGES --- */
 	figure {
 		display: inline-grid;
+		width: 24%;
 	}
 	figure img {
-		height: 200px;
+		height: 180px;
 	}
 	#quicksearch {
 		width: 85%;
