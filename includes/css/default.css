@@ -5,37 +5,27 @@
  * Revised: Feb 2020 - Simon Arthur
  * ----- ----- ----- */
 
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Gabriela&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 /* -- FONTS ----- *
-	font-family: 'Oswald', sans-serif;
-	font-family: 'Gabriela', serif;
-	font-family: 'Noto Serif JP', serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
 /* ----- ----- ----- */
 
 
 
 /* -- COLORS ----- *
- * 	https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=C62828&secondary.color=CFD8DC
-/* -- COLORS ----- *
-	Primary:			#42a5f5; #1976d2; #bbdefb;
-	Primary-Light:		#63a4ff; #63a4ff; #eeffff;
-	Primary-Dark: 		#0077c2; #004ba0; #8aacc8;
-	
-	Secondary:			#bdbdbd;
-	Secondary-Light:	#efefef;
-	Secondary-Dark:		#8d8d8d;
+base - #9ccc65
+lite - #efefef
+dark - #6b9b37
 /* ----- ----- ----- */
 
 
 
 /* --- ICONS ----- *
- * 	https://www.iconfinder.com/iconsets/heroicons-ui * 
+ * 	https://www.iconfinder.com/iconsets/heroicons-ui *
  * ----- ----- ----- */
-
-
 
 
 
@@ -44,58 +34,26 @@ html {
 }
 
 body {
-	background: linear-gradient(to bottom right, #1b1b1b, #1b1b1b, #6a1b9a);
-	color: #fff;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 100%;
 	max-width: 100%;
-
-	/* --- https://www.gradient-animator.com/ ----- */
-	background: linear-gradient(0deg, #38006b, #1b1b1b);
-	background-size: 400% 400%;
-
-	-webkit-animation: AnimationName 20s ease infinite;
-	-moz-animation: AnimationName 20s ease infinite;
-	animation: AnimationName 20s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 2%}
-    50%{background-position:100% 99%}
-    100%{background-position:0% 2%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 2%}
-    50%{background-position:100% 99%}
-    100%{background-position:0% 2%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 2%}
-    50%{background-position:100% 99%}
-    100%{background-position:0% 2%}
-}
-
-
-
-article, aside, footer, header, nav {
+section, aside, footer, header {
 	display: block;
-	margin: 0;
-	padding: 5px 10px;
+	padding: 5px;
 }
 
 header {
-	background: #1b1b1b;
-	border-bottom: 1px solid #9c4dcc;
+	background: #fff;
+	border-bottom: 1px solid #6b9b37;
 }
 section {
 	clear: both;
-	font-family: 'Gabriela', serif;
 }
 article {
-	border-radius: 5px;
 }
 footer {
-	border-top: 1px double #9c4dcc;
 	clear: both;
 }
 
@@ -103,34 +61,44 @@ footer {
 
 /* --- STICKY NAV BAR --- */
 .sticky {
-    position: -webkit-sticky;  /* required for Safari */
+    position: -webkit-sticky;
     position: sticky;
-    top: 0; /* required as well. */
+    top: 0;
 }
 noscript p strong {
     background: url(../images/iconfinder_icon-information_2867914.svg) no-repeat left center;
 	display: block;
     padding: 0 0 0 30px;
 }
+noscript a {
+	font-weight: 600;
+}
 .logo {
 	background: #fff;
-	padding: 2px;
+	padding: 1px;
 	border-radius: 50%;
 }
 
 
-/* --- TEXT HEIRARCHY --- */
-h1, h2 {
-	line-height: 200%;
-	/* text-shadow: 2px 2px 4px #bbdefb; */
-	/* text-shadow: 3px 3px 1px #bbdefb; */
+
+/* --- TEXT HIERARCHY --- */
+h1 {
+	font-size: 1.8em;
+	margin: 0;
+	padding: 0;
 }
 h1 a {
 	color: #fff;
 }
+h2 {
+	font-size: 1.5em;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
 h3 {
-	line-height: 100%;
-	margin: 5px 0 10px 0;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 5px;
 }
 ul,
 p {
@@ -140,40 +108,21 @@ p {
 li {
 	line-height: 166%;
 }
-pre {
-}
 
-/* ----- QUOTES ----- */
-q {
-	display: block;
-	font-family: 'Bad Script', cursive;
-	font-size: 125%;
-	margin: 50px 25px 25px 25px;
-}
-cite {
-	clear: right;
-	display: block;
-	float: right;
-	margin: 10px 20px 20px 0;
-}
-cite::before {
-	content: "- ";
+
+
+.center {
+	text-align: center;
+	margin: 0 auto;
 }
 .lead {
 	font-size: 120%;
 	font-weight: 600;
 }
-.left {
-	float: left;
-	clear: left;
-}
-.right {
-	float: right;
-	clear: right;
-}
-.center {
-	text-align: center;
-	margin: 0 auto;
+.date {
+	font-size: 90%;
+	font-style: italic;
+	text-align: right;
 }
 .sr-only {
 	position: absolute;
@@ -185,10 +134,8 @@ cite::before {
 
 /* ----- ANCHORS ----- */
 a {
-	color: #9c4dcc;
-	text-decoration: none;
-	border-bottom: 1px solid #1b1b1b;
-	padding: 0 3px;
+	color: #000;
+	padding: 0;
 
 	transition: color .6s linear;
 	transition: background .6s linear;
@@ -202,9 +149,9 @@ a:not([href*='simonarthur.co.uk']):not([href^='#']):not([href^='/']):after {
 a:active,
 a:hover,
 a:focus {
-	background: #6a1b9a;
-	border-bottom: 1px solid #9c4dcc;
-	color: #fff;
+	background: #efefef;
+	/* border-bottom: 1px solid #6b9b37; */
+	color: #000;
 }
 
 /* --- FAMILY TREE --- */
@@ -233,7 +180,7 @@ noscript,
 	color: #fff;
 }
 .success {
-	background: #2e7d32; /* 800 */ 
+	background: #2e7d32; /* 800 */
 	color: #fff;
 }
 .warning {
@@ -247,14 +194,36 @@ noscript,
 
 
 
+/* ----- QUOTES ----- */
+q {
+	font-family: 'Kaushan Script', cursive;	
+	display: block;
+	font-size: 125%;
+	margin: 50px 25px 25px 25px;
+}
+cite {
+	clear: right;
+	display: block;
+	float: right;
+	margin: 10px 20px 20px 0;
+}
+cite::before {
+	content: "- ";
+}
+
+
+
+
+
 /* --- HEADER --- */
 header h1 {
 	margin: 0;
 	padding: 0;
 }
 header img {
-	max-height: 60px;
-	float: right;
+	max-height: 2.4em;
+	margin-right: 1em;
+	float: left;
 }
 #nav {
 	clear: left;
@@ -269,17 +238,18 @@ header img {
 	line-height: 166%;
 }
 #nav ul a {
-	border: 1px solid #424242;
-	border-width: 1px 0;
+	border-bottom: 1px solid #6b9b37;
+	/* border-width: 1px 0 1px 0; */
     display: block;
-	padding: 5px;
-	margin: 5px 0;
+	padding: 0.5em;
+	margin: 2px 0;
     text-decoration: none;
 }
 .active {
-	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
-	color: #fff;
-	border: 1px solid #efefef;
+    background: #9ccc65;
+	color: #000;
+	font-weight: 600;
+	border-bottom: 1px solid #6b9b37;
 }
 
 
@@ -287,12 +257,13 @@ header img {
  * https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 
  * --- --- --- --- */
 nav label {
-    background: #fff url(../images/iconfinder_icon-menu_2867922.svg) no-repeat 5px center;
-	color: #1b1b1b;
+    background: #6b9b37;
+	color: #000;
     cursor: pointer;
     display: inline-block;
+	font-weight: 600;
 	margin: 5px 0;
-    padding: 5px 15px 5px 40px;
+    padding: 5px 15px 5px 15px;
 	border-radius: 1em;
 }
 input#menu {
@@ -305,7 +276,7 @@ input#menu {
     overflow: hidden;
 }
 input:checked ~ label {
-    background-image: url(../images/iconfinder_icon-x-circle_2867957.svg);
+    /* background-image: url(../images/iconfinder_icon-x-circle_2867957.svg); */
 }
 input:checked ~ .toggle {
     max-height: 100%;
@@ -313,20 +284,21 @@ input:checked ~ .toggle {
 
 
 
-/* --- SECTION STYLES --- */
+/* --- SECTION STYLES --- *
 section h2,
 section h3 {
 	clear: both;
 }
+*/
 article {
-	background: rgba(34, 34, 34, 0.85);
-	border-bottom: 1px solid #38006b;
-	margin: 2em auto;
+	border-bottom: 1px solid #6b9b37;
+	margin-bottom: 1em;
 }
 form {
 	clear: both;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+/*
+::-webkit-input-placeholder { /* Chrome/Opera/Safari *
   color: #9c4dcc;
   z-index: auto;
 }
@@ -340,13 +312,6 @@ input[type="text"] {
 	width: 100%;
 }
 
-.date {
-	color: #6d6d6d;
-	font-size: 90%;
-	font-style: italic;
-
-	text-align: right;
-}
 .btn {
 	background: none;
 	border: 2px solid #6a1b9a;
@@ -370,27 +335,27 @@ img {
 }
 figure {
 	display: table;
-	font-size: 95%;
 	margin: 0 auto 1em auto;
-	width: 200px;
+	width: 240px;
 }
 figure img {
 	display: block;
     margin: auto;
 	object-fit: cover; /* Zoom/Crop image */
 	
-	height: 200px;
+	height: 240px;
 	width: 100%;
+	max-width: 320px;
 }
 figcaption {
-    background: #424242;
+    background: #efefef; /*linear-gradient(to bottom right, #bbdefb, #eeffff, #bbdefb); */
     caption-side: bottom;
-	color: #fff;
+	color: #000;
 	display: table-caption;
+	font-size: 0.8em;
+	line-height: 130%;
 	
-	font-family: 'Oswald', sans-serif;
-    padding: 5px 5px;
-	text-align: center;
+    padding: 0.5em;
 }
 
 
@@ -402,17 +367,17 @@ figcaption {
 }
 /* --- each row --- */
 #csv-list .record {
-	border-bottom: 2px solid #38006b;
+	border-bottom: 2px solid #6b9b37;
 }
 /* --- add stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background: rgba(255,255,255,0.05);
+	background: rgba(239,239,239,0.2);
 }
 /* --- highlight action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background: rgba(255,255,255,0.2);
+	background: rgba(46,125,50,0.2);
 }
 /* --- inline cells --- */
 #csv-list .record span {
@@ -423,8 +388,8 @@ figcaption {
 }
 /* --- header style --- */
 #csv-list .record:first-of-type  {
-	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
-	color: #fff;
+    background: #6b9b37; /*linear-gradient(to bottom right, #bbdefb, #eeffff, #bbdefb);*/
+	color: #000;
 	font-weight: 600;
 	text-transform: capitalize;
 }
@@ -441,11 +406,6 @@ figcaption {
 	border-radius: 25px;
 	padding: 10px;
 }
-.cc_cp_f_save button,
-.cc_dialog button.cc_b_ok {
-    color: #fff;
-	background: linear-gradient(to bottom right, #38006b, #9c4dcc);
-}
 
 
 
@@ -459,23 +419,60 @@ figcaption {
 @media (min-width: 800px) {
 
 	body {
-		font-size: 120%;
-		line-height: 160%;
-		margin: 0 auto;
-		max-width: 48em;
-		width: 100%;
+		font-size: 110%;
+		/* line-height: 160%; */
+		/* margin: 0 auto; */
+		/* max-width: 48em; */
+		/* width: 100%; */
 	}
-	article, aside, footer, header, nav {
+	article, aside, footer, header {
 		display: block;
 		margin: 0;
-		padding: 10px 20px;
+		/* padding: 10px 20px; */
 	}
+	section {
+		margin: 0 auto;
+		max-width: 48em;
+	}
+	nav {
+		display: inline;
+	}
+
+
+
 	/* --- HEADER STYLES --- */
-	header img {
-		max-height: 120px;
-		float: right;
-		margin: 0 0 0 1em;
+	#header.broad {
+		padding: 2em;		/* Some padding */
+		transition: 1s;	/* Add a transition effect (when scrolling - and font size is decreased) */
 	}
+	#header.narrow {
+		padding: 5px;		/* Some padding */
+		transition: 1s;	/* Add a transition effect (when scrolling - and font size is decreased) */
+	}
+
+	#header.broad h1 {
+		font-size: 2.4em;
+		visibility: visible;
+		transition: 1s;
+	}
+	#header.narrow h1 {
+		font-size: 1em;
+		visibility: collapse;
+		transition: 1s;
+	}
+
+	#header.broad img {
+		max-height: 8em;
+		padding: 1px;
+		margin: 0 1em 0 0;
+		transition: 1s;
+	}
+	#header.narrow img {
+		max-height: 4em;
+		padding: 5px;
+		transition: 1s;
+	}
+
 	nav label { /* hide menu button */
 		display: none;
 	}
@@ -483,22 +480,31 @@ figcaption {
 		max-height: 100%;
 	}
 	#nav {
-		margin-top: 1em;
+		margin-top: 5px;
 	}
 	#nav ul {
+		margin-top: 5px;
 		font-size: 100%;
 	}
 	#nav li {
 		display: inline-block;
 	}
 	#nav li a {
-		border-bottom: 3px solid #6d6d6d;
+		border-bottom: 3px solid #6b9b37;
 		border-width: 0 0 3px 0;
 		padding: 5px 10px;
 		margin-right: 10px;
 	}
 	#nav li a:hover {
-		border-bottom: 3px solid #9c4dcc;
+		border-bottom: 3px solid #6b9b37;
+	}
+	#header.broad #nav {
+		font-size: 1em;
+		transition: 1s;
+	}
+	#header.narrow #nav {
+		font-size: 0.85em;
+		transition: 1s;
 	}
 
 
@@ -506,23 +512,47 @@ figcaption {
 	/* --- SECTION STYLES --- */
 	section {
 		clear: both;
-		margin: 0;
 	}
+		
 	/* --- IMAGES --- */
 	figure {
 		display: inline-grid;
-		width: 24%;
+		width: 32%;
 	}
-	figure img {
-		height: 180px;
+
+	.btn {
+		min-width: 25%;
 	}
-	#quicksearch {
-		width: 85%;
-		border-radius: 20px 0 0 20px;
+	.hidden {
+		display: none;
+		visibility: hidden;
+		transition: 1s;
 	}
-	.btn[type="reset"] {
-		border-radius: 0 20px 20px 0;
+	.inline {
+		display: inline;
+		visibility: visible;
+		transition: 0.5s;
 	}
+
+
+	.button-circle {
+		border-radius: 50%;
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		/* color: #fff; */
+		font-size: 1.5em;
+		text-align: center;
+		padding-top: 0.5em;
+		line-height: 1em;
+	}
+	#button-top {
+		position: fixed;
+		bottom: 0.5em;
+		right: 0.5em;
+	}
+
+
 
 	/* --- FOOTER STYLES --- */
 	footer {

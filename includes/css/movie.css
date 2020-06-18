@@ -102,13 +102,13 @@ input[type="text"] {
 	}
 	.movie .record span:nth-of-type(7) {
 		display: inline-block;
-		font-size: 70% !important;
+		font-size: 75% !important;
 		visibility: visible;
 		width: 52%;
 	}
 	.movie .record span:nth-of-type(8) {
 		display: inline-block;
-		font-size: 70% !important;
+		font-size: 75% !important;
 		visibility: visible;
 		width: 48%;
 	}

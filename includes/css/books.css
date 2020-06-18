@@ -51,6 +51,7 @@ input[type="text"] {
 
 
 img.bee {
+	float: right;
 	max-width: 90px;
 }
 
@@ -80,6 +81,15 @@ img.bee {
 	}
 	.books .record span:nth-of-type(10) {
 		font-style: italic;
+	}
+
+	.books .record span:nth-of-type(5),
+	.books .record span:nth-of-type(6),
+	.books .record span:nth-of-type(7),
+	.books .record span:nth-of-type(8),
+	.books .record span:nth-of-type(9),
+	.books .record span:nth-of-type(10) {
+		font-size: 75% !important;
 	}
 
 	img.bee {
