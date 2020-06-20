@@ -46,7 +46,7 @@ section, aside, footer, header {
 
 header {
 	background: #fff;
-	border-bottom: 1px solid #6b9b37;
+	/* border-bottom: 1px solid #6b9b37; */
 }
 section {
 	clear: both;
@@ -83,20 +83,20 @@ noscript a {
 
 /* --- TEXT HIERARCHY --- */
 h1 {
-	font-size: 1.8em;
+	font-size: 2em;
 	margin: 0;
 	padding: 0;
 }
 h1 a {
-	color: #fff;
+	color: #000;
 }
 h2 {
-	font-size: 1.5em;
-	margin: 0 0 1em 0;
+	font-size: 1.75em;
+	margin: 1em 0 1em 0;
 	padding: 0;
 }
 h3 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin: 0;
 	padding: 5px;
 }
@@ -137,20 +137,16 @@ a {
 	color: #000;
 	padding: 0;
 
+	border-bottom: 1px dotted #bcbcbc;
+	text-decoration: none;
 	transition: color .6s linear;
 	transition: background .6s linear;
-}
-a:not([href*='simonarthur.co.uk']):not([href^='#']):not([href^='/']):after {
-/*
-	font-family: 'FontAwesome';
-    content: " \f08e";
-*/
 }
 a:active,
 a:hover,
 a:focus {
 	background: #efefef;
-	/* border-bottom: 1px solid #6b9b37; */
+	border-bottom: 1px solid #6b9b37;
 	color: #000;
 }
 
@@ -284,12 +280,9 @@ input:checked ~ .toggle {
 
 
 
-/* --- SECTION STYLES --- *
-section h2,
-section h3 {
-	clear: both;
-}
-*/
+
+
+/* --- SECTION STYLES --- */
 article {
 	border-bottom: 1px solid #6b9b37;
 	margin-bottom: 1em;
@@ -297,35 +290,6 @@ article {
 form {
 	clear: both;
 }
-/*
-::-webkit-input-placeholder { /* Chrome/Opera/Safari *
-  color: #9c4dcc;
-  z-index: auto;
-}
-select,
-textarea,
-input[type="text"] {
-	background: #6d6d6d;
-	border: 1px solid #6a1b9a;
-	border-radius: 20px;
-	padding: 10px;
-	width: 100%;
-}
-
-.btn {
-	background: none;
-	border: 2px solid #6a1b9a;
-	border-radius: 25px;
-	color: #fff;
-	padding: 10px;
-	min-width: 15%;
-}
-.btn:hover {
-    cursor: pointer;	
-	border: 2px solid #9c4dcc;
-}
-
-
 
 /* --- IMAGES --- */
 img {
@@ -358,8 +322,6 @@ figcaption {
     padding: 0.5em;
 }
 
-
-
 /* --- MOBILE FRIENDLY TABLE --- */
 #csv-list {
 	clear: both;
@@ -381,22 +343,23 @@ figcaption {
 }
 /* --- inline cells --- */
 #csv-list .record span {
-	/* display: inline-block; */
 	font-size: 85%;
 	padding: 2px 5px;
 	vertical-align: top;
 }
-/* --- header style --- */
+/* --- table header style --- */
 #csv-list .record:first-of-type  {
-    background: #6b9b37; /*linear-gradient(to bottom right, #bbdefb, #eeffff, #bbdefb);*/
+    background: #6b9b37;
 	color: #000;
 	font-weight: 600;
 	text-transform: capitalize;
 }
-/* --- AJAX LOADING GRAPHIC --- */
+/* --- Ajax Loading Graphic --- */
 #loading {
 	text-align: center;
 }
+
+
 
 
 
@@ -419,20 +382,19 @@ figcaption {
 @media (min-width: 800px) {
 
 	body {
-		font-size: 110%;
-		/* line-height: 160%; */
-		/* margin: 0 auto; */
-		/* max-width: 48em; */
-		/* width: 100%; */
+		/* background: linear-gradient(180deg, #fff, #fff, #fff, #6b9b37); */
+		font-size: 115%;
 	}
-	article, aside, footer, header {
+	header, section, article, aside, footer {
 		display: block;
-		margin: 0;
-		/* padding: 10px 20px; */
-	}
-	section {
 		margin: 0 auto;
 		max-width: 48em;
+	}
+	header,
+	footer {
+		text-align: center;
+	}
+	section {
 	}
 	nav {
 		display: inline;
@@ -534,7 +496,7 @@ figcaption {
 		transition: 0.5s;
 	}
 
-
+	/* --- Back To Top --- */
 	.button-circle {
 		border-radius: 50%;
 		display: inline-block;
