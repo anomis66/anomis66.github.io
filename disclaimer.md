@@ -1,4 +1,4 @@
-<script src="./includes/scripts/md-page.js"></script><noscript>
+<script src="https://www.simonarthur.co.uk/includes/scripts/md-page.js"></script><noscript>
 
 [![Logo](./includes/images/anomis66_jack_100s.png)][1]
 
