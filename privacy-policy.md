@@ -1,10 +1,14 @@
+<script src="./includes/scripts/md-page.js"></script><noscript>
+
+[![Logo](./includes/images/anomis66_jack_100s.png)][1]
+
 # Privacy Policy
 
-__Effective date: December 18, 2019__
+**Effective date: December 18, 2019**
 
-Keep It Simple, Simon ("us", "we", or "our") operates the www.simonarthur.co.uk website (the "Service").
+*Keep It Simple, Simon* ("us", "we", or "our") operates the www.simonarthur.co.uk website (the "Service").
 
-This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy for Keep It Simple, Simon is created with the help of the Free Privacy Policy Generator.
+This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy for *Keep It Simple, Simon* is created with the help of the Free Privacy Policy Generator.
 
 We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from www.simonarthur.co.uk
 
@@ -32,13 +36,13 @@ You can instruct your browser to refuse all cookies or to indicate when a cookie
 
 Examples of Cookies we use:
 
- * __Session Cookies__. We use Session Cookies to operate our Service.
+ * __Session Cookies__ . We use Session Cookies to operate our Service.
  * __Preference Cookies__. We use Preference Cookies to remember your preferences and various settings.
  * __Security Cookies__. We use Security Cookies for security purposes.
  
 ## Use of Data
 
-Keep It Simple, Simon uses the collected data for various purposes:
+*Keep It Simple, Simon* uses the collected data for various purposes:
 
  * To provide and maintain the Service
  * To notify you about changes to our Service
@@ -56,16 +60,16 @@ If you are located outside United Kingdom and choose to provide information to u
 
 Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
 
-Keep It Simple, Simon will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+*Keep It Simple, Simon* will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
 
 ## Disclosure Of Data
 
 ### Legal Requirements
 
-Keep It Simple, Simon may disclose your Personal Data in the good faith belief that such action is necessary to:
+*Keep It Simple, Simon* may disclose your Personal Data in the good faith belief that such action is necessary to:
 
  * To comply with a legal obligation
- * To protect and defend the rights or property of Keep It Simple, Simon
+ * To protect and defend the rights or property of *Keep It Simple, Simon*
  * To prevent or investigate possible wrongdoing in connection with the Service
  * To protect the personal safety of users of the Service or the public
  * To protect against legal liability
@@ -104,8 +108,12 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us:
 
- * By email: [privacypolicy@simonarthur.co.uk](privacypolicy@simonarthur.co.uk)
+ * By email: <privacypolicy@simonarthur.co.uk>
 
 -----
 
-Created with [freeprivacypolicy.com](//www.freeprivacypolicy.com/) 
+Created with [freeprivacypolicy.com][2] and [markdown page][3].
+
+[1]: <https://www.simonarthur.co.uk/> "Keep It Simple, Simon"
+[2]: <https://www.freeprivacypolicy.com/> "Free Privacy Policy"
+[3]: <https://github.com/oscarmorrison/md-page/> "Markdown Page"

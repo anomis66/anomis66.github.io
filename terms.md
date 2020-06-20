@@ -1,18 +1,22 @@
+<script src="./includes/scripts/md-page.js"></script><noscript>
+
+[![Logo](./includes/images/anomis66_jack_100s.png)][1]
+
 # Terms and Conditions ("Terms")
 
-__Last updated: December 18, 2019__
+**Last updated: December 18, 2019**
 
-Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the www.simonarthur.co.uk website (the "Service") operated by Keep It Simple, Simon ("us", "we", or "our").
+Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the www.simonarthur.co.uk website (the "Service") operated by *Keep It Simple, Simon* ("us", "we", or "our").
 
 Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
-By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. The Terms and Conditions agreement for Keep It Simple, Simon has been created with the help of FreePrivacyPolicy.com Terms and Conditions Generator.
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. The Terms and Conditions agreement for *Keep It Simple, Simon* has been created with the help of FreePrivacyPolicy.com Terms and Conditions Generator.
 
 ## Links To Other Web Sites
 
-Our Service may contain links to third-party web sites or services that are not owned or controlled by Keep It Simple, Simon.
+Our Service may contain links to third-party web sites or services that are not owned or controlled by *Keep It Simple, Simon*.
 
-Keep It Simple, Simon has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Keep It Simple, Simon shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+*Keep It Simple, Simon* has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that *Keep It Simple, Simon* shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
 
 We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
 
@@ -34,4 +38,8 @@ If you have any questions about these Terms, please contact us.
 
 -----
 
-Created with [freeprivacypolicy.com](//www.freeprivacypolicy.com/)
+Created with [freeprivacypolicy.com][2] and [markdown page][3].
+
+[1]: <https://www.simonarthur.co.uk/> "Keep It Simple, Simon"
+[2]: <https://www.freeprivacypolicy.com/> "Free Privacy Policy"
+[3]: <https://github.com/oscarmorrison/md-page/> "Markdown Page"
