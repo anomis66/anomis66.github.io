@@ -3,28 +3,31 @@
  * 
  * Created: Nov 2017 - Simon Arthur
  * Revised: Feb 2020 - Simon Arthur
+ * Revised: Jun 2020 - Simon Arthur
+ *
  * ----- ----- ----- */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 /* -- FONTS ----- *
-font-family: 'Kaushan Script', cursive;
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Kaushan Script', cursive;
+	font-family: 'Montserrat', sans-serif;
 /* ----- ----- ----- */
 
 
 
-/* -- COLORS ----- *
-base - #9ccc65
-lite - #efefef
-dark - #6b9b37
+/* --- COLORS ----- *
+	base - #9ccc65
+	lite - #efefef
+	dark - #6b9b37
 /* ----- ----- ----- */
 
 
 
 /* --- ICONS ----- *
- * 	https://www.iconfinder.com/iconsets/heroicons-ui *
+ * https://icons8.com/line-awesome
+ * https://www.iconfinder.com/iconsets/heroicons-ui
  * ----- ----- ----- */
 
 
@@ -35,6 +38,7 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	color: #333;
 	font-size: 100%;
 	max-width: 100%;
 }
@@ -46,7 +50,6 @@ section, aside, footer, header {
 
 header {
 	background: #fff;
-	/* border-bottom: 1px solid #6b9b37; */
 }
 section {
 	clear: both;
@@ -55,6 +58,8 @@ article {
 }
 footer {
 	clear: both;
+	text-align: center;
+	margin-bottom: 3em;
 }
 
 
@@ -73,17 +78,11 @@ noscript p strong {
 noscript a {
 	font-weight: 600;
 }
-.logo {
-	background: #fff;
-	padding: 1px;
-	border-radius: 50%;
-}
 
 
 
 /* --- TEXT HIERARCHY --- */
 h1 {
-	font-size: 2em;
 	margin: 0;
 	padding: 0;
 }
@@ -91,22 +90,20 @@ h1 a {
 	color: #000;
 }
 h2 {
-	font-size: 1.75em;
 	margin: 1em 0 1em 0;
 	padding: 0;
 }
 h3 {
-	font-size: 1.5em;
 	margin: 0;
 	padding: 5px;
 }
 ul,
 p {
-	line-height: 166%;
+	line-height: 133%;
 	margin: 0 0 1.5em 0;
 }
 li {
-	line-height: 166%;
+	line-height: 133%;
 }
 
 
@@ -149,7 +146,6 @@ a:focus {
 	border-bottom: 1px solid #6b9b37;
 	color: #000;
 }
-
 /* --- FAMILY TREE --- */
 a[name] {
 	border: 0;
@@ -194,7 +190,7 @@ noscript,
 q {
 	font-family: 'Kaushan Script', cursive;	
 	display: block;
-	font-size: 125%;
+	font-size: 120%;
 	margin: 50px 25px 25px 25px;
 }
 cite {
@@ -215,30 +211,53 @@ cite::before {
 header h1 {
 	margin: 0;
 	padding: 0;
+	text-shadow: 3px 3px 3px #6b9b37;
 }
-header img {
+header.broad h1 {
+	font-size: 2em;
+	transition: 0.5s;
+}
+header.narrow h1 {
+	font-size: 0;
+	transition: 0.5s;
+}
+
+.logo {
+	background: #fff;
+	border-radius: 50%;
+	float: right;
+	margin-left: 1em;
+	padding: 1px;
+}
+header.broad .logo {
+	max-height: 4em;
+	transition: 0.5s;
+}
+header.narrow .logo {
 	max-height: 2.4em;
-	margin-right: 1em;
-	float: left;
+	transition: 0.5s;
 }
+
 #nav {
 	clear: left;
+	border-bottom: 1px solid #6b9b37;
 }
 #nav ul {
-	font-size: 1.2em;
+	background: #efefef;
+	font-weight: bolder;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-#nav ul li { 
-	line-height: 166%;
+#nav ul li {
+	line-height: 133%;
 }
 #nav ul a {
+	/* background: #efefef; */
 	border-bottom: 1px solid #6b9b37;
-	/* border-width: 1px 0 1px 0; */
     display: block;
 	padding: 0.5em;
-	margin: 2px 0;
+	margin: 0;
     text-decoration: none;
 }
 .active {
@@ -249,6 +268,7 @@ header img {
 }
 
 
+
 /* --- CSS Collapsing Menu --- *
  * https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 
  * --- --- --- --- */
@@ -257,22 +277,21 @@ nav label {
 	color: #000;
     cursor: pointer;
     display: inline-block;
+	font-size: 1em;
 	font-weight: 600;
-	margin: 5px 0;
-    padding: 5px 15px 5px 15px;
+	line-height: 133%;
+	margin-bottom: 0.5em;
+    padding: 0.25em 0.5em;
 	border-radius: 1em;
 }
 input#menu {
     display: none;
 	margin: 0;
 }
-/* Toggle Effect */
+/* Toggle Effect for Mobile Menu */
 .toggle {
 	max-height: 0;
     overflow: hidden;
-}
-input:checked ~ label {
-    /* background-image: url(../images/iconfinder_icon-x-circle_2867957.svg); */
 }
 input:checked ~ .toggle {
     max-height: 100%;
@@ -305,22 +324,57 @@ figure {
 figure img {
 	display: block;
     margin: auto;
-	object-fit: cover; /* Zoom/Crop image */
+	object-fit: cover;
 	
-	height: 240px;
+	height: 180px;
 	width: 100%;
-	max-width: 320px;
+	transition: 0.5s;
 }
 figcaption {
-    background: #efefef; /*linear-gradient(to bottom right, #bbdefb, #eeffff, #bbdefb); */
+    background: #efefef;
     caption-side: bottom;
 	color: #000;
 	display: table-caption;
 	font-size: 0.8em;
-	line-height: 130%;
+	line-height: 133%;
 	
     padding: 0.5em;
 }
+
+
+
+
+
+.hidden {
+	display: none;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.inline {
+	display: inline;
+	visibility: visible;
+	transition: 0.5s;
+}
+
+/* --- back to top --- */
+.button-circle {
+	background: rgba(255,255,255,0.6);
+	display: inline-block;
+	font-size: 3em;
+	text-align: center;
+	padding: 5px;
+}
+.button-circle:hover {
+	background: #6b9b37;
+}
+
+#button-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+
 
 /* --- MOBILE FRIENDLY TABLE --- */
 #csv-list {
@@ -382,15 +436,13 @@ figcaption {
 @media (min-width: 800px) {
 
 	body {
-		/* background: linear-gradient(180deg, #fff, #fff, #fff, #6b9b37); */
-		font-size: 115%;
+		font-size: larger;
 	}
 	header, section, article, aside, footer {
 		display: block;
 		margin: 0 auto;
 		max-width: 48em;
 	}
-	header,
 	footer {
 		text-align: center;
 	}
@@ -399,52 +451,19 @@ figcaption {
 	nav {
 		display: inline;
 	}
-
-
-
-	/* --- HEADER STYLES --- */
-	#header.broad {
-		padding: 2em;		/* Some padding */
-		transition: 1s;	/* Add a transition effect (when scrolling - and font size is decreased) */
-	}
-	#header.narrow {
-		padding: 5px;		/* Some padding */
-		transition: 1s;	/* Add a transition effect (when scrolling - and font size is decreased) */
-	}
-
-	#header.broad h1 {
-		font-size: 2.4em;
-		visibility: visible;
-		transition: 1s;
-	}
-	#header.narrow h1 {
-		font-size: 1em;
-		visibility: collapse;
-		transition: 1s;
-	}
-
-	#header.broad img {
-		max-height: 8em;
-		padding: 1px;
-		margin: 0 1em 0 0;
-		transition: 1s;
-	}
-	#header.narrow img {
-		max-height: 4em;
-		padding: 5px;
-		transition: 1s;
-	}
-
-	nav label { /* hide menu button */
+	nav label { 
+		/* hide menu button */
 		display: none;
 	}
-	.toggle { /* show menu */
+	.toggle { 
+		/* show menu */
 		max-height: 100%;
 	}
 	#nav {
 		margin-top: 5px;
 	}
 	#nav ul {
+		background: none;
 		margin-top: 5px;
 		font-size: 100%;
 	}
@@ -460,14 +479,6 @@ figcaption {
 	#nav li a:hover {
 		border-bottom: 3px solid #6b9b37;
 	}
-	#header.broad #nav {
-		font-size: 1em;
-		transition: 1s;
-	}
-	#header.narrow #nav {
-		font-size: 0.85em;
-		transition: 1s;
-	}
 
 
 
@@ -475,43 +486,18 @@ figcaption {
 	section {
 		clear: both;
 	}
-		
 	/* --- IMAGES --- */
 	figure {
 		display: inline-grid;
 		width: 32%;
 	}
-
-	.btn {
-		min-width: 25%;
-	}
-	.hidden {
-		display: none;
-		visibility: hidden;
-		transition: 1s;
-	}
-	.inline {
-		display: inline;
-		visibility: visible;
+	figure img {
+		height: 240px;
 		transition: 0.5s;
 	}
 
-	/* --- Back To Top --- */
-	.button-circle {
-		border-radius: 50%;
-		display: inline-block;
-		width: 2em;
-		height: 2em;
-		/* color: #fff; */
-		font-size: 1.5em;
-		text-align: center;
-		padding-top: 0.5em;
-		line-height: 1em;
-	}
-	#button-top {
-		position: fixed;
-		bottom: 0.5em;
-		right: 0.5em;
+	.btn {
+		min-width: 25%;
 	}
 
 
@@ -521,6 +507,36 @@ figcaption {
 		padding: 5px;
 	}
 
+
+
+}
+
+
+
+/* ----- X-LARGE SCREEN ----- */
+@media (min-width: 1280px) {
+
+	body {
+		font-size: larger;
+	}
+	header, section, article, aside, footer {
+		max-width: 60em;
+	}
+
+	/* --- HEADER STYLES --- */
+	header.broad h1 {
+		font-size: 3.5em;
+		transition: 0.5s;
+	}
+	header.broad .logo {
+		max-height: 8em;
+		transition: 0.5s;
+	}
+
+	figure img {
+		height: 320px;
+		transition: 0.5s;
+	}
 
 
 }

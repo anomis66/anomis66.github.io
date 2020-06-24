@@ -8,37 +8,36 @@ $('[data-fancybox]').fancybox({
 
 
 
-/* --- change icon on menu ----- ----- */
-$("input#menu").change(function() {
-	if(this.checked) {
-		$("input#menu .las").removeClass('la-bars').addClass('la-caret-down');
-	}
+/* -- Change Icon On Menu Drop-Down----- */
+$(document).ready(function() { 
+	$("#nav #menu").change(function() {
+		if($(this).is(':checked')) {
+			$("#nav label i").removeClass('la-caret-square-down').addClass('la-times-circle');
+		} 
+		if(!$(this).is(':checked')) {
+			$("#nav label i").removeClass('la-times-circle').addClass('la-caret-square-down');
+		}
+		
+	});
 });
 
 
 
-$('input#menu').mousedown(function() {
-    if (!$(this).is(':checked')) {
-		$("input#menu .las").removeClass('la-bars').addClass('la-caret-down');
-    }
-});
-
-
-
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+/* -- On-Scroll Update ----- *
+ * When the user scrolls down 100px from the 
+ * top of the document, trigger a reaction. 
+ */
 window.onscroll = function() {
 	scrollFunction()
 };
 
 function scrollFunction() {
 	
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		$('#header').addClass("narrow").removeClass("broad");
-		$('#header h1').addClass("hidden").removeClass("inline");
 		$('#button-top').addClass("inline").removeClass("hidden");
 	} else {
 		$('#header').addClass("broad").removeClass("narrow");
-		$('#header h1').addClass("inline").removeClass("hidden");
 		$('#button-top').addClass("hidden").removeClass("inline");
 	}
 	
