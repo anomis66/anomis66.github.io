@@ -94,7 +94,7 @@ h2 {
 	padding: 0;
 }
 h3 {
-	margin: 0;
+	margin: 1em 0;
 	padding: 5px;
 }
 ul,
@@ -209,7 +209,7 @@ cite::before {
 
 /* --- HEADER --- */
 header h1 {
-	margin: 0;
+	margin: 0 0 0.5em 0;
 	padding: 0;
 	text-shadow: 3px 3px 3px #6b9b37;
 }
@@ -224,9 +224,9 @@ header.narrow h1 {
 
 .logo {
 	background: #fff;
-	border-radius: 50%;
+	border-radius: 5px;
 	float: right;
-	margin-left: 1em;
+	margin-left: 5px;
 	padding: 1px;
 }
 header.broad .logo {
@@ -234,7 +234,7 @@ header.broad .logo {
 	transition: 0.5s;
 }
 header.narrow .logo {
-	max-height: 2.4em;
+	max-height: 2em;
 	transition: 0.5s;
 }
 
@@ -282,7 +282,7 @@ nav label {
 	line-height: 133%;
 	margin-bottom: 0.5em;
     padding: 0.25em 0.5em;
-	border-radius: 1em;
+	border-radius: 5px;
 }
 input#menu {
     display: none;
@@ -318,15 +318,17 @@ img {
 }
 figure {
 	display: table;
-	margin: 0 auto 1em auto;
-	width: 240px;
+	margin: 1em auto 1em auto;
+	max-width: 320px;
+	/* max-width: 90%; */
 }
 figure img {
 	display: block;
     margin: auto;
 	object-fit: cover;
 	
-	height: 180px;
+	border-radius: 5px 5px 0 0;
+	height: 240px;
 	width: 100%;
 	transition: 0.5s;
 }
@@ -338,7 +340,8 @@ figcaption {
 	font-size: 0.8em;
 	line-height: 133%;
 	
-    padding: 0.5em;
+	border-radius: 0 0 5px 5px;
+    padding: 10px;
 }
 
 
@@ -355,10 +358,16 @@ figcaption {
 	visibility: visible;
 	transition: 0.5s;
 }
+.btn {
+	/* min-width: 25%; */
+	border-radius: 3px;
+	margin: 0 5px 0 5px;
+}
 
 /* --- back to top --- */
 .button-circle {
-	background: rgba(255,255,255,0.6);
+	border-radius: 5px 0 0 5px;
+	background: rgba(255,255,255,0.75);
 	display: inline-block;
 	font-size: 3em;
 	text-align: center;
@@ -370,7 +379,7 @@ figcaption {
 
 #button-top {
 	position: fixed;
-	bottom: 0;
+	bottom: 1em;
 	right: 0;
 }
 
@@ -436,12 +445,17 @@ figcaption {
 @media (min-width: 800px) {
 
 	body {
+		background: #efefef;
 		font-size: larger;
 	}
 	header, section, article, aside, footer {
+		background: #fff;
 		display: block;
 		margin: 0 auto;
+		margin-bottom: 2em;		
 		max-width: 48em;
+	}
+	header, section, aside, footer {
 	}
 	footer {
 		text-align: center;
@@ -473,6 +487,7 @@ figcaption {
 	#nav li a {
 		border-bottom: 3px solid #6b9b37;
 		border-width: 0 0 3px 0;
+		border-radius: 5px 5px 0 0;
 		padding: 5px 10px;
 		margin-right: 10px;
 	}
@@ -486,18 +501,19 @@ figcaption {
 	section {
 		clear: both;
 	}
+	q {
+		font-size: 1.6em;
+	}
 	/* --- IMAGES --- */
 	figure {
+		margin: 1em 5% 2em 5%;
 		display: inline-grid;
-		width: 32%;
+		width: 39%;
 	}
 	figure img {
-		height: 240px;
+		max-height: 240px;
+		margin: 0;
 		transition: 0.5s;
-	}
-
-	.btn {
-		min-width: 25%;
 	}
 
 
@@ -532,9 +548,13 @@ figcaption {
 		max-height: 8em;
 		transition: 0.5s;
 	}
-
+	figure {
+		margin: 1em 4.5% 2em 4.5%;
+		display: inline-grid;
+		max-width: 24%;
+	}
 	figure img {
-		height: 320px;
+		max-height: 320px;
 		transition: 0.5s;
 	}
 
