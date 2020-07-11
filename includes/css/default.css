@@ -1,33 +1,19 @@
-/* ----- ----- -----
- * Common CSS for anomis66.github.io
- * 
- * Created: Nov 2017 - Simon Arthur
- * Revised: Feb 2020 - Simon Arthur
- * Revised: Jun 2020 - Simon Arthur
- *
- * ----- ----- ----- */
+/* --- design@arthur12.co.uk - 10 July 2020 --- */
+
+/* 
+Dark Mode - https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#os-level
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 /* -- FONTS ----- *
-	font-family: 'Kaushan Script', cursive;
-	font-family: 'Montserrat', sans-serif;
-/* ----- ----- ----- */
-
-
-
-/* --- COLORS ----- *
-	base - #9ccc65
-	lite - #efefef
-	dark - #6b9b37
-/* ----- ----- ----- */
-
-
-
-/* --- ICONS ----- *
- * https://icons8.com/line-awesome
- * https://www.iconfinder.com/iconsets/heroicons-ui
+ font-family: 'Kaushan Script', cursive;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Courier Prime', monospace;
+ font-family: 'Roboto Slab', serif;	
  * ----- ----- ----- */
 
 
@@ -37,77 +23,208 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	color: #333;
+	margin: 5px;
+	padding: 0;
+	font-family: monospace;
 	font-size: 100%;
+	line-height: 160%;
+	max-width: 960px;
+}
+header, section, footer {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 75px;
+	background-image: linear-gradient(#fff, #fff,  #fff, rgba(255,255,255,0.3) );
+	z-index: 100;
+}
+form {
+	clear: both;
+}
+
+
+
+/* --- ALERTS --- */
+noscript, .info, .success, .warning, .error {
+	display: block;
+	padding: 3px 12px;
+	margin: 12px auto;
+}
+noscript,
+.info {
+	background: #1565c0; /* 800 */
+	color: #fff;
+}
+.success {
+	background: #2e7d32; /* 800 */
+	color: #fff;
+}
+.warning {
+	background: #f9a825; /* 800 */
+	color: #000;
+}
+.error {
+	background: #c62828; /* 800 */
+	color: #fff;
+}
+noscript a,
+.info a,
+.success a,
+.error a {
+	color: #fff;
+	font-weight: 600
+}
+.warning a {
+	color: #000;
+	font-weight: 600
+}
+
+
+
+/* --- IMAGES --- */
+section img {
+	display: block;
+	margin: 0 auto;
 	max-width: 100%;
 }
+figure {
+	display: table;
+	margin: 3px auto 12px;
 
-section, aside, footer, header {
+	border: 1px solid #999;
+}
+figure img {
 	display: block;
-	padding: 5px;
+	object-fit: cover;
+
+	padding: 3px;
+	height: 200px;
+	width: 200px;
+
+	transition: all 200ms ease-in;
+	filter: grayscale(1) opacity(.9);	
+}
+figure img:hover {
+	filter: grayscale(0) opacity(1);
+}
+figcaption {
+	background: rgba(198,40,40,0.3);
+    caption-side: bottom;
+	display: table-caption;
+	font-size: 90%;
+	padding: 3px;
 }
 
-header {
-	background: #fff;
+
+
+/* --- NAVBAR --- */
+nav ul {
+	background: none;
+	display: block;
+	font-size: 2.4em;
+	margin: 0;
 }
-section {
-	clear: both;
-}
-article {
-}
-footer {
-	clear: both;
-	text-align: center;
-	margin-bottom: 3em;
+nav li {
+	display: inline-block;
 }
 
 
 
-/* --- STICKY NAV BAR --- */
+/* --- LINKS --- */
+a {
+	color: #8e0000;
+
+	transition: color .5s linear;
+	transition: background .5s linear;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #fff;
+	background: #c62828;
+}
+/* --- family tree --- */
+a[name] {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+a[name]:active,
+a[name]:hover,
+a[name]:focus {
+	border: 0;
+}
+a.active {
+	border-bottom: 2px solid #c62828;
+	border-bottom: 2px solid #fff;
+}
+/*
+a[href^="http://"]:not([href*="simonarthur.co.uk"]):after,
+a[href^="https://"]:not([href*="simonarthur.co.uk"]):after{
+    content: " (~)";
+}
+*/
+
+/* ----- heading ----- */
+h1, h2, h3 {
+	font-family: 'Roboto Slab', serif;
+	line-height: 125%;
+}
+
+/* ----- QUOTES ----- */
+q {
+	font-family: 'Kaushan Script', cursive;	
+	display: block;
+	font-size: 110%;
+	margin: 24px 12px 12px 24px;
+}
+cite {
+	clear: right;
+	display: block;
+	float: right;
+	margin: 3px 12px 12px 0;
+}
+cite::before {
+	content: "- ";
+}
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "♠";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
+
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
-noscript p strong {
-    background: url(../images/iconfinder_icon-information_2867914.svg) no-repeat left center;
-	display: block;
-    padding: 0 0 0 30px;
+.logo {
+	background: #fff;
+	float: left;
+	margin-right: 1em;
+	width: 4em;
 }
-noscript a {
-	font-weight: 600;
+.hidden {
+	display: none;
+	visibility: hidden;
+	transition: 0.5s;
 }
-
-
-
-/* --- TEXT HIERARCHY --- */
-h1 {
-	margin: 0;
-	padding: 0;
-}
-h1 a {
-	color: #000;
-}
-h2 {
-	margin: 1em 0 1em 0;
-	padding: 0;
-}
-h3 {
-	margin: 1em 0;
-	padding: 5px;
-}
-ul,
-p {
-	line-height: 133%;
-	margin: 0 0 1.5em 0;
-}
-li {
-	line-height: 133%;
-}
-
-
-
 .center {
 	text-align: center;
 	margin: 0 auto;
@@ -129,262 +246,6 @@ li {
 
 
 
-/* ----- ANCHORS ----- */
-a {
-	color: #000;
-	padding: 0;
-
-	border-bottom: 1px dotted #bcbcbc;
-	text-decoration: none;
-	transition: color .6s linear;
-	transition: background .6s linear;
-}
-a:active,
-a:hover,
-a:focus {
-	background: #efefef;
-	border-bottom: 1px solid #6b9b37;
-	color: #000;
-}
-/* --- FAMILY TREE --- */
-a[name] {
-	border: 0;
-	padding: 0;
-	margin: 0;
-}
-a[name]:active,
-a[name]:hover,
-a[name]:focus {
-	border: 0;
-}
-
-
-
-/* --- ALERTS --- */
-noscript, .info, .success, .warning, .error {
-	display: block;
-	padding: 0.5em 1em;
-	margin: 0.5em auto;
-}
-noscript,
-.info {
-	background: #1565c0; /* 800 */
-	color: #fff;
-}
-.success {
-	background: #2e7d32; /* 800 */
-	color: #fff;
-}
-.warning {
-	background: #f9a825; /* 800 */
-	color: #000;
-}
-.error {
-	background: #c62828; /* 800 */
-	color: #fff;
-}
-
-
-
-/* ----- QUOTES ----- */
-q {
-	font-family: 'Kaushan Script', cursive;	
-	display: block;
-	font-size: 120%;
-	margin: 50px 25px 25px 25px;
-}
-cite {
-	clear: right;
-	display: block;
-	float: right;
-	margin: 10px 20px 20px 0;
-}
-cite::before {
-	content: "- ";
-}
-
-
-
-
-
-/* --- HEADER --- */
-header h1 {
-	margin: 0 0 0.5em 0;
-	padding: 0;
-	text-shadow: 3px 3px 3px #6b9b37;
-}
-header.broad h1 {
-	font-size: 2em;
-	transition: 0.5s;
-}
-header.narrow h1 {
-	font-size: 0;
-	transition: 0.5s;
-}
-
-.logo {
-	background: #fff;
-	border-radius: 5px;
-	float: right;
-	margin-left: 5px;
-	padding: 1px;
-}
-header.broad .logo {
-	max-height: 4em;
-	transition: 0.5s;
-}
-header.narrow .logo {
-	max-height: 2em;
-	transition: 0.5s;
-}
-
-#nav {
-	clear: left;
-	border-bottom: 1px solid #6b9b37;
-}
-#nav ul {
-	background: #efefef;
-	font-weight: bolder;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-#nav ul li {
-	line-height: 133%;
-}
-#nav ul a {
-	/* background: #efefef; */
-	border-bottom: 1px solid #6b9b37;
-    display: block;
-	padding: 0.5em;
-	margin: 0;
-    text-decoration: none;
-}
-.active {
-    background: #9ccc65;
-	color: #000;
-	font-weight: 600;
-	border-bottom: 1px solid #6b9b37;
-}
-
-
-
-/* --- CSS Collapsing Menu --- *
- * https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 
- * --- --- --- --- */
-nav label {
-    background: #6b9b37;
-	color: #000;
-    cursor: pointer;
-    display: inline-block;
-	font-size: 1em;
-	font-weight: 600;
-	line-height: 133%;
-	margin-bottom: 0.5em;
-    padding: 0.25em 0.5em;
-	border-radius: 5px;
-}
-input#menu {
-    display: none;
-	margin: 0;
-}
-/* Toggle Effect for Mobile Menu */
-.toggle {
-	max-height: 0;
-    overflow: hidden;
-}
-input:checked ~ .toggle {
-    max-height: 100%;
-}
-
-
-
-
-
-/* --- SECTION STYLES --- */
-article {
-	border-bottom: 1px solid #6b9b37;
-	margin-bottom: 1em;
-}
-form {
-	clear: both;
-}
-
-/* --- IMAGES --- */
-img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
-}
-figure {
-	display: table;
-	margin: 1em auto 1em auto;
-	max-width: 320px;
-	/* max-width: 90%; */
-}
-figure img {
-	display: block;
-    margin: auto;
-	object-fit: cover;
-	
-	border-radius: 5px 5px 0 0;
-	height: 240px;
-	width: 100%;
-	transition: 0.5s;
-}
-figcaption {
-    background: #efefef;
-    caption-side: bottom;
-	color: #000;
-	display: table-caption;
-	font-size: 0.8em;
-	line-height: 133%;
-	
-	border-radius: 0 0 5px 5px;
-    padding: 10px;
-}
-
-
-
-
-
-.hidden {
-	display: none;
-	visibility: hidden;
-	transition: 0.5s;
-}
-.inline {
-	display: inline;
-	visibility: visible;
-	transition: 0.5s;
-}
-.btn {
-	/* min-width: 25%; */
-	border-radius: 3px;
-	margin: 0 5px 0 5px;
-}
-
-/* --- back to top --- */
-.button-circle {
-	border-radius: 5px 0 0 5px;
-	background: rgba(255,255,255,0.75);
-	display: inline-block;
-	font-size: 3em;
-	text-align: center;
-	padding: 5px;
-}
-.button-circle:hover {
-	background: #6b9b37;
-}
-
-#button-top {
-	position: fixed;
-	bottom: 1em;
-	right: 0;
-}
-
-
-
 /* --- MOBILE FRIENDLY TABLE --- */
 #csv-list {
 	clear: both;
@@ -392,28 +253,27 @@ figcaption {
 }
 /* --- each row --- */
 #csv-list .record {
-	border-bottom: 2px solid #6b9b37;
+	border-bottom: 2px solid #ff5f52;
 }
 /* --- add stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background: rgba(239,239,239,0.2);
+	background: rgba(198,40,40,0.1)
 }
 /* --- highlight action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background: rgba(46,125,50,0.2);
+	background: rgba(198,40,40,0.3)
 }
 /* --- inline cells --- */
 #csv-list .record span {
-	font-size: 85%;
-	padding: 2px 5px;
+	font-size: 90%;
+	padding: 3px 3px;
 	vertical-align: top;
 }
 /* --- table header style --- */
 #csv-list .record:first-of-type  {
-    background: #6b9b37;
-	color: #000;
+    background: rgba(198,40,40,0.4);
 	font-weight: 600;
 	text-transform: capitalize;
 }
@@ -424,142 +284,83 @@ figcaption {
 
 
 
+/* --- BACK TO TOP --- */
+.button-circle {
+	border-radius: 5px 0 0 5px;
+	background: rgba(255,255,255,0.3);
+	display: inline-block;
+	font-size: 3em;
+	text-align: center;
+	padding: 5px;
+}
+.button-circle:hover {
+    background: rgba(198,40,40,0.3);
+}
 
-
-/* --- FOOTER STYLES --- */
-.cc_dialog button.cc_b_ok,
-.cc_dialog button.cc_b_cp {
-	border-radius: 25px;
-	padding: 10px;
+#button-top {
+	position: fixed;
+	bottom: 1em;
+	right: 0;
 }
 
 
 
 
 
+/* DEFAULTS FOR DARK THEME */
+@media (prefers-color-scheme: dark) {
+
+	body {
+		color: #e5e5e5;
+		background: #151515;
+	}
+	header {
+		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.3) );
+		/* background: #151515; */
+		box-shadow: 0 0 20px #151515;
+	}
+	img {
+		filter: brightness(.8) contrast(1.2);
+	}
+	a.active {
+		border-bottom: 2px solid #c62828;
+	}
+	hr {
+		border-top: medium double #ccc;
+		color: #ccc;
+	}
+	hr:after {
+		background: #151515;
+	}
+
+}
 
 
 
 
-/* ----- LARGE SCREEN PRESENTATION ----- */
+
+/* -- LARGER SCREENS --- */
 @media (min-width: 800px) {
-
+	
 	body {
-		background: #efefef;
-		font-size: larger;
+		font-size: 120%;
 	}
-	header, section, article, aside, footer {
-		background: #fff;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 2em;		
-		max-width: 48em;
+	nav ul {
+		font-size: 2.4em;
 	}
-	header, section, aside, footer {
+	.logo {
+		border-radius: 50%;
+		width: 5em;
 	}
-	footer {
-		text-align: center;
-	}
-	section {
-	}
-	nav {
-		display: inline;
-	}
-	nav label { 
-		/* hide menu button */
-		display: none;
-	}
-	.toggle { 
-		/* show menu */
-		max-height: 100%;
-	}
-	#nav {
-		margin-top: 5px;
-	}
-	#nav ul {
-		background: none;
-		margin-top: 5px;
-		font-size: 100%;
-	}
-	#nav li {
-		display: inline-block;
-	}
-	#nav li a {
-		border-bottom: 3px solid #6b9b37;
-		border-width: 0 0 3px 0;
-		border-radius: 5px 5px 0 0;
-		padding: 5px 10px;
-		margin-right: 10px;
-	}
-	#nav li a:hover {
-		border-bottom: 3px solid #6b9b37;
-	}
-
-
-
-	/* --- SECTION STYLES --- */
-	section {
-		clear: both;
-	}
-	q {
-		font-size: 1.6em;
-	}
-	/* --- IMAGES --- */
 	figure {
-		margin: 1em 5% 2em 5%;
+		margin: 12px 24px 24px 0;
 		display: inline-grid;
-		width: 39%;
+		width: 202px;
 	}
-	figure img {
-		max-height: 240px;
-		margin: 0;
-		transition: 0.5s;
-	}
-
-
-
-	/* --- FOOTER STYLES --- */
-	footer {
-		padding: 5px;
-	}
-
-
-
+	
 }
 
 
-
-/* ----- X-LARGE SCREEN ----- */
-@media (min-width: 1280px) {
-
-	body {
-		font-size: larger;
-	}
-	header, section, article, aside, footer {
-		max-width: 60em;
-	}
-
-	/* --- HEADER STYLES --- */
-	header.broad h1 {
-		font-size: 3.5em;
-		transition: 0.5s;
-	}
-	header.broad .logo {
-		max-height: 8em;
-		transition: 0.5s;
-	}
-	figure {
-		margin: 1em 4.5% 2em 4.5%;
-		display: inline-grid;
-		max-width: 24%;
-	}
-	figure img {
-		max-height: 320px;
-		transition: 0.5s;
-	}
-
-
-}
 
 
 
@@ -589,3 +390,6 @@ figcaption {
 
 }
 
+
+
+/* --- EOF --- */
