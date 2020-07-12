@@ -13,9 +13,13 @@ Dark Mode - https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#os-
  font-family: 'Courier Prime', monospace; 	(Body)
  font-family: 'Roboto Slab', serif;			(Headings)
  * -- COLOURS ----- *
- primary: #ff9800 / rgb(255,152,0)
- dark: #c66900 / rgb(198,105,0)
- lite: #ffc947 / rgb(255,201,71)
+ primary: 	#ff9800 / rgb(255,152,0)
+ dark: 		#c66900 / rgb(198,105,0)
+ lite: 		#ffc947 / rgb(255,201,71)
+ * ----- ----- ----- *
+ primary: 	#336699 / rgb(51,102,153)
+ dark: 		#003366 / rgb(153,51,51)
+ lite: 		#6699cc / rgb(153,153,51)
  * ----- ----- ----- */
  
 
@@ -26,7 +30,7 @@ html {
 }
 
 body {
-	margin: 5px;
+	margin: 5px 5px 5em 5px;
 	padding: 0;
 	font-family: 'Courier Prime', monospace;
 	font-size: 100%;
@@ -101,9 +105,9 @@ figure img {
 	display: block;
 	object-fit: cover;
 
-	padding: 2px;
-	height: 200px;
-	width: 200px;
+	padding: 4px;
+	height: 196px;
+	width: 196px;
 
 	transition: all 200ms ease-in;
 	filter: grayscale(1) opacity(.8);	
@@ -112,7 +116,7 @@ figure img:hover {
 	filter: grayscale(0) opacity(1);
 }
 figcaption {
-	background: rgba(255,152,0,0.2);
+	background: rgba(51,102,153,0.4);
     caption-side: bottom;
 	display: table-caption;
 	font-size: 80%;
@@ -137,7 +141,7 @@ nav li {
 
 /* --- LINKS --- */
 a {
-	color: #ff9800;
+	color: #336699;
 
 	transition: color .4s linear;
 	transition: background .4s linear;
@@ -145,8 +149,8 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #000;
-	background: #ffc947;
+	color: #fff;
+	background: #993333;
 }
 /* --- family tree --- */
 a[name] {
@@ -160,7 +164,7 @@ a[name]:focus {
 	border: 0;
 }
 a.active {
-	border-bottom: 2px solid #c66900;
+	border-bottom: 2px solid #336699;
 
 }
 /*
@@ -202,7 +206,7 @@ hr {
     text-align: center;
 }
 hr:after {
-	color: #ff9800;
+	color: #993333;
     content: "♠";
     display: inline-block;
     position: relative;
@@ -224,7 +228,9 @@ hr:after {
 	background: #fff;
 	float: left;
 	margin-right: 1em;
+	padding: 2px;
 	width: 4em;
+	box-shadow: 2px 2px 2px #000;
 }
 .hidden {
 	display: none;
@@ -259,33 +265,34 @@ hr:after {
 }
 /* --- each row --- */
 #csv-list .record {
-	border-bottom: 2px solid #ff9800;
+	border-bottom: 2px solid #336699;
 }
 /* --- add stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background: rgba(255,152,0,0.1)
+	background: rgba(51,102,153,0.2)
 }
 /* --- highlight action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background: rgba(255,152,0,0.2)
+	background: rgba(153,51,51,0.2)
 }
 /* --- inline cells --- */
 #csv-list .record span {
 	font-size: 90%;
-	padding: 3px 3px;
+	padding: 1px 3px;
 	vertical-align: top;
 }
 /* --- table header style --- */
 #csv-list .record:first-of-type  {
-    background: rgba(255,152,0,0.4);
+    background: rgba(51,102,153,0.6);
 	font-weight: 600;
 	text-transform: capitalize;
 }
 /* --- Ajax Loading Graphic --- */
 #loading {
 	text-align: center;
+	max-width: 150px;
 }
 
 
@@ -293,14 +300,14 @@ hr:after {
 /* --- BACK TO TOP --- */
 .button-circle {
 	border-radius: 5px 0 0 5px;
-	background: rgba(255,255,255,0.4);
+	background: rgba(255,255,255,0.2);
 	display: inline-block;
 	font-size: 3em;
 	text-align: center;
 	padding: 5px;
 }
 .button-circle:hover {
-    background: rgba(255,201,71,0.4);
+    background: rgba(153,51,51,0.6);
 }
 
 #button-top {
@@ -329,11 +336,14 @@ hr:after {
 		filter: brightness(.8) contrast(1.2);
 	}
 	a.active {
-		border-bottom: 2px solid #c66900;
+		border-bottom: 2px solid #993333;
+	}
+	a.active:hover {
+		border-bottom: 2px solid #fff;
 	}
 	hr {
-		border-top: medium double #ccc;
-		color: #ccc;
+		border-top: medium double #999;
+		color: #999;
 	}
 	hr:after {
 		background: #151515;
@@ -346,7 +356,7 @@ hr:after {
 
 
 /* -- LARGER SCREENS --- */
-@media (min-width: 1280px) {
+@media (min-width: 760px) {
 	
 	body {
 		font-size: 120%;
@@ -359,7 +369,7 @@ hr:after {
 		width: 5em;
 	}
 	figure {
-		margin: 10px 20px 40px 20px;
+		margin: 10px 15px 40px 15px;
 		display: inline-grid;
 		width: 200px;
 	}
