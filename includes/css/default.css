@@ -4,17 +4,20 @@
 Dark Mode - https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#os-level
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 /* -- FONTS ----- *
- font-family: 'Kaushan Script', cursive;
- font-family: 'Montserrat', sans-serif;
- font-family: 'Courier Prime', monospace;
- font-family: 'Roboto Slab', serif;	
+ font-family: 'Kaushan Script', cursive;  	(Quotes)
+ font-family: 'Courier Prime', monospace; 	(Body)
+ font-family: 'Roboto Slab', serif;			(Headings)
+ * -- COLOURS ----- *
+ primary: #ff9800 / rgb(255,152,0)
+ dark: #c66900 / rgb(198,105,0)
+ lite: #ffc947 / rgb(255,201,71)
  * ----- ----- ----- */
+ 
 
 
 
@@ -25,10 +28,10 @@ html {
 body {
 	margin: 5px;
 	padding: 0;
-	font-family: monospace;
+	font-family: 'Courier Prime', monospace;
 	font-size: 100%;
 	line-height: 160%;
-	max-width: 960px;
+	max-width: 1024px;
 }
 header, section, footer {
 	margin: 0;
@@ -36,7 +39,7 @@ header, section, footer {
 }
 header {
 	height: 75px;
-	background-image: linear-gradient(#fff, #fff,  #fff, rgba(255,255,255,0.3) );
+	background-image: linear-gradient(#fff, #fff,  #fff, rgba(255,255,255,0.2) );
 	z-index: 100;
 }
 form {
@@ -90,7 +93,7 @@ section img {
 }
 figure {
 	display: table;
-	margin: 3px auto 12px;
+	margin: 5px auto 10px;
 
 	border: 1px solid #999;
 }
@@ -98,21 +101,22 @@ figure img {
 	display: block;
 	object-fit: cover;
 
-	padding: 3px;
+	padding: 2px;
 	height: 200px;
 	width: 200px;
 
 	transition: all 200ms ease-in;
-	filter: grayscale(1) opacity(.9);	
+	filter: grayscale(1) opacity(.8);	
 }
 figure img:hover {
 	filter: grayscale(0) opacity(1);
 }
 figcaption {
-	background: rgba(198,40,40,0.3);
+	background: rgba(255,152,0,0.2);
     caption-side: bottom;
 	display: table-caption;
-	font-size: 90%;
+	font-size: 80%;
+	line-height: 120%;
 	padding: 3px;
 }
 
@@ -133,16 +137,16 @@ nav li {
 
 /* --- LINKS --- */
 a {
-	color: #8e0000;
+	color: #ff9800;
 
-	transition: color .5s linear;
-	transition: background .5s linear;
+	transition: color .4s linear;
+	transition: background .4s linear;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #fff;
-	background: #c62828;
+	color: #000;
+	background: #ffc947;
 }
 /* --- family tree --- */
 a[name] {
@@ -156,8 +160,8 @@ a[name]:focus {
 	border: 0;
 }
 a.active {
-	border-bottom: 2px solid #c62828;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #c66900;
+
 }
 /*
 a[href^="http://"]:not([href*="simonarthur.co.uk"]):after,
@@ -193,17 +197,18 @@ hr {
     margin-top: 2em;
 	padding: 0;
     border: none;
-    border-top: medium double #333;
-    color: #333;
+    border-top: medium double #999;
+    color: #999;
     text-align: center;
 }
 hr:after {
+	color: #ff9800;
     content: "♠";
     display: inline-block;
     position: relative;
-    top: -0.4em;
-    font-size: 2em;
-    padding: 0 0.25em;
+    top: -0.8rem;
+    font-size: 2rem;
+    padding: 0 0.25rem;
     background: white;
 }
 
@@ -254,17 +259,17 @@ hr:after {
 }
 /* --- each row --- */
 #csv-list .record {
-	border-bottom: 2px solid #ff5f52;
+	border-bottom: 2px solid #ff9800;
 }
 /* --- add stripes --- */
 #csv-list .record:nth-child(odd)  { 
-	background: rgba(198,40,40,0.1)
+	background: rgba(255,152,0,0.1)
 }
 /* --- highlight action --- */
 #csv-list .record:hover,
 #csv-list .record:active,
 #csv-list .record:focus {
-	background: rgba(198,40,40,0.3)
+	background: rgba(255,152,0,0.2)
 }
 /* --- inline cells --- */
 #csv-list .record span {
@@ -274,7 +279,7 @@ hr:after {
 }
 /* --- table header style --- */
 #csv-list .record:first-of-type  {
-    background: rgba(198,40,40,0.4);
+    background: rgba(255,152,0,0.4);
 	font-weight: 600;
 	text-transform: capitalize;
 }
@@ -288,14 +293,14 @@ hr:after {
 /* --- BACK TO TOP --- */
 .button-circle {
 	border-radius: 5px 0 0 5px;
-	background: rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.4);
 	display: inline-block;
 	font-size: 3em;
 	text-align: center;
 	padding: 5px;
 }
 .button-circle:hover {
-    background: rgba(198,40,40,0.3);
+    background: rgba(255,201,71,0.4);
 }
 
 #button-top {
@@ -316,7 +321,7 @@ hr:after {
 		background: #151515;
 	}
 	header {
-		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.3) );
+		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.2) );
 		/* background: #151515; */
 		box-shadow: 0 0 20px #151515;
 	}
@@ -324,7 +329,7 @@ hr:after {
 		filter: brightness(.8) contrast(1.2);
 	}
 	a.active {
-		border-bottom: 2px solid #c62828;
+		border-bottom: 2px solid #c66900;
 	}
 	hr {
 		border-top: medium double #ccc;
@@ -341,7 +346,7 @@ hr:after {
 
 
 /* -- LARGER SCREENS --- */
-@media (min-width: 800px) {
+@media (min-width: 1280px) {
 	
 	body {
 		font-size: 120%;
@@ -354,9 +359,9 @@ hr:after {
 		width: 5em;
 	}
 	figure {
-		margin: 12px 24px 24px 0;
+		margin: 10px 20px 40px 20px;
 		display: inline-grid;
-		width: 202px;
+		width: 200px;
 	}
 	
 }
