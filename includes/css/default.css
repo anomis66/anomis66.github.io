@@ -30,12 +30,12 @@ html {
 }
 
 body {
-	margin: 0 5px 5em 5px;
-	padding: 0;
+	margin: 0 0 5em 0;
+	padding: 0 5px 0 5px;
 	font-family: 'Courier Prime', monospace;
 	font-size: 100%;
 	line-height: 160%;
-	max-width: 1280px;
+	max-width: 1024px;
 }
 header, section, footer {
 	margin: 0;
@@ -396,8 +396,8 @@ section img:hover {
 @media (min-width: 760px) {
 	
 	body {
-		margin: 5px auto 5em auto;
-		padding: 0;
+		margin: 0 auto 5em auto;
+		padding: 0 10px 0 10px;
 	}
 	nav ul {
 		font-size: 2.4em;
