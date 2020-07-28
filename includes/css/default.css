@@ -21,7 +21,12 @@ Dark Mode - https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#os-
  dark: 		#003366 / rgb(153,51,51)
  lite: 		#6699cc / rgb(153,153,51)
  * ----- ----- ----- */
- 
+
+
+
+:root {
+  color-scheme: light dark; /* both supported */
+}
 
 
 
@@ -30,21 +35,25 @@ html {
 }
 
 body {
+	color: #151515;
+	background: #e5e5e5;
+
 	margin: 0 0 5em 0;
 	padding: 0 5px 0 5px;
+	max-width: 1024px;
+
 	font-family: 'Courier Prime', monospace;
 	font-size: 100%;
 	line-height: 160%;
-	max-width: 1024px;
 }
 header, section, footer {
 	margin: 0;
 	padding: 0;
 }
 header {
-	height: 80px;
+	height: 120px;
 	padding-top: 5px;
-	background-image: linear-gradient(#fff, #fff, rgba(255,255,255,0.2) );
+	background-image: linear-gradient(#e5e5e5, #e5e5e5, #e5e5e5, rgba(229,229,229,0.2) );
 	z-index: 100;
 }
 form {
@@ -104,6 +113,7 @@ figure {
 	margin: 5px auto 10px;
 
 	border: 1px solid #999;
+	box-shadow: 2px 2px 4px #000;
 }
 figure img {
 	display: block;
@@ -112,6 +122,7 @@ figure img {
 	padding: 4px;
 	height: 196px;
 	width: 196px;
+	
 
 	transition: all 200ms ease-in;
 	filter: grayscale(1) opacity(.8);	
@@ -168,7 +179,7 @@ a[name]:focus {
 	border: 0;
 }
 a.active {
-	border-bottom: 2px solid #336699;
+	border-bottom: 3px solid #993333;
 
 }
 /*
@@ -183,23 +194,7 @@ h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 	line-height: 125%;
 }
-
-/* ----- QUOTES ----- */
-q {
-	font-family: 'Kaushan Script', cursive;	
-	display: block;
-	font-size: 110%;
-	margin: 24px 12px 12px 24px;
-}
-cite {
-	clear: right;
-	display: block;
-	float: right;
-	margin: 3px 12px 12px 0;
-}
-cite::before {
-	content: "- ";
-}
+/* ----- rules ----- */
 hr {
     overflow: visible; /* For IE */
     margin-top: 2em;
@@ -217,8 +212,53 @@ hr:after {
     top: -0.8rem;
     font-size: 2rem;
     padding: 0 0.25rem;
-    background: white;
+    background: #e5e5e5;
+	text-shadow: 1px 1px 2px #151515;
 }
+/* ----- quotes ----- */
+q {
+	font-family: 'Kaushan Script', cursive;	
+	display: block;
+	font-size: 110%;
+	margin: 24px 12px 12px 24px;
+}
+cite {
+	clear: right;
+	display: block;
+	float: right;
+	margin: 3px 12px 12px 0;
+}
+cite::before {
+	content: "- ";
+}
+.banner {
+	position: relative;
+	text-align: left;
+}
+/* ----- banner quotes ----- */
+.banner img {
+	box-shadow: 2px 2px 4px #000;
+	width: 100%;
+	min-height: 240px;
+	object-fit: cover;
+	max-height: 480px;
+	object-position: top;
+}
+.banner q {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    width: 90%;
+
+    color: #fff;
+    font-size: 3em;
+    line-height: 110%;
+    text-shadow: 1px 1px 2px #000;
+}
+
 
 
 
@@ -234,7 +274,7 @@ hr:after {
 	margin-right: 20px;
 	padding: 3px;
 	width: 80px;
-	box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 4px #000;
 }
 .hidden {
 	display: none;
@@ -260,31 +300,10 @@ hr:after {
 	top: auto;
 }
 
-.banner {
-	position: relative;
-	text-align: left;
-}
-.banner img {
-	width: 100%;
-	min-height: 240px;
-	object-fit: cover;
-	max-height: 480px;
-	object-position: top;
-}
-.banner q {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 
-    margin: 0 auto;
-    width: 90%;
 
-    color: #fff;
-    font-size: 3em;
-    line-height: 110%;
-    text-shadow: 0px 1px 6px #000;
-}
+
+/* ----- grayscale images ----- */
 section img {
 	transition: all 200ms ease-in;
 	filter: grayscale(1) opacity(.8);	
@@ -337,7 +356,7 @@ section img:hover {
 /* --- BACK TO TOP --- */
 .button-circle {
 	border-radius: 5px 0 0 5px;
-	background: rgba(255,255,255,0.2);
+	background: rgba(229,229,229,0.2);
 	display: inline-block;
 	font-size: 3em;
 	text-align: center;
@@ -365,18 +384,13 @@ section img:hover {
 		background: #151515;
 	}
 	header {
-		background-image: linear-gradient(#151515, #151515, rgba(21,21,21,0.2) );
-		/* background: #151515; */
-		box-shadow: 0 0 20px #151515;
+		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.2) );
 	}
 	img {
 		filter: brightness(.8) contrast(1.2);
 	}
-	a.active {
-		border-bottom: 2px solid #993333;
-	}
 	a.active:hover {
-		border-bottom: 2px solid #fff;
+		border-bottom: 3px solid #fff;
 	}
 	hr {
 		border-top: medium double #999;
@@ -398,6 +412,10 @@ section img:hover {
 	body {
 		margin: 0 auto 5em auto;
 		padding: 0 10px 0 10px;
+		font-size: 125%;
+	}
+	h1 {
+		font-size: 3em;
 	}
 	nav ul {
 		font-size: 2.4em;
