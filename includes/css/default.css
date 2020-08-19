@@ -426,8 +426,8 @@ section img:hover {
 	nav ul {
 		font-size: 2.2em;
 	}
+	img[src$='#logo'],
 	.logo {
-		/* border-radius: 50%; */
 		margin-right: 50px;
 		width: 100px;
 	}
