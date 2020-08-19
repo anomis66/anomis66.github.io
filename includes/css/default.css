@@ -270,6 +270,7 @@ cite::before {
     position: sticky;
     top: 0;
 }
+img[src$='#logo'],
 .logo {
 	background: #fff;
 	float: left;
@@ -389,7 +390,7 @@ section img:hover {
 		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.2) );
 	}
 	img {
-		filter: brightness(.6) contrast(1.2);
+		filter: brightness(.8) contrast(1.2);
 	}
 	a.active:hover {
 		border-bottom: 3px solid #fff;
@@ -401,7 +402,10 @@ section img:hover {
 	hr:after {
 		background: #151515;
 	}
-
+	code {
+		background: #000;
+		color: #693;
+	}
 }
 
 
