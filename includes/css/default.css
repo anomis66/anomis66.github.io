@@ -138,7 +138,7 @@ figcaption {
 	bottom: 0;
 	left: 0;
 
-	background: rgba(153,51,51,0.8);
+	background: rgba(153,51,51,0.9);
 	color: #e5e5e5;
 	font-size: 80%;
 	line-height: 120%;
@@ -174,7 +174,7 @@ nav li {
 
 /* --- LINKS --- */
 a {
-	color: #336699;
+	color: #1E4A76;
 
 	transition: color .4s linear;
 	transition: background .4s linear;
@@ -198,6 +198,9 @@ a[name]:focus {
 }
 a.active {
 	border-bottom: 3px solid #993333;
+}
+a.active:hover {
+	border-bottom: 3px solid #fff;
 }
 /*
 a[href^="http://"]:not([href*="simonarthur.co.uk"]):after,
@@ -409,8 +412,8 @@ section img:hover {
 	img {
 		filter: brightness(.8) contrast(1.2);
 	}
-	a.active:hover {
-		border-bottom: 3px solid #fff;
+	a {
+		color: #79A6D2;
 	}
 	hr {
 		border-top: medium double #999;
