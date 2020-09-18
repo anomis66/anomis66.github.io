@@ -100,6 +100,12 @@ noscript a,
 	color: #000;
 	font-weight: 600
 }
+code {
+	border: #ccc;
+	background: #d5d5d5;
+	color: #693;
+	padding: 2px 4px;
+}
 
 
 
@@ -421,10 +427,6 @@ section img:hover {
 	}
 	hr:after {
 		background: #151515;
-	}
-	code {
-		background: #000;
-		color: #693;
 	}
 }
 
