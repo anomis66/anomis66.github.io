@@ -329,7 +329,17 @@ img[src$='#logo'],
 	left: -10000px;
 	top: auto;
 }
-
+article p:nth-child(3)::first-letter {
+	color: #993333;
+	text-shadow: 2px 2px 6px #1E4A76;
+	padding: 0 0.2rem;
+	margin: 0 0.1rem 0 0;
+	
+	
+	font-size: 3.8em;
+	float: left;
+	line-height: 1em;
+}
 
 
 
