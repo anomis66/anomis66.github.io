@@ -127,6 +127,7 @@ figure {
 figure img {
 	display: block;
 	object-fit: cover;
+	object-position: center 75%;
 
 	padding: 4px;
 	height: 196px;
