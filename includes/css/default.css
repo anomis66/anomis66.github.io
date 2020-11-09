@@ -37,6 +37,7 @@ html {
 body {
 	color: #151515;
 	background: #e5e5e5;
+	background-image: url(../images/background-pattern-neg.png);
 
 	margin: 0 0 5em 0;
 	padding: 0 5px 0 5px;
@@ -56,6 +57,10 @@ header {
 	padding-top: 5px;
 	background-image: linear-gradient(#e5e5e5, #e5e5e5, #e5e5e5, rgba(229,229,229,0.2) );
 	z-index: 100;
+}
+article {
+	background:	rgba(229,229,229,0.4);
+	padding: 0.5em 1em;
 }
 form {
 	clear: both;
@@ -243,6 +248,7 @@ hr:after {
     font-size: 2rem;
     padding: 0 0.25rem;
     background: #e5e5e5;
+	background: rgba(221,221,221,0.0);
 	text-shadow: 1px 1px 2px #151515;
 }
 /* ----- quotes ----- */
@@ -333,8 +339,8 @@ img[src$='#logo'],
 article p:nth-child(3)::first-letter {
 	color: #993333;
 	text-shadow: 2px 2px 6px #1E4A76;
-	padding: 0 0.2rem;
-	margin: 0 0.1rem 0 0;
+	padding: 0 0.4rem;
+	margin: 0 0.2rem 0 0;
 	
 	
 	font-size: 3.8em;
@@ -386,12 +392,16 @@ section img:hover {
 	font-weight: 600;
 	text-transform: capitalize;
 }
-/* --- Ajax Loading Graphic --- */
-#loading {
-	text-align: center;
-	max-width: 150px;
-}
 
+
+/* --- AJAX LOADING GRAPHIC --- */
+#loading {
+	width: 100%;
+	margin: auto;
+}
+#loading img {
+	width: 100px;
+}
 
 
 /* --- BACK TO TOP --- */
