@@ -40,7 +40,7 @@ body {
 
 	margin: 0 0 5em 0;
 	padding: 0 5px 0 5px;
-	max-width: 1024px;
+	max-width: 1280px;
 
 	font-family: 'Courier Prime', monospace;
 	font-size: 100%;
@@ -117,8 +117,9 @@ section img {
 	max-width: 100%;
 }
 figure {
-	position: relative;	
+	position: relative;
 	display: table;
+	clear: both;
 	margin: 5px auto 10px;
 
 	border: 1px solid #999;
@@ -127,12 +128,11 @@ figure {
 figure img {
 	display: block;
 	object-fit: cover;
-	object-position: center 75%;
+	/* object-position: center 75%; */
 
 	padding: 4px;
-	height: 196px;
-	width: 196px;
-	
+	height: 240px;
+	width: 360px;
 
 	transition: all 200ms ease-in;
 	filter: grayscale(1) opacity(.8);	
@@ -423,9 +423,14 @@ section img:hover {
 	body {
 		color: #e5e5e5;
 		background: #151515;
+		background-image: url(../images/background-pattern.png);
 	}
 	header {
 		background-image: linear-gradient(#151515, #151515, #151515, rgba(21,21,21,0.2) );
+	}
+	article {
+		background: rgba(21,21,21,0.4); /* #151515; */
+		padding: 0.5em 1em;
 	}
 	img {
 		filter: brightness(.8) contrast(1.2);
@@ -438,7 +443,7 @@ section img:hover {
 		color: #999;
 	}
 	hr:after {
-		background: #151515;
+		background: rgba(21,21,21,0.0);
 	}
 }
 
@@ -468,7 +473,7 @@ section img:hover {
 	figure {
 		margin: 10px 15px 40px 15px;
 		display: inline-grid;
-		width: 200px;
+		width: 240px;
 	}
 	.banner q {
 		top: 35%;
