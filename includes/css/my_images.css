@@ -25,6 +25,10 @@ p img {
 	margin: 0 auto;
 }
 
+p img[src*="#logo"] {
+	width: 405px;
+	height: 290px;
+}
 
 p img[src*="#full"] {
 	width: 90vw;
