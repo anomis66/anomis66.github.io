@@ -16,9 +16,9 @@ p img {
 	width: 320px;
 	height: 240px;
 
-	border: thin solid #eee;
+	border: var(--sml) solid var(--mono-mid);
 
-	padding: 1.5rem;
+	padding: var(--sml);
 	margin: 0 auto;
 }
 
@@ -88,6 +88,6 @@ p .caption {
 
 	.gallery > p {
 		display: inline-grid;
-		margin: 3rem 1rem 3rem 1rem;
+		margin: var(--lrg) var(--sml) var(--lrg) var(--sml);
 	}
 }

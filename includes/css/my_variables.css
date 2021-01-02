@@ -1,5 +1,21 @@
 
 :root {
-  color-scheme: light dark; /* both supported */
+	color-scheme: light dark; /* both supported */
+
+	--red: #d32f2f;
+	--blue: #1976d2;
+	--green: #689f38;
+	--yellow: #fbc02d;
+	
+	--white: #ffffff;
+
+	--mono-dark: #616161;
+	--mono-lite: #eeeeee;
+	--mono-mid: #bdbdbd;
+	
+	--min: 0.5rem;
+	--sml: 1rem;
+	--med: 2rem;
+	--lrg: 3rem;
 }
  
