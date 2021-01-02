@@ -69,13 +69,7 @@ h1 + p + p::first-letter {
 
 }
 
-h1 + p {
-	font-size: 90%;
-	font-style: italic;
-	font-weight: 600;
-	text-align: right;
-	
-}
+
 
 
 
