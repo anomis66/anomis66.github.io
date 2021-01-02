@@ -16,7 +16,7 @@ p img {
 	width: 320px;
 	height: 240px;
 
-	border: var(--sml) solid var(--mono-mid);
+	border: var(--min) solid var(--mono-mid);
 
 	padding: var(--sml);
 	margin: 0 auto;
