@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
 /* DISPLAY IMAGE TITLE AS CAPTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$("p img").each(
+$(".gallery p img").each(
 	function(){
 		var title = $(this).attr('title');
 		var text = '<span class="caption">' + title + '</span>';
