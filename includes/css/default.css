@@ -32,7 +32,7 @@
 @import url('jquery.fancybox.min.css?v3.5.7'); 
  
 /* 1. -------------------- */
-@import url('_variables.css?v21.0102');
+@import url('my_variables.css?v21.0102');
 
 
 /* 3. -------------------- */
@@ -41,10 +41,10 @@
 
 
 /* 4. -------------------- */
-@import url('_typography.css');
-@import url('_grid.css');
+@import url('my_typography.css');
+@import url('my_grid.css');
 
 /* 5. -------------------- */
-@import url('_images.css');
-@import url('_tables.css');
+@import url('my_images.css');
+@import url('my_tables.css');
 
