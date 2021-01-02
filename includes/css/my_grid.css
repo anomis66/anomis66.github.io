@@ -59,6 +59,12 @@ body,
 	.column {width: 100%;}
 	
 	.hidden { display: none; }
+	
+	body{
+		max-width: 60rem;
+	}
+		
+
 } 
 
 
@@ -74,6 +80,9 @@ body,
 	.column {width: 100%;}
 	
 	.hidden { display: none; }
+	body{
+		max-width: 80rem;
+	}
 } 
 
 
