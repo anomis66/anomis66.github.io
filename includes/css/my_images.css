@@ -13,29 +13,12 @@ p img {
 
 	clear: both;
 	
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
 
-	max-width: 60rem;
-	max-height: 60rem;
-
-	border: var(--min) solid var(--mono-mid);
-
-	padding: var(--sml);
 	margin: 0 auto;
 }
 
-p img[src*="#logo"] {
-	width: 405px;
-	height: 290px;
-}
 
-p img[src*="#full"] {
-	width: 90vw;
-	height: calc(90vw * 0.66);
-	max-width: 1024px;
-	max-height: 1024px;
-}
 
 
 
@@ -97,4 +80,15 @@ p .caption {
 		display: inline-grid;
 		margin: var(--lrg) var(--sml) var(--lrg) var(--sml);
 	}
+	p img[src*="#logo"] {
+		width: 320px;
+	}
+
+	p img[src*="#full"] {
+		width: 90vw;
+		height: calc(90vw * 0.66);
+		max-width: 1024px;
+		max-height: 1024px;
+	}
+	
 }
