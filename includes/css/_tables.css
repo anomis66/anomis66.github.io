@@ -1,0 +1,57 @@
+/* MOBILE FRIENDLY TABLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#csv-list {
+	clear: both;
+	width: auto;
+}
+
+/* Each Row 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#csv-list .record {
+	border-bottom: 2px solid #336699;
+}
+
+/* Add Stripes 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#csv-list .record:nth-child(odd)  { 
+	background: rgba(51,102,153,0.2)
+}
+
+/* Highlight
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#csv-list .record:hover,
+#csv-list .record:active,
+#csv-list .record:focus {
+	background: rgba(153,51,51,0.2)
+}
+
+/* Inline Cells 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#csv-list .record span {
+	font-size: 90%;
+	padding: 1px 3px;
+	vertical-align: top;
+}
+
+/* Table Header 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#csv-list .record:first-of-type  {
+    background: rgba(51,102,153,0.6);
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+
+
+/* Ajax Loading Graphic 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#loading {
+	width: 100%;
+	margin: auto;
+}
+#loading img {
+	width: 100px;
+}
+
+

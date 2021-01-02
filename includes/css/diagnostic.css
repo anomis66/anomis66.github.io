@@ -1,48 +1,21 @@
-/* --- DIAGNOSTIC CSS ---
- * https://meyerweb.com/eric/tools/css/diagnostics/
- *
- * Quickly see where your markup might have some trouble:
- * https://meyerweb.com/eric/tools/css/diagnostics/demo-not.html
- * ----- ----- ----- */
-
 div:empty, span:empty,
 li:empty, p:empty,
-td:empty, th:empty
-	{ padding: 0.6em; background: yellow; }
+td:empty, th:empty {padding: 0.5em; background: yellow;}
 
-*[style], font, center 
-	{ outline: 2px solid crimson; }
-*[class=""], *[id=""] 
-	{ outline: 2px dotted crimson; }
+*[style], font, center {outline: 5px solid red;}
+*[class=""], *[id=""] {outline: 5px dotted red;}
 
-img[alt=""] 
-	{ border: 3px dotted orange; }
-img:not([alt]) 
-	{ border: 3px solid orange; }
-img[title=""] 
-	{ outline: 3px dotted violet; }
-img:not([title]) 
-	{ outline: 3px solid violet; }
+img[alt=""] {border: 3px dotted red;}
+img:not([alt]) {border: 5px solid red;}
+img[title=""] {outline: 3px dotted fuchsia;}
+img:not([title]) {outline: 5px solid fuchsia;}
 
-table:not([summary]) 
-	{ outline: 3px double crimson; }
-table[summary=""] 
-	{ outline: 2px dotted crimson; }
-th 
-	{ border: 2px solid crimson; }
-th[scope="col"], 
-th[scope="row"] 
-	{ border: none; }
+table:not([summary]) {outline: 5px solid red;}
+table[summary=""] {outline: 3px dotted red;}
+th {border: 2px solid red;}
+th[scope="col"], th[scope="row"] {border: none;}
 
-a[href]:not([title]) 
-	{ border: 3px double crimson; }
-a[title=""] 
-	{ outline: 2px dotted crimson; }
-a[href="#"] 
-	{ background: lime; }
-a[href=""] 
-	{ background: violet; }
-
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([aria-labelledby]):not([id]), 
-label:not([for]) 
-	{ outline: 2px dashed red; }
+a[href]:not([title]) {border: 5px solid red;}
+a[title=""] {outline: 3px dotted red;}
+a[href="#"] {background: lime;}
+a[href=""] {background: fuchsia;}
