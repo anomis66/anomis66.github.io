@@ -20,7 +20,7 @@ $("p img").each(
 
 /* LOAD JSON NAVBAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-fetch('nav.json')
+fetch('/includes/nav.json')
 .then(function (response) {
 	return response.json();
 })
