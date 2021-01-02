@@ -61,7 +61,7 @@ body,
 	.hidden { display: none; }
 	
 	body{
-		max-width: 60rem;
+		max-width: 80rem;
 	}
 		
 
@@ -81,7 +81,7 @@ body,
 	
 	.hidden { display: none; }
 	body{
-		max-width: 80rem;
+		max-width: 100rem;
 	}
 } 
 
