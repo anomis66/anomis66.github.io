@@ -19,3 +19,4 @@ family/musi/musicbrainz.php
 *.bak
 family/vinyl/add/_pdo_cnxn.php
 family/vinyl/add/index.php
+*.txt
