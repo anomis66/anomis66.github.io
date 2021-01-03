@@ -19,7 +19,7 @@ img {
 	font-size: 80%;
 	line-height: 1.4;
 	padding: 1rem 2rem;
-	text-align: center;
+	text-align: left;
 	word-wrap: initial;
 }
 /* if image is child of <p> */
@@ -79,7 +79,7 @@ p img[src*="#full"] {
 	.gallery p { 
 		display: inline-grid; 
 		float: left;
-		width: 48%;
+		width: 50%;
 	}
 	.caption {
 		border: 0;
@@ -88,11 +88,11 @@ p img[src*="#full"] {
 }
 @media only screen and (min-width: 60rem) {
 	.gallery { column-count: 3; }
-	.gallery p { width: 32%; }
+	.gallery p { width: 33.33%; }
 }
 @media only screen and (min-width: 80rem) {
 	.gallery { column-count: 4; }
-	.gallery p { width: 23%; }
+	.gallery p { width: 25%; }
 
 }
 
