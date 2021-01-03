@@ -6,7 +6,8 @@
 
 body,
 .container {
-	max-width: 98vw;
+	max-width: 99vw;
+	padding: 5px;
 	margin: 0 auto;
 }
 
@@ -93,10 +94,10 @@ body,
 	.aside ul { column-count: 2; }
 }
 @media only screen and (min-width: 60rem) {
-	.aside ul { column-count: 3; }
+	.aside ul { column-count: 2; }
 }
 @media only screen and (min-width: 80rem) {
-	.aside ul { column-count: 4; }
+	.aside ul { column-count: 3; }
 }
 
 
