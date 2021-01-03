@@ -44,12 +44,12 @@ p img[src*="#full"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .gallery {
 	text-align: center;
+	max-width: 99vw;
 }
 
 .gallery p {
 	display: table;
 	float: left;
-	max-width: 99vw;
 }
 
 /* crop image */
