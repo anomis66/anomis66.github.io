@@ -50,7 +50,8 @@ p img[src*="#full"] {
 	border: 1px solid var(--blue);
 	border-radius: var(--mini);
 	padding: var(--small);
-	margin: 0.5%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
 }
 .gallery p:hover {
 	border: 1px solid var(--red);
