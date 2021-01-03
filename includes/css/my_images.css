@@ -64,7 +64,7 @@ p img[src*="#full"] {
 	margin-right: 0.5%;
 }
 .gallery p:hover {
-	border: 1px solid var(--red);
+	border: 2px solid var(--red);
 }
 
 /* crop image */
