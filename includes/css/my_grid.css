@@ -62,8 +62,7 @@ body,
 	.hidden { display: none; }
 	
 	body{
-		max-width: 1024px;
-	}
+		max-width: 70rem;
 		
 
 } 
@@ -72,7 +71,7 @@ body,
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768PX AND UP)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (min-width: 80rem) {
+@media only screen and (min-width: 1280px) {
 	.col-l25 {width: 25%;}
 	.col-l33 {width: 33.3333%;}
 	.col-l50 {width: 50%;}
@@ -90,13 +89,13 @@ body,
 
 /* NAVIGATION BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 640px) {
 	.aside ul { column-count: 2; }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 1024px) {
 	.aside ul { column-count: 2; }
 }
-@media only screen and (min-width: 80rem) {
+@media only screen and (min-width: 1280px) {
 	.aside ul { column-count: 3; }
 }
 
