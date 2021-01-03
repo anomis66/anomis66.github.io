@@ -91,7 +91,7 @@ p img {
 	height: 300px;
 }
 p .caption {
-	display: block;
+	/* display: block; */
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
 	word-wrap: initial;
