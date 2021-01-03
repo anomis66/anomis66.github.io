@@ -82,13 +82,13 @@ body,
 /* NAVIGATION BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 40rem) {
-	.aside ul { column-count: 2; }
+	.aside ul { column-count: 1; }
 }
 @media only screen and (min-width: 60rem) {
 	.aside ul { column-count: 2; }
 }
 @media only screen and (min-width: 80rem) {
-	.aside ul { column-count: 4; }
+	.aside ul { column-count: 3; }
 }
 
 
