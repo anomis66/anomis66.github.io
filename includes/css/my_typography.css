@@ -61,8 +61,8 @@ h1 + p + p::first-letter {
 	font-size: 6.4rem;
 	float: left;
 
-	line-height:  var(--sml);
-	padding: 0var(--sml) 0 0;
+	line-height: 1;
+	padding: 0 var(--sml) 0 0;
 
 	color: var(--red);
 	text-shadow: 2px 2px 4px var(--mono-dark);
