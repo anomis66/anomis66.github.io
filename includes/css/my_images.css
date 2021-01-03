@@ -1,6 +1,7 @@
+@import url('my_variables.css?v21.0102');
+
 /* IMAGES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 
 /* Standard Image
@@ -13,19 +14,19 @@ img {
 	max-width: 90%;
 }
 .caption {
-	border: 1px solid #9e9e9e;
+	border: 1px solid var(--mono-mid);
 	box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
 
 	font-size: 80%;
 	line-height: 1.4;
-	padding: 1rem 2rem;
+	padding: var(--small) var(--medium);
 	text-align: left;
 	word-wrap: initial;
 }
 /* if image is child of <p> */
 p < img {
-	background: #f5f5f5;
-	border: 1px solid #9e9e9e;
+	background: var(--mono-lite);
+	border: 1px solid var(--mono-mid);
 }
 /* logo sizing */
 p img[src*="#logo"] {
