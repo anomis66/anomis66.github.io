@@ -28,10 +28,12 @@ p img[src*="#logo"] {
 }
 /* full-size non-gallery image */
 p img[src*="#full"] {
-	width: 90vw;
+	display: block;
+	object-fit: cover;
+	object-position: 50% 75%;
+
+	width: 80vw;
 	height: auto;
-	max-width: 1024px;
-	max-height: 1024px;
 }
 
 
