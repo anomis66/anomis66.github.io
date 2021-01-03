@@ -13,9 +13,12 @@ img {
 	max-width: 90%;
 }
 .caption {
+	border: 1px solid var(--mono-mid);
+	box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
+
 	font-size: 80%;
 	line-height: 1.4;
-	padding: 0 1rem 1rem 1rem;
+	padding: val(--sml) val(--med);
 	text-align: center;
 	word-wrap: initial;
 }
@@ -74,6 +77,10 @@ p img[src*="#full"] {
 @media only screen and (min-width: 40rem) {
 	.gallery { column-count: 2; }
 	.gallery p { display: inline-grid; float: left; }
+	.caption {
+		border: 0;
+		box-shadow: 0 0 0 transparent;
+	}
 }
 @media only screen and (min-width: 60rem) {
 	.gallery { column-count: 3; }
