@@ -65,14 +65,15 @@ p img[src*="#full"] {
 
 	height: 245px;
 	width: 245px;
-
-	/* /* transition: all 200ms ease-in; */ */
-	/* /* filter: grayscale(1) opacity(.8);	 */ */
-/* } */
-/* .gallery p img:hover { */
-	/* filter: grayscale(0) opacity(1); */
 }
-
+/*
+	transition: all 200ms ease-in;
+	filter: grayscale(1) opacity(.8);	
+}
+.gallery p img:hover {
+	filter: grayscale(0) opacity(1);
+}
+*/
 
 
 
