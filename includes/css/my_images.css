@@ -48,10 +48,11 @@ p img[src*="#full"] {
 .gallery p {
 	background: var(--white);
 	border: 1px solid var(--blue);
+	border-radius: var(--mini);
 	padding: var(--small);
 	margin: 0.5%;
 }
-.gallery p {
+.gallery p:hover {
 	border: 1px solid var(--red);
 }
 
