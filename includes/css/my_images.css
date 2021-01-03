@@ -21,12 +21,7 @@ img {
 	text-align: left;
 	word-wrap: initial;
 }
-/* if image is child of <p> */
-p img:parent {
-	background: var(--white);
-	border: 1px solid var(--mono-mid);
-	padding: var(--small);
-}
+
 /* logo sizing */
 p img[src*="#logo"] {
 	width: 320px;
@@ -50,7 +45,11 @@ p img[src*="#full"] {
 	max-width: 99vw;
 	text-align: center;
 }
-
+.gallery p {
+	background: var(--white);
+	border: 1px solid var(--mono-mid);
+	padding: var(--small);
+}
 /* crop image */
 .gallery p img {
 	display: block;
