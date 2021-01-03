@@ -29,7 +29,8 @@ div.gallery {
 
 
 div.gallery p {
-	
+	float: left;
+	width: 240px;	
 	border-radius: 3px;
 
 	/* fallback colour for browsers that don't support gradients */
