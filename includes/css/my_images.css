@@ -10,29 +10,20 @@ img {
 	margin: 0 auto;
 	clear: both;
 	
+	padding: 4px;
+	border: 1px solid var(--mono-mid);
+	
 	max-width: 90%;
-
 }
 .caption {
-	background: var(--mono-lite);
 	font-size: 85%;
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
 	word-wrap: initial;
 }
 
-/* crop image */
-p img {
-	display: block;
-	object-fit: cover;
-	object-position: 50% 75%;
 
-	height: 150px;
-	width: 150px;
 
-	transition: all 200ms ease-in;
-	filter: grayscale(1) opacity(.8);	
-}
 /* logo sizing */
 p img[src*="#logo"] {
 	width: 320px;
@@ -61,20 +52,39 @@ p img[src*="#full"] {
 	max-width: 400px;
 }
 
+/* crop image */
+.gallery p img {
+	display: block;
+	object-fit: cover;
+	object-position: 50% 75%;
+
+	background: var(--mono-lite);
+
+	height: 240px;
+	width: 180px;
+
+	transition: all 200ms ease-in;
+	filter: grayscale(1) opacity(.8);	
+}
+.gallery p img:hover {
+	filter: grayscale(0) opacity(1);
+}
+
+
 
 
 
 
 /* Larger Screens
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 640px) {
 	.gallery p { display: inline-grid; }
 	.gallery { column-count: 2; }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 1024px) {
 	.gallery { column-count: 3; }
 }
-@media only screen and (min-width: 80rem) {
+@media only screen and (min-width: 1280px) {
 	.gallery { column-count: 4; }
 }
 
