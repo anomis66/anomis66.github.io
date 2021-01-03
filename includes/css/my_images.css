@@ -13,9 +13,6 @@ p img {
 
 	clear: both;
 	
-	max-width: 800px;
-	max-height: 600px;
-
 	margin: 0 auto;
 	padding: 1rem;
 }
@@ -31,6 +28,10 @@ p img {
 }
 
 .gallery p {
+
+	max-width: 480px;
+	max-height: 480px;
+
 	
 	border-radius: 3px;
 	/* fallback colour for browsers that don't support gradients */
@@ -86,9 +87,6 @@ p img {
 
 .gallery img {
 	border: 0;
-	
-	max-width: 300px;
-	height: 300px;
 }
 p .caption {
 	/* display: block; */
