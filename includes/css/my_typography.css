@@ -17,7 +17,7 @@ body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 	color: var(--mono-dark);
-	background: var(--mono-lite);
+	background: var(--white);
 	/* background-image: url(../images/background-pattern-neg.png); */
 	font-family: 'Courier Prime', monospace;
 }
