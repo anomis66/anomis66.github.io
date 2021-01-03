@@ -1,13 +1,15 @@
-<link rel="stylesheet" href="https://www.simonarthur.co.uk/includes/css/default.css" />
-<script src="https://www.simonarthur.co.uk/includes/scripts/md-page.js"></script>
-<script src="https://www.simonarthur.co.uk/includes/scripts/default.js"></script>
-
 [![Logo](https://www.simonarthur.co.uk/includes/images/anomis66_jack.png#logo "Keep It Simple, Simon")][home]
 
 
 
-Legal Stuff
+
+
+Welcome
 ===========
+
+This is the personal site of **Simon Arthur** hosted on Github.io.
+
+## Legal Stuff
 
 The legal stuff for my site is in the footer.  This is in addition to any policies from [Github, Inc.](https://github.com/)
 
