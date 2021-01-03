@@ -13,14 +13,17 @@ img {
 	max-width: 90%;
 }
 .caption {
-	font-size: 85%;
+	font-size: 80%;
+	line-height: 1rem;
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
 	word-wrap: initial;
 }
-
-
-
+/* if image is child of <p> */
+p < img {
+	background: var(--mono-lite);
+	border: 1px solid var(--mono-mid);
+}
 /* logo sizing */
 p img[src*="#logo"] {
 	width: 320px;
@@ -47,11 +50,6 @@ p img[src*="#full"] {
 	display: table;
 	float: left;
 	max-width: 400px;
-
-	padding: 4px;
-	background: var(--mono-lite);
-	border: 1px solid var(--mono-mid);
-
 }
 
 /* crop image */
@@ -60,8 +58,8 @@ p img[src*="#full"] {
 	object-fit: cover;
 	object-position: 50% 75%;
 
-	height: 150px;
-	width: 150px;
+	height: 240px;
+	width: 240px;
 
 	transition: all 200ms ease-in;
 	filter: grayscale(1) opacity(.8);	
