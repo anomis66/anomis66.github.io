@@ -57,7 +57,7 @@ p img[src*="#full"] {
 }
 .gallery p {
 	background: var(--mono-lite);
-	border: 1px solid var(--mono-mid);
+	border: 2px solid var(--mono-mid);
 	border-radius: var(--mini);
 	padding: var(--small);
 	margin-left: 0.5%;
