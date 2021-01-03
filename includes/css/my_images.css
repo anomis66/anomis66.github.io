@@ -48,10 +48,6 @@ p img[src*="#full"] {
 	text-align: center;
 }
 
-.gallery p {
-	float: left;
-}
-
 /* crop image */
 .gallery p img {
 	display: block;
@@ -77,7 +73,7 @@ p img[src*="#full"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 40rem) {
 	.gallery { column-count: 2; }
-	.gallery p { display: inline-grid; }
+	.gallery p { display: inline-grid; float: left; }
 }
 @media only screen and (min-width: 60rem) {
 	.gallery { column-count: 3; }
