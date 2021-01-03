@@ -117,7 +117,7 @@ a.active:hover {
 /* blockquotes and code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 blockquote {
-	border-left: var(--sml) solid var(--red);
+	border-left: var(--small) solid var(--red);
 }
 code {
 	color:  var(--red);
@@ -126,7 +126,7 @@ code {
 blockquote,
 code {
 	background: var(--mono-lite);
-	padding: var(--min) var(--sml);
+	padding: var(--mini) var(--small);
 }
 
 
