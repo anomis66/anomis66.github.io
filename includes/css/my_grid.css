@@ -71,7 +71,7 @@ body,
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768PX AND UP)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 80rem) {
 	.col-l25 {width: 25%;}
 	.col-l33 {width: 33.3333%;}
 	.col-l50 {width: 50%;}
@@ -89,13 +89,13 @@ body,
 
 /* NAVIGATION BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 40rem) {
 	.aside ul { column-count: 2; }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 60rem) {
 	.aside ul { column-count: 2; }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 80rem) {
 	.aside ul { column-count: 3; }
 }
 
