@@ -1,3 +1,6 @@
+@import url('my_variables.css?v21.0102');
+
+
 /* GRID VIEW
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 * {
@@ -6,16 +9,10 @@
 
 body,
 .container {
-	max-width: 99vw;
-	padding: 5px;
+	width: 98vw;
+	padding: var(--mini);
 	margin: 0 auto;
 }
-
-.container-fluid {
-	width: 98%;
-	margin: 1%;
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -28,7 +25,7 @@ body,
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 [class*="col-"] {
     float: left;
-    padding: 5px;
+    padding: var(--mini);
     width: 100%;
 }
 
@@ -91,7 +88,7 @@ body,
 	.aside ul { column-count: 2; }
 }
 @media only screen and (min-width: 80rem) {
-	.aside ul { column-count: 3; }
+	.aside ul { column-count: 4; }
 }
 
 
