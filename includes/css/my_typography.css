@@ -60,13 +60,13 @@ h6 { font-size: 1.8rem; line-height: 1.6; letter-spacing: 0; }
 
 
 
-
+/* dropped capital on second paragraph */
 h1 + p + p::first-letter {
 	font-size: 6.4rem;
 	float: left;
 
 	line-height: 1;
-	padding: 0 2rem 0 0;
+	padding: 0 1rem 0 0;
 
 	color: var(--red);
 	text-shadow: 2px 2px 4px var(--mono-dark);
