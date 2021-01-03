@@ -89,8 +89,9 @@ a {
 a:hover,
 a:focus,
 a:active {
+	border-radius: 3px;
 	color:  var(--red);
-	background:  var(--white);
+	background: rgba(255,255,255,0.7);
 }
 /* --- family tree --- */
 a[name] {
