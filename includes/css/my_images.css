@@ -87,8 +87,8 @@ p img {
 .gallery img {
 	border: 0;
 	
-	width: ;
-	height: 
+	max-width: 300px;
+	height: 300px;
 }
 p .caption {
 	display: block;
