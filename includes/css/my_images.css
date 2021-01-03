@@ -62,6 +62,8 @@ p img {
 	transform: rotate(12deg);
 }
 .gallery img {
+	max-width: 24vw;
+	max-height: auto;
 	border: 0;
 }
 p .caption {
