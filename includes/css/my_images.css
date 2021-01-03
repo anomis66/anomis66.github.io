@@ -34,6 +34,9 @@ p img[src*="#full"] {
 
 	width: 80vw;
 	height: auto;
+	
+	max-width: 800px;
+	max-height: 800px;
 }
 
 
