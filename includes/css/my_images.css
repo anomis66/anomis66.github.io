@@ -6,8 +6,6 @@
 /* Standard Image
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 p img {
-	position: relative;
-	display: table;
 	object-fit: cover;
 	overflow: hidden;
 
@@ -17,12 +15,25 @@ p img {
 	padding: 1rem;
 }
 p .caption {
-	/* display: block; */
+	display: inline-block;
 	font-size: 85%;
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
 	word-wrap: initial;
 }
+
+/* logo sizing */
+p img[src*="#logo"] {
+	width: 320px;
+}
+/* full-size non-gallery image */
+p img[src*="#full"] {
+	width: 90vw;
+	height: calc(90vw * 0.66);
+	max-width: 1024px;
+	max-height: 1024px;
+}
+
 
 
 
@@ -121,15 +132,6 @@ p .caption {
 		display: inline-grid;
 		margin: 2rem 1rem 2rem 1rem;
 	}
-	p img[src*="#logo"] {
-		width: 320px;
-	}
-
-	p img[src*="#full"] {
-		width: 90vw;
-		height: calc(90vw * 0.66);
-		max-width: 1024px;
-		max-height: 1024px;
-	}
+	
 	
 }
