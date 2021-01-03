@@ -5,17 +5,16 @@
 
 /* Standard Image
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p > img {
+img {
 	display: block;
 	margin: 0 auto;
+
+	width: 360px;
 	max-width: 99%;
 
 	clear: both;
-	
-	margin: 0 auto;
-	padding: 1rem;
 }
-p > .caption {
+.caption {
 	font-size: 85%;
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
@@ -42,39 +41,3 @@ p > img[src*="#full"] {
 
 /* Image Gallery
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.gallery {
-	text-align: center;
-}
-
-.gallery p {
-	
-	border: 1px solid var(--blue);
-	border-radius: 3px;
-	
-	max-width: 240px;
-}
-.gallery p:hover {
-	border: 1px solid var(--red);
-}
-.gallery p img {
-	display: block;
-	object-fit: cover;
-
-	transition: all 200ms ease-in;
-	filter: grayscale(1) opacity(.8);	
-}
-.gallery p img:hover {
-	filter: grayscale(0) opacity(1);
-}
-
-
-
-@media (min-width: 40rem) {
-
-	.gallery p {
-		display: inline-grid;
-		margin: 2rem 1rem 2rem 1rem;
-	}
-	
-	
-}
