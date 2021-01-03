@@ -17,6 +17,7 @@ img {
 	display: inline-block;
 	
 	font-size: 85%;
+	line-height: 1.2;
 	padding: var(--small);
 	text-align: left;
 	word-wrap: initial;
