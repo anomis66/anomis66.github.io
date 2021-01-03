@@ -32,11 +32,15 @@ p img[src*="#full"] {
 	object-fit: cover;
 	object-position: 50% 75%;
 
+	background: var(--white);
+	border: 1px solid var(--mono-mid);
+	border-radius: var(--mini);
+
 	width: 80vw;
 	height: auto;
 	
-	max-width: 800px;
-	max-height: 800px;
+	max-width: 640px;
+	max-height: 640px;
 }
 
 
