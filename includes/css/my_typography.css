@@ -117,7 +117,7 @@ a.active:hover {
 /* blockquotes and code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 blockquote {
-	border-left: var(--sml) solid var(--red);
+	border-left: var(--small) solid var(--red);
 }
 code {
 	color:  var(--red);
@@ -126,7 +126,7 @@ code {
 blockquote,
 code {
 	background: var(--mono-lite);
-	padding: var(--min) var(--sml);
+	padding: var(--min) var(--small);
 }
 
 
@@ -137,24 +137,24 @@ code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
     overflow: visible; /* For IE */
-    margin: 4rem 0;
+    margin: val(--large) 0;
 	padding: 0;
     border: none;
-    border-top: medium double #999;
-    color: #999;
+    border-top: medium double val(--mono-mid);
+    color: val(--mono-mid);
     text-align: center;
 }
 hr:after {
-	color: #c62828;
+	color: val(--red);
     content: "♠";
     display: inline-block;
     position: relative;
     top: -3.6rem;
     font-size: 4rem;
-    padding: 0 2rem;
-    background: #ccc;
+    padding: 0 val(--large);
+    background: val(--mono-lite);
 	background: rgba(221,221,221,0.0);
-	text-shadow: 2px 2px 4px #151515;
+	text-shadow: 2px 2px 4px val(--mono-dark);
 }
 
 
@@ -182,8 +182,8 @@ hr:after {
 @media (prefers-color-scheme: dark) {
 
 	body {
-		color: #e5e5e5;
-		background: #151515;
+		color: val(--mono-lite);
+		background: val(--mono-dark);
 		background-image: url(../images/background-pattern.png);
 	}
 }
