@@ -14,7 +14,7 @@ img {
 }
 .caption {
 	font-size: 80%;
-	line-height: 1rem;
+	line-height: 1.4;
 	padding: 0 1rem 1rem 1rem;
 	text-align: center;
 	word-wrap: initial;
@@ -49,7 +49,7 @@ p img[src*="#full"] {
 .gallery p {
 	display: table;
 	float: left;
-	max-width: 400px;
+	max-width: 99vw;
 }
 
 /* crop image */
@@ -76,13 +76,17 @@ p img[src*="#full"] {
 /* Larger Screens
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 40rem) {
-	.gallery p { display: inline-grid; }
 	.gallery { column-count: 2; }
+	.gallery p { display: inline-grid; }
 }
 @media only screen and (min-width: 60rem) {
 	.gallery { column-count: 3; }
 }
 @media only screen and (min-width: 80rem) {
 	.gallery { column-count: 4; }
+	.gallery p img {
+		height: 240px;
+		width: 240px;
+	}
 }
 
