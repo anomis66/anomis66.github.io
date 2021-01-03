@@ -56,8 +56,8 @@ p img[src*="#full"] {
 	text-align: center;
 }
 .gallery p {
-	background: var(--white);
-	border: 1px solid var(--blue);
+	background: var(--mono-lite);
+	border: 1px solid var(--mono-mid);
 	border-radius: var(--mini);
 	padding: var(--small);
 	margin-left: 0.5%;
