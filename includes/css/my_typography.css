@@ -1,5 +1,9 @@
-/* BASE STYLES
+@import url('my_variables.css?v21.0102');
+
+
+/* TYPOGRAPHY BASICS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 /* NOTE
  * html is set to 62.5% so that all the REM measurements throughout Skeleton
@@ -18,7 +22,7 @@ body {
 
 	color: var(--mono-dark);
 	background: var(--white);
-	/* background-image: url(../images/background-pattern-neg.png); */
+	background-image: url(../images/background-pattern-neg.png);
 	font-family: 'Courier Prime', monospace;
 }
 
