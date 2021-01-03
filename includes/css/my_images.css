@@ -10,11 +10,10 @@ img {
 	display: block;
 	margin: 0 auto;
 	clear: both;
-	padding: var(--mini);
+	padding: var(--small);
 	max-width: 90%;
 }
 .caption {
-	background: var(--white);
 	display: inline-block;
 	
 	font-size: 85%;
@@ -23,9 +22,10 @@ img {
 	word-wrap: initial;
 }
 /* if image is child of <p> */
-p < img {
-	background: var(--mono-lite);
+p img:parent {
+	background: var(--white);
 	border: 1px solid var(--mono-mid);
+	padding: var(--small);
 }
 /* logo sizing */
 p img[src*="#logo"] {
