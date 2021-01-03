@@ -43,7 +43,7 @@ h6 { font-size: 1.8rem; line-height: 1.6; letter-spacing: 0; }
 
 /* Larger Than Phablet 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
 	body{ font-size: 2.2em; }
 	h1 { font-size: 5.0rem; }
 	h2 { font-size: 4.2rem; }
@@ -85,8 +85,8 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color:  var(--white);
-	background:  var(--red);
+	color:  var(--red);
+	background:  var(--white);
 }
 /* --- family tree --- */
 a[name] {
