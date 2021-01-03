@@ -8,10 +8,10 @@
 img {
 	display: block;
 	margin: 0 auto;
-	
-	max-width: 80%;
-
 	clear: both;
+	
+	max-width: 90%;
+
 }
 .caption {
 	font-size: 85%;
@@ -20,7 +20,18 @@ img {
 	word-wrap: initial;
 }
 
+/* crop image */
+p > img {
+	display: block;
+	object-fit: cover;
+	object-position: 50% 75%;
 
+	height: 150px;
+	width: 150px;
+
+	transition: all 200ms ease-in;
+	filter: grayscale(1) opacity(.8);	
+}
 /* logo sizing */
 p > img[src*="#logo"] {
 	width: 320px;
@@ -37,7 +48,6 @@ p > img[src*="#full"] {
 
 
 
-
 /* Image Gallery
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .gallery {
@@ -45,7 +55,7 @@ p > img[src*="#full"] {
 }
 
 .gallery p {
-	display: block;
+	display: table;
 	float: left;
 	max-width: 400px;
 }
@@ -54,7 +64,10 @@ p > img[src*="#full"] {
 
 
 
+/* Larger Screens
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 40rem) {
+	.gallery p { display: inline-grid; }
 	.gallery { column-count: 2; }
 }
 @media only screen and (min-width: 60rem) {
