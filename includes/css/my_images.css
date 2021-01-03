@@ -13,8 +13,8 @@ p img {
 
 	clear: both;
 	
-	max-width: 100%;
-	max-height: 75%;
+	max-width: 800px;
+	max-height: 600px;
 
 	margin: 0 auto;
 	padding: 1rem;
@@ -32,8 +32,6 @@ p img {
 
 .gallery p {
 	
-	max-width: 22%;
-
 	border-radius: 3px;
 	/* fallback colour for browsers that don't support gradients */
 	background: #f5f5f5;
@@ -69,8 +67,28 @@ p img {
 	height: 25px;
 	transform: rotate(12deg);
 }
+
+@media only screen and (min-width: 40rem) {
+	.gallery p { column-count: 2; }
+}
+@media only screen and (min-width: 60rem) {
+	.gallery p { column-count: 3; }
+}
+@media only screen and (min-width: 80rem) {
+	.gallery p { column-count: 4; }
+}
+
+
+
+
+
+
+
 .gallery img {
 	border: 0;
+	
+	width: ;
+	height: 
 }
 p .caption {
 	display: block;
