@@ -8,9 +8,8 @@
 img {
 	display: block;
 	margin: 0 auto;
-
-	width: 360px;
-	max-width: 99%;
+	
+	max-width: 80%;
 
 	clear: both;
 }
@@ -41,3 +40,27 @@ p > img[src*="#full"] {
 
 /* Image Gallery
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery {
+	text-align: center;
+}
+
+.gallery p {
+	display: block;
+	float: left;
+	max-width: 400px;
+}
+
+
+
+
+
+@media only screen and (min-width: 40rem) {
+	.gallery { column-count: 2; }
+}
+@media only screen and (min-width: 60rem) {
+	.gallery { column-count: 3; }
+}
+@media only screen and (min-width: 80rem) {
+	.gallery { column-count: 4; }
+}
+
