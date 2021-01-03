@@ -14,7 +14,9 @@ img {
 	max-width: 90%;
 }
 .caption {
+	background: var(--white);
 	display: inline-block;
+	
 	font-size: 85%;
 	padding: var(--small);
 	text-align: left;
