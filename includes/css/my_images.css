@@ -13,19 +13,19 @@ img {
 	max-width: 90%;
 }
 .caption {
-	border: 1px solid var(--mono-mid);
+	border: 1px solid #9e9e9e;
 	box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
 
 	font-size: 80%;
 	line-height: 1.4;
-	padding: val(--sml) val(--med);
+	padding: 1rem 2rem;
 	text-align: center;
 	word-wrap: initial;
 }
 /* if image is child of <p> */
 p < img {
-	background: var(--mono-lite);
-	border: 1px solid var(--mono-mid);
+	background: #f5f5f5;
+	border: 1px solid #9e9e9e;
 }
 /* logo sizing */
 p img[src*="#logo"] {
@@ -76,7 +76,11 @@ p img[src*="#full"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (min-width: 40rem) {
 	.gallery { column-count: 2; }
-	.gallery p { display: inline-grid; float: left; }
+	.gallery p { 
+		display: inline-grid; 
+		float: left;
+		width: 48%;
+	}
 	.caption {
 		border: 0;
 		box-shadow: 0 0 0 transparent;
@@ -84,12 +88,11 @@ p img[src*="#full"] {
 }
 @media only screen and (min-width: 60rem) {
 	.gallery { column-count: 3; }
+	.gallery p { width: 32%; }
 }
 @media only screen and (min-width: 80rem) {
 	.gallery { column-count: 4; }
-	.gallery p img {
-		height: 240px;
-		width: 240px;
-	}
+	.gallery p { width: 23%; }
+
 }
 
