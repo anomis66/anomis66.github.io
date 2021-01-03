@@ -16,6 +16,13 @@ p img {
 	margin: 0 auto;
 	padding: 1rem;
 }
+p .caption {
+	/* display: block; */
+	font-size: 85%;
+	padding: 0 1rem 1rem 1rem;
+	text-align: center;
+	word-wrap: initial;
+}
 
 
 
@@ -23,14 +30,16 @@ p img {
 
 /* Image Gallery
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-div.gallery {
+.gallery {
 	text-align: center;
 }
 
-
-div.gallery p {
+.gallery p {
+	
 	float: left;
-	width: 240px;	
+	width: 18em;
+	border: 1px solid var(--blue);
+	
 	border-radius: 3px;
 
 	/* fallback colour for browsers that don't support gradients */
@@ -42,16 +51,28 @@ div.gallery p {
 	/* prevent rotated text in the caption being jagged in Chrome and Safari */ 
 	-webkit-backface-visibility:hidden; 
 }
-.gallery p:nth-child(even) { /*see support section below for more info on nth-child*/
+.gallery p {
+	border: 1px solid var(--red);
+}
+.gallery p img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+.gallery p:nth-child(even) {
 	transform: rotate(2deg);
-	/*because the image is rotated the opposite way, the drop-shadow needs moving to the other side of the image*/
+	/* because the image is rotated the opposite way, the drop-shadow needs moving to the other side of the image */
 	box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
 }
-.gallery p:before { /*see the support section below to more info on using the :before psuedo element*/
+.gallery p:before {
 	content: '';
 	display: block;
 	position: absolute;
-	left: 5px; /*postion from the left side of the frame (positive value move the tape right, negative moves it left)*/
+	left: val(--lrg); /*postion from the left side of the frame (positive value move the tape right, negative moves it left)*/
 	top: -15px; /*position from the top of the frame (positive move it above the frame, negative below)*/
 	width: 75px; /*width of the tape*/
 	height: 25px; /*height of the tape*/
@@ -68,6 +89,10 @@ div.gallery p {
 	transform: rotate(12deg);
 }
 
+
+
+/*
+
 @media only screen and (min-width: 40rem) {
 	.gallery p { column-count: 2; }
 }
@@ -77,26 +102,13 @@ div.gallery p {
 @media only screen and (min-width: 80rem) {
 	.gallery p { column-count: 4; }
 }
+*/
 
 
 
 
 
 
-
-.gallery p img {
-	border: 0;
-	
-	width: 100%;
-	height: auto;
-}
-p .caption {
-	/* display: block; */
-	font-size: 85%;
-	padding: 0 1rem 1rem 1rem;
-	text-align: center;
-	word-wrap: initial;
-}
 
 
 
