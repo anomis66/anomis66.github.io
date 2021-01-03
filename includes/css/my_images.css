@@ -33,7 +33,7 @@ p img[src*="#full"] {
 	object-fit: cover;
 	object-position: 50% 75%;
 
-	background: var(--white);
+	background: rgba(255, 255, 255, 1);
 	border: 1px solid var(--mono-mid);
 	border-radius: var(--mini);
 
@@ -55,7 +55,7 @@ p img[src*="#full"] {
 	text-align: center;
 }
 .gallery p {
-	background: var(--mono-lite);
+	background: rgba(241, 241, 241, 0.7);
 	border: 2px solid var(--mono-mid);
 	border-radius: var(--mini);
 	padding: var(--small);
