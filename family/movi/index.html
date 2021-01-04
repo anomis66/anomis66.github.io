@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="author" content="MarkdownViewer++" />
-        <title>index.txt</title>
+        <title>index.md</title>
         <style type="text/css">
             
 /* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
@@ -32,30 +32,9 @@ code { display: inline-block; }
 <div id="csv-list" class="movie">&nbsp;</div>
 <script>
 
-// Executes when complete page is fully loaded, including all frames, objects and image…
-// $(window).load(function() {
+/* LOAD TSV OF MOVIES
+------------------------------ */
 
-// Executes when HTML-Document is loaded and DOM is ready
-$(document).ready(function () {
-
-/* ----- ----- ----- *
- * jQuery .filter() Search
- * https://stackoverflow.com/questions/7051800/how-to-build-a-simple-table-filter-with-jquery
- * ----- ----- ----- */
-
-	$("#quicksearch").on("keyup", function() {
-		var value = $(this).val().toLowerCase();
-		$("#table .record").filter(function() {
-			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-		});
-	});
-
-});
-
-
-/* ----- ----- ----- *
- * LOAD CSV OF MOVIES
- * ----- ----- ----- */
 document.getElementById("loading").style.display = ""; // show the loading image
 
 if (window.XMLHttpRequest) {
@@ -93,6 +72,10 @@ function doStuff(file) {
 }
 
 </script>
+<hr />
+<div class="aside">
+	<ul id="navbar"></ul>
+</div>
 <hr />
 <div class="footer">
 <p><a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon">Home</a> | <a href="https://www.simonarthur.co.uk/privacy.html" title="Privacy Policy">Privacy</a> &amp; <a href="https://www.simonarthur.co.uk/disclaimer.html" title="Disclaimer">Disclaimer</a> | <a href="https://www.simonarthur.co.uk/terms.html" title="Terms of Use">Terms of Use</a> | <a href="https://www.simonarthur.co.uk/toolkit.html" title="Toolkit">Toolkit</a></p>
