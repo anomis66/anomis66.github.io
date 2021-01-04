@@ -19,6 +19,6 @@ function appendData(data) {
 		var myList = document.createElement("li");
 		myList.innerHTML = '<a href="' + data[i].url + '">' + data[i].title + '</a> <small>('+data[i].date+')</small>';
 		// console.log(myList);
-		document.getElementById("navbar").appendChild(myList);
+		document.getElementById("myNavbar").appendChild(myList);
 	}
 }
