@@ -1,6 +1,22 @@
 /* MOBILE FRIENDLY TABLE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
+/* Ajax Loading Graphic 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#loading {
+	width: 100%;
+	margin: auto;
+}
+#loading img {
+	width: 100px;
+}
+
+
+
+
+
 #csv-list {
 	clear: both;
 	width: auto;
@@ -44,17 +60,62 @@
 
 
 
-/* Ajax Loading Graphic 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#loading {
-	width: 100%;
-	margin: auto;
+
+
+.movie .record span {
+	display: inline-block;	
 }
-#loading img {
-	width: 100px;
+/* --- TITLE --- */
+.movie .record span:first-of-type { 
+	font-weight: 600;
+	width: 75%;
+}
+/* --- SERIES --- */
+.movie .record span:nth-of-type(2) {
+	font-weight: 600;
+	width: 25%;
+}
+.movie .record span:nth-of-type(3), 
+.movie .record span:nth-of-type(4), 
+.movie .record span:nth-of-type(5), 
+.movie .record span:nth-of-type(6) {
+	text-align: left;
+	width: 25%;
+}
+.movie .record span:nth-of-type(7),
+.movie .record span:nth-of-type(8) {
+	display: none;
+	visibility: hidden;
 }
 
 
+@media (min-width: 800px) {
+
+	.movie .record span:first-of-type { 
+		font-weight: 600;
+		width: 40%;
+	}
+	.movie .record span:nth-of-type(2),
+	.movie .record span:nth-of-type(3),
+	.movie .record span:nth-of-type(4),
+	.movie .record span:nth-of-type(5),
+	.movie .record span:nth-of-type(6) {
+		display: inline-block;
+		width: 12%;
+	}
+	.movie .record span:nth-of-type(7) {
+		display: inline-block;
+		font-size: 75% !important;
+		visibility: visible;
+		width: 52%;
+	}
+	.movie .record span:nth-of-type(8) {
+		display: inline-block;
+		font-size: 75% !important;
+		visibility: visible;
+		width: 48%;
+	}
+
+}
 
 
-@import url('my_movies.css');
