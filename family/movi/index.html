@@ -11,15 +11,12 @@
 td, h1, h2, h3, h4, h5, p, ul, ol, li {
     page-break-inside: avoid; 
 }
-pre > code { display: block; margin: 1em 2em; }
-code { display: inline-block; }
+body{font-family: Sans-Serif;font-size: 100%;line-height: 1.5;margin: 1em auto;max-width: 65em;padding: 1em}blockquote{border-left: 5px solid IndianRed;padding: 1em}pre{background: GhostWhite;display: block;padding: 1em 2em}code{background: GhostWhite;color: IndianRed;font-family: Monospace;font-size: 105%;padding: 2px}img{max-width: 100%;padding: 5px}@media only screen and (min-width: 40rem){.columns{column-count: 2}}
         </style>
       </head>
     <body>
-        <link rel="stylesheet" href="https://www.simonarthur.co.uk/includes/css/default.css" />
-<script src="http://sp3/github/anomis66.github.io/includes/scripts/default.js"></script>
-<script src="https://www.simonarthur.co.uk/includes/scripts/md-page.js"></script>
-<p><a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon"><img src="https://www.simonarthur.co.uk/includes/images/anomis66_jack.png#logo" alt="Logo" title="Keep It Simple, Simon" /></a></p>
+        <script src="https://www.simonarthur.co.uk/includes/scripts/md-page.js"></script>
+<p><a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon"><img src="https://www.simonarthur.co.uk/includes/images/anomis66_jack.png" alt="Logo" title="Keep It Simple, Simon" /></a></p>
 <h1 id="a-listing-of-my-dvd-and-blu-ray-collection">A listing of my DVD and Blu-ray collection</h1>
 <p>Updated: 5 December 2020</p>
 <p>This started life as a <a href="https://www.postgresql.org/">PostgreSQL</a> learning exercise. Soon it became something using <a href="https://www.omdbapi.com/">OMDb API</a> and a learning tool more useful to me. Here's <a href="https://m.imdb.com/user/ur90560186/checkins?sort=list_order%2Cdesc&amp;view=grid">what I've been watching recently</a>.</p>
@@ -62,25 +59,21 @@ function doStuff(file) {
 	// Add SPACE after commas.
 	file = file.replace(/(?:\,)/g, ', ');				
 	// replace DELIMITER with next record code
-	file = file.replace(/(?:\|)/g, '</span><span>');
+	file = file.replace(/(?:\|)/g, '] [');
 	// replace EOL with next record code
-	file = file.replace(/(?:\r\n|\r|\n)/g, '</span></div><div class="record"><span>');  
+	file = file.replace(/(?:\r\n|\r|\n)/g, ']</div><div class="record">[');  
 	// replace \N with space
 	file = file.replace(/(?:\\N)/g, '&nbsp;');
 	// top & tail the output to ensure valid html
-	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record"><span>' + file + '</div></div>';
+	document.getElementById("csv-list").innerHTML = '<div id="table"><div class="record">[' + file + '</div></div>';
 }
 
 </script>
 <hr />
-<div class="aside">
-	<ul id="navbar"></ul>
-</div>
+<ul id="myNavbar" class="columns"></ul>
+<script src="https://www.simonarthur.co.uk/includes/scripts/navigation.main.js"></script>
 <hr />
-<div class="footer">
-<p><a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon">Home</a> | <a href="https://www.simonarthur.co.uk/privacy.html" title="Privacy Policy">Privacy</a> &amp; <a href="https://www.simonarthur.co.uk/disclaimer.html" title="Disclaimer">Disclaimer</a> | <a href="https://www.simonarthur.co.uk/terms.html" title="Terms of Use">Terms of Use</a> | <a href="https://www.simonarthur.co.uk/toolkit.html" title="Toolkit">Toolkit</a></p>
-<p>© 2021 <a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon">Simon Arthur</a>.  All rights reserved.</p>
-</div>
+<p>© 2021 <a href="https://www.simonarthur.co.uk/" title="Keep It Simple, Simon">Simon Arthur</a>.  All rights reserved. | <a href="https://www.simonarthur.co.uk/legal.html" title="Legal Stuff">Legal Stuff</a></p>
 
     </body>
 </html>
