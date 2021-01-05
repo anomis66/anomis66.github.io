@@ -1,7 +1,7 @@
 /* LOAD MAIN NAVIGATION
 ------------------------------ */
 
-fetch('https://www.simonarthur.co.uk/items/blog.json')
+fetch('https://www.simonarthur.co.uk/items/news.json')
 .then(function (response) {
 	return response.json();
 })
