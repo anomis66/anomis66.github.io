@@ -1,23 +1,9 @@
 
-family/book/add/_pdo_cnxn.php
-family/book/add/_update.php
-family/book/add/api.isbn.php
-family/book/add/index.php
-family/book/add/mybooks.sql
-family/movi/add/_pdo_cnxn.php
-family/movi/add/_search.php
-family/movi/add/_update.php
-family/movi/add/index.php
-family/movi/add/myfilms.sql
-family/movi/add/myfilms.xls
-family/movi/add/omdb_apikey.txt
-family/movi/add/URI - Convert CSV to JSON.url
-family/musi/discogs.php
-family/musi/musicbrainz.php
+family/book/add/*
+family/movi/add/*
+family/musi/*
 *.ini
 *.zip
 *.bak
-family/vinyl/add/_pdo_cnxn.php
-family/vinyl/add/index.php
+family/vinyl/add/*
 *.txt
-*.md
