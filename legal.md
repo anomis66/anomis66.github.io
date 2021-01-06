@@ -22,9 +22,9 @@ Website Toolkit
 
 This site is created using a number of free tools.  These include:
 
- + [Notepad++](https://notepad-plus-plus.org/ "Notepad++")
- + [MarkdownViewer++](https://github.com/nea/MarkdownViewerPlusPlus "MarkdownViewer++")
- + [Markdown Page](https://github.com/oscarmorrison/md-page/ "Markdown Page")
+ + [Notepad++](https://notepad-plus-plus.org/ "Notepad++") with [MarkdownViewer++](https://github.com/nea/MarkdownViewerPlusPlus "MarkdownViewer++") Plugin.
+ + [IrfanView](https://www.irfanview.com/ "IrfanView Graphic Viewer") Graphic Viewer.
+ + [Markdown Page](https://github.com/oscarmorrison/md-page/ "Markdown Page") script.
 
 
 
