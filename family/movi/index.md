@@ -15,11 +15,11 @@ Updated: 5 December 2020
 This started life as a [PostgreSQL](https://www.postgresql.org/) learning exercise. Soon it became something using [OMDb API](https://www.omdbapi.com/) and a learning tool more useful to me. Here's [what I've been watching recently](https://m.imdb.com/user/ur90560186/checkins?sort=list_order%2Cdesc&view=grid).
 
 <form action="#">
-	<input type="text" name="quicksearch" id="quicksearch" autofocus /><input type="reset" />
+	<p><input type="text" name="quicksearch" id="quicksearch" autofocus /><input type="reset" /></p>
 </form>
 
 <div id="loading">
-	<p><img src="https://www.simonarthur.co.uk/includes/images/loading-gray.gif" alt="Loading ... " width="100" /></p>
+	<img src="https://www.simonarthur.co.uk/includes/images/loading-gray.gif" alt="Loading ... " width="100" />
 </div>
 
 <div id="csv-list">&nbsp;</div>
