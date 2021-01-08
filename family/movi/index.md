@@ -19,7 +19,7 @@ This started life as a [PostgreSQL](https://www.postgresql.org/) learning exerci
 </form>
 
 <div id="loading">
-	<img src="https://www.simonarthur.co.uk/includes/images/loading-gray.gif" alt="Loading ... " width="100" />
+	<p><img src="https://www.simonarthur.co.uk/includes/images/loading-gray.gif" alt="Loading ... " width="100" /></p>
 </div>
 
 <div id="csv-list">&nbsp;</div>
