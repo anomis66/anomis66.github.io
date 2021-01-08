@@ -68,4 +68,4 @@ var quote = quotes[q_count];
 
 var author = quotes[q_count];
 
-document.getElementById("quotes").innerHTML = '<q>' + quote + '</q><cite>' + author + '</cite>';
+document.getElementById("quotes").innerHTML = '<q>' + quote + '</q> <cite>' + author + '</cite>';
