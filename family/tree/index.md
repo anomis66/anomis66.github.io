@@ -20,7 +20,11 @@ Progress is slow but [you can view the latest version of the ARTHUR tree](https:
 
 ![Tree](https://www.simonarthur.co.uk/includes/images/tree.png)
 
-## Primary Resources
+
+
+
+Primary Resources
+-----------------
 
  + [FreeBMD](https://www.freebmd.org.uk/): Free internet search of the Civil Registration index of births, marriages and deaths for England and Wales.
  + [FreeCen](https://www.freecen.org.uk/): Free internet search of the 19th century UK census returns. The first UK census to include names and other details of UK residents took place in 1841. Since then, a census has been held every ten years.
@@ -32,7 +36,9 @@ Progress is slow but [you can view the latest version of the ARTHUR tree](https:
 
 
 
-## Software & Tools
+
+Software & Tools
+----------------
 
  + [My Family Tree](https://chronoplexsoftware.com/products/index.htm): My Family Tree is a genealogy application for Windows®. It has been carefully designed to help you quickly create your family tree using a simple and intuitive interface.
  + [GEDCOM Validator](https://chronoplexsoftware.com/gedcomvalidator/updates/index.php): GEDCOM Validator is a free tool for checking a GEDCOM file for problems which could lead to data loss when transferring files between different genealogy applications.
@@ -40,7 +46,10 @@ Progress is slow but [you can view the latest version of the ARTHUR tree](https:
 
 
 
-## Additional Resources
+
+
+Additional Resources
+--------------------
 
  + [Ancestry.co.uk](https://www.ancestry.co.uk/): (Subscription required) Top Tip: Visit your local library they may have free access for a nominal cost.
  + [Find My Past](https://www.findmypast.co.uk/): Genealogy & Ancestry

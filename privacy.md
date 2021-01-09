@@ -20,7 +20,8 @@ We use your data to provide and improve the Service. By using the Service, you a
 
 
 
-## Information Collection And Use
+Information Collection And Use
+------------------------------
 
 We collect several different types of information for various purposes to provide and improve our Service to you.
 
@@ -54,7 +55,8 @@ Examples of Cookies we use:
 
 
 
-## Use of Data
+Use of Data
+-----------
 
 **Keep It Simple, Simon** uses the collected data for various purposes:
 
@@ -68,7 +70,8 @@ Examples of Cookies we use:
  
 
 
-## Transfer Of Data
+Transfer Of Data
+----------------
 
 Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
 
@@ -80,7 +83,8 @@ Your consent to this Privacy Policy followed by your submission of such informat
 
 
 
-## Disclosure Of Data
+Disclosure Of Data
+------------------
 
 ### Legal Requirements
 
@@ -96,7 +100,8 @@ Your consent to this Privacy Policy followed by your submission of such informat
 
 
 
-## Service Providers
+Service Providers
+-----------------
 
 We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.
 
@@ -104,7 +109,8 @@ These third parties have access to your Personal Data only to perform these task
 
 
 
-## Links To Other Sites
+Links To Other Sites
+--------------------
 
 Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
 
@@ -112,7 +118,8 @@ We have no control over and assume no responsibility for the content, privacy po
 
 
 
-## Children's Privacy
+Children's Privacy
+------------------
 
 Our Service does not address anyone under the age of 18 ("Children").
 
@@ -120,7 +127,8 @@ We do not knowingly collect personally identifiable information from anyone unde
 
 
 
-## Changes To This Privacy Policy
+Changes To This Privacy Policy
+------------------------------
 
 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
@@ -130,7 +138,8 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 
 
-## Contact Us
+Contact Us
+----------
 
 If you have any questions about this Privacy Policy, please contact us by email: <website@simonarthur.co.uk>
 
