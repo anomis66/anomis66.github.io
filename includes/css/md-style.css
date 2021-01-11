@@ -39,14 +39,14 @@ tr:first-child {
 	font-weight: 600;
 	text-transform: capitalize;
 }
-@media only screen and (min-width: 40rem) {
+
+@media (prefers-color-scheme: dark) {
 	a { color: #1dadf9; }
 	blockquote { border-color: #f9d41d; }
 	code { color: #f91d67; }
-	.columns { 
-		column-count: 2; 
-	}
-	table  { 
-		width: 100%; 
-	}
+}
+
+@media only screen and (min-width: 40rem) {
+	.columns { column-count: 2; }
+	table  { width: 100%; }
 }
