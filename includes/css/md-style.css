@@ -1,7 +1,7 @@
 :root {
   color-scheme: light dark; /* both supported */
 }
-body { 
+body {
 	font-family: Sans-Serif;
 	font-size: 100%;
 	line-height: 1.5; 
@@ -9,17 +9,17 @@ body {
 	max-width: 65em;
 	padding: 1em;
 }
-a { color: IndianRed; }
+a { color: #72a4d8; }
 blockquote { 
-	background: GhostWhite;
-	border-left: 5px solid GoldenRod; 
+	background: #f5f5f5;
+	border-left: 5px solid #7c6a0e; 
 	padding: 1em; 
 }
 pre {
 	display: block;
 }
 code {
-	color: IndianRed;
+	color: #7c0e33;
 	font-family: Monospace;
 	font-size: 105%;
 	padding: 2px;
@@ -40,6 +40,9 @@ tr:first-child {
 	text-transform: capitalize;
 }
 @media only screen and (min-width: 40rem) {
+	a { color: #1dadf9; }
+	blockquote { border-color: #f9d41d; }
+	code { color: #f91d67; }
 	.columns { 
 		column-count: 2; 
 	}
