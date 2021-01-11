@@ -9,18 +9,13 @@ body {
 	max-width: 65em;
 	padding: 1em;
 }
-a { color: #72a4d8; }
 blockquote { 
-	background: #f5f5f5;
-	border-left: 5px solid #7c6a0e; 
 	padding: 1em; 
 }
 pre {
 	display: block;
 }
 code {
-	color: #7c0e33;
-	font-family: Monospace;
 	font-size: 105%;
 	padding: 2px;
 }
@@ -38,12 +33,6 @@ td, th {
 tr:first-child {
 	font-weight: 600;
 	text-transform: capitalize;
-}
-
-@media (prefers-color-scheme: dark) {
-	a { color: #1dadf9; }
-	blockquote { border-color: #f9d41d; }
-	code { color: #f91d67; }
 }
 
 @media only screen and (min-width: 40rem) {
